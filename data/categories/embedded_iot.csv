@@ -1,0 +1,81 @@
+website,name,tags,description
+https://github.com/rust-embedded,Rust Embedded Working Group (GitHub),embedded;rust;open-source;community,"Official Rust Embedded WG organization hosting cortex-m, embedded-hal, svd2rust, the Embedded Rust Book and other core crates."
+https://www.freecodecamp.org/news/learn-embedded-systems-firmware-basics-handbook-for-devs/,freeCodeCamp – Embedded Systems Firmware Basics Handbook,embedded;firmware;c;course;book,"Free long-form handbook covering microcontroller firmware fundamentals such as registers, GPIO, interrupts, timers and peripherals for developers new to embedded."
+https://www.freecodecamp.org/news/learn-c-programming-classic-book-dr-chuck/,freeCodeCamp – Learn C with Dr. Chuck (K&R),embedded;c;course;book;youtube,"Free video course by Dr. Charles Severance walking through the classic K&R 'The C Programming Language' book, the foundation for firmware work."
+https://www.parlezvoustech.com/en/comparaison-protocoles-communication-i2c-spi-uart/,ParlezVousTech – I2C vs SPI vs UART Compared,embedded;protocols;i2c;spi;uart;blog,"Free article comparing the I2C, SPI and UART serial protocols in wiring, speed, addressing and typical use cases."
+https://playembedded.org/blog/arm-cortex-clock-tree-101/,PlayEmbedded – ARM Cortex Clock Tree 101,embedded;arm-cortex;stm32;blog,"Free tutorial explaining how the clock tree (oscillators, PLLs, prescalers) of ARM Cortex-M microcontrollers like STM32 works and how to configure it."
+https://learn-arduino-red.vercel.app/,Learn Arduino – Interactive 3D Lessons,embedded;arduino;course;simulator,"Free interactive site with 16 beginner lessons where you wire LEDs, buttons, sensors, motors and servos on a 3D Arduino board and run the code."
+https://github.com/nopnop2002/esp-idf-ssd1306/tree/master/BalloonDemo,esp-idf-ssd1306 BalloonDemo (nopnop2002),embedded;esp32;esp-idf;display;pbl-project;open-source,"Open-source ESP-IDF demo that animates balloons on an SSD1306 OLED, part of a full I2C/SPI SSD1306 driver repo for ESP32."
+https://github.com/justimepassnow/Microdrive,μDrive (Microdrive),embedded;robotics;micropython;motor-control;pbl-project;open-source,"OSHWA-certified open hardware/firmware project (MIT, CERN-OHL-P) that turns a plain DC motor into a PID closed-loop smart servo with a single-wire UART bus and Web Serial dashboard."
+https://www.zephyrproject.org/,Zephyr Project,embedded;rtos;iot;open-source,"Linux Foundation open-source RTOS supporting hundreds of boards with a full networking, Bluetooth and device-driver stack."
+https://www.freertos.org/,FreeRTOS,embedded;rtos;c;open-source,"MIT-licensed real-time kernel for microcontrollers with free documentation, tutorials and the 'Mastering the FreeRTOS Kernel' book."
+https://nuttx.apache.org/,Apache NuttX,embedded;rtos;posix;open-source,Apache-licensed POSIX-compliant RTOS that scales from 8-bit to 64-bit microcontrollers and powers PX4 drones.
+https://www.riot-os.org/,RIOT OS,embedded;rtos;iot;open-source,Open-source operating system for low-power IoT devices with IPv6/6LoWPAN networking and multi-threading.
+https://www.chibios.org/,ChibiOS,embedded;rtos;stm32;open-source,"Compact open-source RTOS and HAL (ChibiOS/RT and ChibiOS/HAL) widely used on STM32, with free docs and articles on PlayEmbedded."
+https://github.com/RT-Thread/rt-thread,RT-Thread,embedded;rtos;iot;open-source,Apache-2.0 IoT-focused RTOS with a component/package ecosystem and support for many ARM Cortex-M and RISC-V chips.
+https://www.tockos.org/,Tock OS,embedded;rtos;rust;security;open-source,Secure embedded operating system written in Rust for Cortex-M and RISC-V that isolates untrusted applications.
+https://rtic.rs/,RTIC (Real-Time Interrupt-driven Concurrency),embedded;rust;rtos;open-source,"Open-source Rust framework for building statically scheduled, interrupt-driven concurrent firmware on Cortex-M."
+https://embassy.dev/,Embassy,embedded;rust;async;open-source,"Open-source async Rust framework with HALs for STM32, nRF and RP2040/RP2350 plus networking, USB and BLE support."
+https://docs.rust-embedded.org/book/,The Embedded Rust Book,embedded;rust;arm-cortex;book,"Free official book teaching embedded Rust on Cortex-M microcontrollers, from setup to peripherals, concurrency and interop with C."
+https://docs.rust-embedded.org/discovery/,Discovery Book (Embedded Rust),embedded;rust;course;book,Free hands-on beginner book teaching microcontroller programming in Rust with the micro:bit board.
+https://github.com/rust-embedded/awesome-embedded-rust,Awesome Embedded Rust,embedded;rust;awesome-list;open-source,"Curated list of embedded Rust HALs, board support crates, drivers, tools and learning resources."
+https://docs.esp-rs.org/book/,The Rust on ESP Book,embedded;rust;esp32;book,"Free official guide to developing Rust firmware for Espressif ESP32 chips, both bare-metal (no_std) and on ESP-IDF (std)."
+https://github.com/esp-rs,esp-rs (GitHub),embedded;rust;esp32;open-source,"Community organization with esp-hal, esp-wifi, espflash and other open-source crates for Rust on ESP32."
+https://github.com/rp-rs/rp-hal,rp-hal,embedded;rust;rp2040;open-source,Open-source Rust HAL and board support crates for the Raspberry Pi RP2040 and RP2350 microcontrollers.
+https://github.com/stm32-rs/stm32f4xx-hal,stm32f4xx-hal,embedded;rust;stm32;open-source,Open-source Rust embedded-hal implementation for STM32F4 microcontrollers such as the popular 'Black Pill' boards.
+https://github.com/knurling-rs/defmt,defmt,embedded;rust;tool;open-source,Highly efficient deferred-formatting logging framework for resource-constrained embedded Rust devices.
+https://probe.rs/,probe-rs,embedded;rust;debugging;tool;open-source,"Open-source toolkit for flashing and debugging ARM and RISC-V microcontrollers through common debug probes, with VS Code integration."
+https://openocd.org/,OpenOCD,embedded;debugging;arm-cortex;tool;open-source,Open On-Chip Debugger for flashing and debugging microcontrollers over JTAG/SWD with GDB.
+https://github.com/blackmagic-debug/blackmagic,Black Magic Probe,embedded;debugging;hardware;tool;open-source,"Open-source JTAG/SWD debug probe firmware with an embedded GDB server, runnable on low-cost boards."
+https://www.gnu.org/software/gdb/,GDB – GNU Debugger,embedded;debugging;tool;open-source,"Free GNU debugger used with OpenOCD, probe-rs or QEMU to step through and inspect firmware."
+https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads,Arm GNU Toolchain,embedded;arm-cortex;c;tool;open-source,Free GCC-based cross-compiler toolchain (arm-none-eabi) for building bare-metal ARM Cortex firmware.
+https://sigrok.org/,sigrok / PulseView,embedded;debugging;logic-analyzer;tool;open-source,"Open-source signal analysis suite supporting many cheap logic analyzers with protocol decoders for I2C, SPI, UART and more."
+https://renode.io/,Renode,embedded;simulator;iot;tool;open-source,Open-source framework that simulates complete embedded systems and networks of MCUs to run unmodified firmware for testing and CI.
+https://www.qemu.org/,QEMU,embedded;simulator;arm-cortex;tool;open-source,Open-source machine emulator that can emulate ARM Cortex-M boards for testing firmware without hardware.
+https://simulide.com/,SimulIDE,embedded;simulator;arduino;tool;open-source,"GPL open-source real-time circuit simulator that runs AVR, Arduino and PIC firmware alongside the schematic (source code freely available)."
+https://github.com/espressif/esp-idf,ESP-IDF,embedded;esp32;iot;sdk;open-source,"Espressif's official Apache-2.0 IoT development framework for ESP32 chips, built on FreeRTOS."
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32/,ESP-IDF Programming Guide,embedded;esp32;docs;book,"Free official documentation covering ESP-IDF setup, APIs, Wi-Fi, BLE and peripherals for ESP32."
+https://github.com/espressif/arduino-esp32,Arduino-ESP32 Core,embedded;esp32;arduino;open-source,Official open-source Arduino core that lets you program ESP32 chips with the Arduino API and IDE.
+https://www.arduino.cc/en/software,Arduino IDE,embedded;arduino;tool;open-source,"Free, open-source official IDE for writing and uploading sketches to Arduino and many compatible boards."
+https://platformio.org/,PlatformIO,embedded;tool;open-source,"Open-source cross-platform build system and VS Code IDE extension supporting 1,500+ boards and many frameworks."
+https://github.com/raspberrypi/pico-sdk,Raspberry Pi Pico SDK,embedded;rp2040;c;sdk;open-source,Official BSD-licensed C/C++ SDK for programming RP2040 and RP2350 microcontrollers.
+https://github.com/raspberrypi/pico-examples,Raspberry Pi Pico Examples,embedded;rp2040;c;pbl-project;open-source,"Official collection of example programs for the Pico SDK covering GPIO, PIO, ADC, I2C, SPI, USB and wireless."
+https://github.com/STMicroelectronics/STM32CubeF4,STM32CubeF4,embedded;stm32;c;sdk;open-source,"STMicroelectronics' official open-source HAL/LL drivers, CMSIS and middleware with examples for STM32F4 MCUs."
+https://github.com/libopencm3/libopencm3,libopencm3,embedded;arm-cortex;stm32;c;open-source,"Open-source low-level firmware library for ARM Cortex-M microcontrollers from ST, NXP, TI and others."
+https://github.com/cpq/bare-metal-programming-guide,Bare Metal Programming Guide,embedded;arm-cortex;stm32;c;course;open-source,"Free step-by-step guide to programming an STM32 microcontroller from scratch using only GCC and a datasheet, no frameworks."
+https://micropython.org/,MicroPython,embedded;python;esp32;rp2040;open-source,"Lean open-source Python 3 implementation that runs on microcontrollers like ESP32, RP2040 and STM32."
+https://circuitpython.org/,CircuitPython,embedded;python;education;open-source,Adafruit's beginner-friendly open-source Python for microcontrollers with drag-and-drop code editing.
+https://github.com/lvgl/lvgl,LVGL,embedded;graphics;display;open-source,MIT-licensed embedded graphics library for building GUIs on small displays with any MCU.
+https://github.com/mcu-tools/mcuboot,MCUboot,embedded;bootloader;security;open-source,Open-source secure bootloader for 32-bit MCUs supporting signed images and over-the-air firmware updates.
+https://interrupt.memfault.com/blog/,Interrupt (by Memfault),embedded;firmware;blog,"Free in-depth blog on professional firmware engineering topics like debugging, build systems, Rust, RTOS and testing."
+https://embeddedartistry.com/,Embedded Artistry,embedded;firmware;blog,"Embedded software blog with many free articles, field notes and curated reading lists on firmware architecture and practices."
+https://www.beningo.com/blog/,Beningo Embedded Group Blog,embedded;firmware;blog,"Free articles by Jacob Beningo on modern embedded software, RTOS, architecture and DevOps for firmware."
+https://www.embedded.fm/,Embedded.fm Podcast,embedded;podcast;community,"Free podcast about embedded systems, hardware and engineering careers hosted by Elecia and Christopher White."
+https://randomnerdtutorials.com/,Random Nerd Tutorials,embedded;esp32;arduino;iot;blog;pbl-project,"Hundreds of free step-by-step ESP32, ESP8266, Arduino and Raspberry Pi project tutorials."
+https://learn.adafruit.com/,Adafruit Learning System,embedded;arduino;circuitpython;pbl-project;course,"Thousands of free project guides and tutorials for Arduino, CircuitPython and electronics."
+https://users.ece.utexas.edu/~valvano/,Jonathan Valvano's Embedded Systems Resources (UT Austin),embedded;arm-cortex;course;book,"Free course materials, labs, starter code and e-book chapters from UT Austin's 'Embedded Systems – Shape the World' author."
+https://www.state-machine.com/video-course,Modern Embedded Systems Programming (Miro Samek),embedded;arm-cortex;rtos;course;youtube,"Free video course on YouTube covering embedded C on ARM Cortex-M from basics through RTOS, state machines and active objects."
+https://www.youtube.com/@LowByteProductions,Low Byte Productions (YouTube),embedded;arm-cortex;youtube,"Free YouTube channel with deep-dive series on bare-metal programming, bootloaders and low-level systems."
+https://www.youtube.com/@ShawnHymel,Shawn Hymel (YouTube),embedded;rtos;tinyml;youtube,"Free tutorials on embedded systems, FreeRTOS, Zephyr, edge AI and electronics."
+https://www.youtube.com/@DigiKey,DigiKey (YouTube),embedded;rtos;zephyr;youtube,Free video series including 'Introduction to RTOS' and 'Introduction to Zephyr' plus many maker tutorials.
+https://www.youtube.com/@ControllersTech,ControllersTech (YouTube),embedded;stm32;youtube,"Free STM32 tutorials covering HAL, peripherals, FreeRTOS and interfacing sensors and displays."
+https://www.youtube.com/@AndreasSpiess,Andreas Spiess (YouTube),embedded;esp32;iot;lora;youtube,"Free videos testing ESP32, LoRa, sensors and IoT gear with practical maker projects."
+https://www.youtube.com/@TheRustyBits,The Rusty Bits (YouTube),embedded;rust;youtube,"Free YouTube tutorials on embedded Rust, from basics to Embassy and real microcontroller projects."
+https://nodered.org/,Node-RED,iot;automation;tool;open-source,"Open-source flow-based low-code tool for wiring together devices, APIs and MQTT in IoT applications."
+https://esphome.io/,ESPHome,iot;esp32;home-automation;tool;open-source,"Open-source system that builds custom ESP32/ESP8266 firmware from simple YAML configs, integrating with Home Assistant."
+https://www.home-assistant.io/,Home Assistant,iot;home-automation;open-source,Open-source local home automation platform integrating thousands of devices and services.
+https://tasmota.github.io/docs/,Tasmota,iot;esp32;home-automation;firmware;open-source,"Open-source alternative firmware for ESP8266/ESP32 smart devices with MQTT, web UI and local control."
+https://thingsboard.io/,ThingsBoard Community Edition,iot;platform;dashboard;open-source,"Apache-2.0 IoT platform (Community Edition) for device management, data collection, rule engine and dashboards."
+https://mosquitto.org/,Eclipse Mosquitto,iot;mqtt;tool;open-source,Lightweight open-source MQTT broker for connecting IoT devices and services.
+https://grafana.com/oss/grafana/,Grafana OSS,iot;dashboard;tool;open-source,Open-source (AGPL) visualization platform for building dashboards from IoT sensor data and time-series databases.
+https://github.com/influxdata/influxdb,InfluxDB OSS,iot;database;time-series;open-source,Open-source time-series database commonly used to store IoT telemetry.
+https://www.thethingsnetwork.org/docs/,The Things Network Docs,iot;lora;lorawan;docs,"Free documentation on LoRaWAN, gateways and devices for the community-run The Things Network."
+https://github.com/TheThingsNetwork/lorawan-stack,The Things Stack (LoRaWAN Stack),iot;lora;lorawan;open-source,"Open-source LoRaWAN network server stack behind The Things Network, self-hostable."
+https://www.chirpstack.io/,ChirpStack,iot;lora;lorawan;open-source,Open-source LoRaWAN network server for running your own private LoRa network.
+https://github.com/jgromes/RadioLib,RadioLib,iot;lora;arduino;open-source,"Open-source Arduino library supporting LoRa, FSK and many other radio modules and protocols."
+https://meshtastic.org/,Meshtastic,iot;lora;esp32;pbl-project;open-source,Open-source off-grid LoRa mesh messaging firmware for ESP32 and nRF52 boards.
+https://github.com/InfiniTimeOrg/InfiniTime,InfiniTime,embedded;bluetooth;freertos;pbl-project;open-source,"Open-source smartwatch firmware for the PineTime built on FreeRTOS and nRF52, a great real-world firmware codebase."
+https://github.com/qmk/qmk_firmware,QMK Firmware,embedded;keyboard;c;pbl-project;open-source,"Open-source keyboard firmware for AVR and ARM MCUs, a popular hands-on embedded project."
+https://github.com/nhivp/Awesome-Embedded,Awesome Embedded (nhivp),embedded;awesome-list;open-source,"Curated list of embedded programming resources: MCUs, RTOSes, books, courses and tools."
+https://github.com/embedded-boston/awesome-embedded-systems,Awesome Embedded Systems (embedded-boston),embedded;awesome-list;open-source,"Curated list of embedded systems articles, books, courses and tools."
+https://www.reddit.com/r/embedded/,r/embedded (Reddit),embedded;community,"Active free Reddit community for embedded engineers sharing questions, career advice and resources."

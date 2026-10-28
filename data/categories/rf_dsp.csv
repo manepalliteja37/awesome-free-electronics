@@ -1,0 +1,56 @@
+website,name,tags,description
+https://www.gnuradio.org/,GNU Radio,sdr;dsp;communication;tool;open-source,Free open-source toolkit with a graphical flowgraph editor for building software-defined radio and signal-processing systems.
+https://www.sdrpp.org/,SDR++,sdr;tool;open-source,"Lightweight cross-platform open-source SDR receiver app supporting RTL-SDR, HackRF, Airspy and more."
+https://github.com/f4exb/sdrangel,SDRangel,sdr;communication;tool;open-source,"Open-source SDR receiver/transmitter frontend with many built-in modulators, demodulators and decoders."
+https://gqrx.dk/,Gqrx,sdr;tool;open-source,"Open-source SDR receiver for Linux and macOS built on GNU Radio and Qt, ideal for exploring the spectrum."
+https://github.com/miek/inspectrum,inspectrum,sdr;dsp;tool;open-source,Open-source tool for visually analysing captured radio signal recordings to reverse-engineer modulation and timing.
+https://github.com/jopohl/urh,Universal Radio Hacker,sdr;communication;tool;open-source,Open-source suite for investigating and reverse-engineering unknown wireless protocols from SDR captures.
+https://openems.de/,openEMS,rf;antenna;simulator;open-source,Free open-source 3D FDTD electromagnetic field solver scriptable from Octave/MATLAB or Python for antennas and RF structures.
+https://www.qsl.net/4nec2/,4nec2,antenna;simulator;tool,Free (proprietary) Windows NEC2/NEC4-based antenna modelling and optimisation tool with 3D pattern plots.
+https://www.nec2.org/,NEC2 resources (nec2.org),antenna;simulator;open-source,"Hub for the public-domain Numerical Electromagnetics Code (NEC2) wire-antenna simulator, its manuals and related software."
+https://scikit-rf.org/,scikit-rf,rf;tool;open-source,"Open-source Python library for RF/microwave network analysis, Touchstone files, calibration and Smith charts."
+https://qucsstudio.de/,QucsStudio,rf;simulator;tool,"Free (proprietary) circuit simulator with S-parameter, harmonic balance and filter/matching synthesis tools."
+https://www.sonnetsoftware.com/products/lite/,Sonnet Lite,rf;antenna;simulator,"Free (proprietary, registration required) feature-limited planar 3D EM simulator for microstrip and PCB RF structures."
+https://www.qsl.net/kd2bd/splat.html,SPLAT!,rf;communication;tool;open-source,"Open-source RF signal propagation, loss and terrain analysis tool for planning radio links."
+https://github.com/NanoVNA-Saver/nanovna-saver,NanoVNA-Saver,rf;antenna;tool;open-source,"Open-source PC app for controlling NanoVNA vector network analysers, capturing sweeps and plotting Smith charts."
+https://www.will-kelsey.com/smith_chart/,Online Smith Chart Tool,rf;calculator;tool,Free (proprietary) browser-based interactive Smith chart for impedance matching with lumped and transmission-line elements.
+https://www.microwaves101.com/,Microwaves101,rf;antenna;blog;calculator,Free reference site with microwave engineering encyclopedia articles and downloadable RF calculators.
+https://www.antenna-theory.com/,Antenna-Theory.com,antenna;rf;course;blog,"Free tutorial site explaining antenna fundamentals, antenna types, measurements and impedance matching."
+https://pysdr.org/,PySDR: A Guide to SDR and DSP using Python,sdr;dsp;book;open-source,"Free open-source textbook teaching wireless communications, DSP and SDR hands-on with Python."
+https://www.dspguide.com/,The Scientist and Engineer's Guide to DSP,dsp;book,Free full online book by Steven W. Smith covering practical digital signal processing.
+https://greenteapress.com/wp/think-dsp/,Think DSP,dsp;book;open-source,Free CC-licensed book by Allen Downey teaching signal processing through Python code.
+https://ccrma.stanford.edu/~jos/,Julius O. Smith III Online Books (CCRMA),dsp;book,"Free online books on DFT math, digital filters, physical audio and spectral audio signal processing."
+https://www.dsprelated.com/,DSPRelated,dsp;communication;blog,"Free community site with DSP articles, blogs, code snippets, forums and free books."
+https://dspillustrations.com/,DSPIllustrations,dsp;communication;blog,"Free illustrated tutorials with Python code on signals, Fourier analysis and digital communications."
+https://www.complextoreal.com/,Complex to Real,communication;dsp;blog,"Free intuitive tutorials on digital communications, modulation, OFDM and channel coding."
+https://www.wirelesspi.com/,Wireless Pi,communication;dsp;sdr;blog,Free articles explaining wireless communication and DSP concepts with intuition and figures.
+https://octave.sourceforge.io/signal/,GNU Octave Signal Package,dsp;tool;open-source,"Open-source signal processing package for GNU Octave with filter design, windowing and spectral tools."
+https://github.com/jgaeddert/liquid-dsp,liquid-dsp,dsp;sdr;communication;tool;open-source,"Open-source C library for digital communications and SDR DSP blocks like filters, modems and synchronisers."
+https://github.com/pothosware/SoapySDR,SoapySDR,sdr;tool;open-source,Open-source vendor-neutral SDR hardware abstraction library used by many SDR applications.
+https://ocw.mit.edu/courses/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/,MIT 6.02 Digital Communication Systems,communication;dsp;course,"Free MIT OCW course on digital communication, coding, modulation and networking with lecture notes."
+https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/,MIT 6.450 Principles of Digital Communications I,communication;course,"Free graduate-level MIT OCW course with video lectures on source coding, modulation and detection."
+https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/,MIT 6.341 Discrete-Time Signal Processing,dsp;course,"Free MIT OCW course covering advanced discrete-time signal processing, filter design and spectral analysis."
+https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/,MIT 6.003 Signals and Systems,dsp;course,Free MIT OCW course with video lectures on continuous and discrete-time signals and systems.
+https://greatscottgadgets.com/sdr/,Software Defined Radio with HackRF (Michael Ossmann),sdr;course;youtube,Free video course by Michael Ossmann teaching SDR and DSP fundamentals using HackRF and GNU Radio.
+https://hackrf.readthedocs.io/,HackRF Documentation,sdr;tool;open-source,"Official open documentation for the open-source HackRF One SDR, covering hardware, tools and firmware."
+https://www.rtl-sdr.com/,RTL-SDR Blog,sdr;blog,"Free blog with news, tutorials and project ideas for low-cost RTL-SDR dongles and other SDRs."
+https://www.sigidwiki.com/,Signal Identification Wiki,sdr;communication;ham-radio;blog,"Free community wiki for identifying radio signals by sound, waterfall and frequency."
+https://www.websdr.org/,WebSDR,sdr;ham-radio;tool,Free (proprietary) network of web-accessible SDR receivers worldwide that you can tune from a browser.
+https://www.openwebrx.de/,OpenWebRX,sdr;ham-radio;tool;open-source,Open-source multi-user web SDR receiver with built-in digital-mode decoders.
+https://wsjt.sourceforge.io/,WSJT-X,ham-radio;communication;dsp;tool;open-source,"Open-source weak-signal digital communication software for FT8, FT4, WSPR and other ham modes."
+https://hamstudy.org/,HamStudy.org,ham-radio;course,Free web-based ham radio licence exam study and practice tool with question explanations.
+https://www.kb6nu.com/study-guides/,KB6NU No-Nonsense Study Guides,ham-radio;book,"Free no-nonsense PDF study guides for US amateur radio Technician, General and Extra licences."
+https://www.youtube.com/@iain_explains,"Iain Explains Signals, Systems, and Digital Comms",communication;dsp;youtube,"YouTube channel with intuitive short explanations of signals, wireless and digital communications."
+https://www.youtube.com/@TheSignalPath,The Signal Path,rf;youtube,"YouTube channel featuring RF/microwave test equipment teardowns, repairs and experiments."
+https://www.youtube.com/@AndrewZonenberg,Andrew Zonenberg,rf;dsp;youtube,"YouTube channel on high-speed signal integrity, open-source test equipment and ngscopeclient."
+https://www.youtube.com/@HamRadioCrashCourse,Ham Radio Crash Course,ham-radio;sdr;youtube,YouTube channel with beginner-friendly ham radio and SDR tutorials and reviews.
+https://www.youtube.com/@rtlsdrblog,RTL-SDR Blog (YouTube),sdr;youtube,"YouTube channel with RTL-SDR tutorials, demos and reception projects."
+https://www.youtube.com/@saveitforparts,saveitforparts,sdr;antenna;youtube;pbl-project,"YouTube channel with hands-on satellite, antenna and SDR hacking projects using salvaged gear."
+https://github.com/merbanan/rtl_433,rtl_433,sdr;communication;pbl-project;open-source,Open-source decoder for 433/868/915 MHz ISM devices like weather stations; great RTL-SDR starter project.
+https://github.com/flightaware/dump1090,dump1090 (FlightAware),sdr;communication;pbl-project;open-source,Open-source ADS-B Mode S decoder for tracking aircraft with an RTL-SDR.
+https://github.com/martinber/noaa-apt,noaa-apt,sdr;dsp;pbl-project;open-source,Open-source decoder for NOAA APT weather-satellite images received with an SDR.
+https://www.satdump.org/,SatDump,sdr;dsp;pbl-project;open-source,Open-source generic satellite data processing software for decoding weather and other satellite downlinks.
+https://www.satnogs.org/,SatNOGS,sdr;antenna;communication;pbl-project;open-source,Open-source global network and hardware project for building satellite ground stations.
+https://github.com/bastibl/gr-ieee802-11,gr-ieee802-11,sdr;communication;pbl-project;open-source,Open-source GNU Radio IEEE 802.11a/g/p WiFi transceiver for SDR experimentation.
+https://github.com/srsran/srsRAN_Project,srsRAN Project,communication;sdr;tool;open-source,Open-source 4G/5G RAN software suite that runs on SDR hardware for cellular experiments.
+https://dsp.stackexchange.com/,Signal Processing Stack Exchange,dsp;communication;blog,"Free Q&A community for signal processing, DSP and communications questions."

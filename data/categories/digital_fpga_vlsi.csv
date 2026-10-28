@@ -1,0 +1,71 @@
+website,name,tags,description
+https://github.com/logisim-evolution/logisim-evolution,Logisim-evolution,digital-electronics;simulator;tool;open-source,"Educational GUI tool for designing and simulating digital logic circuits, with VHDL export and FPGA support."
+https://github.com/hneemann/Digital,Digital (hneemann),digital-electronics;simulator;tool;open-source,"Easy-to-use digital logic designer and simulator for teaching, with Verilog/VHDL export and FPGA board support."
+https://circuitverse.org/,CircuitVerse,digital-electronics;simulator;tool;open-source,Free browser-based digital circuit simulator with a community of shareable circuits and learning material.
+https://digitaljs.tilk.eu/,DigitalJS Online,digital-electronics;fpga;simulator;tool;open-source,Web-based simulator that synthesizes Verilog with Yosys and visualizes the resulting circuit interactively.
+https://nandgame.com/,Nandgame,digital-electronics;computer-architecture;course;open-source,Free browser puzzle game where you build a working computer starting from NAND gates.
+https://www.nand2tetris.org/,nand2tetris,computer-architecture;digital-electronics;course;book,Free project-based course and materials for building a full computer system from NAND gates up to an OS.
+https://cpu.land/,Putting the You in CPU (cpu.land),computer-architecture;blog;book,"Free illustrated long-form explainer on how CPUs actually run programs, from syscalls to multitasking."
+https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/,MIT OCW 6.004 Computation Structures,computer-architecture;digital-electronics;course,"Free MIT course covering digital logic, sequential circuits, and building a RISC processor."
+https://safari.ethz.ch/digitaltechnik/spring2024/doku.php,ETH Zurich Digital Design and Computer Architecture (Onur Mutlu),computer-architecture;digital-electronics;course,"Free university course with recorded lectures, slides, and labs on digital design and computer architecture."
+https://www.youtube.com/@OnurMutluLectures,Onur Mutlu Lectures,computer-architecture;youtube,YouTube channel with full free lecture series on digital design and advanced computer architecture.
+https://www.youtube.com/@BenEater,Ben Eater,digital-electronics;computer-architecture;youtube,YouTube channel building an 8-bit breadboard computer and 6502 computer from scratch with clear explanations.
+https://eater.net/8bit,Ben Eater 8-bit Computer,computer-architecture;digital-electronics;pbl-project,Free schematics and video series for building a programmable 8-bit computer on breadboards.
+https://hdlbits.01xz.net/,HDLBits,fpga;digital-electronics;course,Free in-browser Verilog practice problems with automatic simulation-based checking.
+https://www.chipverify.com/,ChipVerify,vlsi;fpga;course;blog,"Free tutorials on Verilog, SystemVerilog, UVM, and digital verification concepts."
+https://www.asic-world.com/,ASIC World,vlsi;fpga;course,"Long-running free tutorial site for Verilog, VHDL, SystemVerilog, and digital design basics."
+https://verilogguide.readthedocs.io/,FPGA Designs with Verilog and SystemVerilog,fpga;book;open-source,"Free open guide to FPGA design with Verilog/SystemVerilog, including worked examples."
+https://zipcpu.com/,ZipCPU Blog,fpga;blog,"In-depth blog on FPGA design, formal verification, and building a soft CPU by Dan Gisselquist."
+https://www.fpga4fun.com/,fpga4fun,fpga;blog;pbl-project,"Classic free site of FPGA tutorials and small projects such as serial interfaces, VGA, and music boxes."
+https://projectf.io/,Project F,fpga;blog;pbl-project;open-source,"Free FPGA tutorials and open-source designs covering graphics, maths, and hardware fundamentals."
+https://learn.lushaylabs.com/,Lushay Labs Learn,fpga;course;pbl-project,Free step-by-step tutorial series on FPGA development with open-source toolchains on Tang Nano boards.
+https://github.com/BrunoLevy/learn-fpga,learn-fpga (Bruno Levy),fpga;computer-architecture;pbl-project;open-source,Tutorials building a RISC-V processor step by step on small FPGAs using open-source tools.
+https://www.youtube.com/@Nandland,Nandland,fpga;youtube,"YouTube channel with beginner-friendly FPGA, Verilog, and VHDL tutorials."
+https://www.youtube.com/@ZeroToASICcourse,Zero to ASIC (Matt Venn) YouTube,vlsi;youtube,"Free YouTube videos on open-source ASIC design, Tiny Tapeout, and chip fabrication."
+https://www.edaplayground.com/,EDA Playground,fpga;vlsi;simulator;tool;free (proprietary),Free browser-based environment to run Verilog/VHDL/SystemVerilog simulations with many simulators (registration required).
+https://github.com/YosysHQ/yosys,Yosys,fpga;vlsi;tool;open-source,Open-source framework for Verilog RTL synthesis targeting FPGAs and ASICs.
+https://github.com/YosysHQ/nextpnr,nextpnr,fpga;tool;open-source,"Portable open-source FPGA place-and-route tool for iCE40, ECP5, Gowin, and other families."
+https://github.com/YosysHQ/oss-cad-suite-build,OSS CAD Suite,fpga;vlsi;tool;open-source,"Prebuilt nightly bundle of open-source EDA tools (Yosys, nextpnr, Verilator, GTKWave, etc.) for all major OSes."
+https://github.com/YosysHQ/icestorm,Project IceStorm,fpga;tool;open-source,Reverse-engineered bitstream documentation and tools for Lattice iCE40 FPGAs.
+https://github.com/YosysHQ/prjtrellis,Project Trellis,fpga;tool;open-source,Documentation and tools enabling a fully open bitstream flow for Lattice ECP5 FPGAs.
+https://github.com/YosysHQ/apicula,Project Apicula,fpga;tool;open-source,Open-source bitstream documentation and tools for Gowin FPGAs such as those on Tang Nano boards.
+https://github.com/f4pga/f4pga,F4PGA,fpga;tool;open-source,Open-source FPGA toolchain project (formerly SymbiFlow) targeting Xilinx 7-series and other devices.
+https://github.com/YosysHQ/sby,SymbiYosys (sby),fpga;vlsi;tool;open-source,Front-end driver for Yosys-based formal hardware verification flows.
+https://github.com/verilator/verilator,Verilator,fpga;vlsi;simulator;tool;open-source,Fast open-source Verilog/SystemVerilog simulator that compiles designs to C++ models.
+https://github.com/steveicarus/iverilog,Icarus Verilog,fpga;vlsi;simulator;tool;open-source,Open-source Verilog compiler and event-driven simulator.
+https://github.com/ghdl/ghdl,GHDL,fpga;vlsi;simulator;tool;open-source,"Open-source VHDL analyzer, compiler, and simulator, with Yosys synthesis plugin."
+https://github.com/gtkwave/gtkwave,GTKWave,fpga;vlsi;tool;open-source,"Fully featured open-source waveform viewer for VCD, FST, and other dump formats."
+https://surfer-project.org/,Surfer,fpga;vlsi;tool;open-source,"Modern, extensible open-source waveform viewer that runs natively or in the browser."
+https://github.com/chipsalliance/verible,Verible,fpga;vlsi;tool;open-source,"SystemVerilog parser, linter, and formatter suite from CHIPS Alliance."
+https://www.cocotb.org/,cocotb,fpga;vlsi;tool;open-source,Python-based coroutine testbench framework for verifying VHDL and Verilog designs.
+https://github.com/amaranth-lang/amaranth,Amaranth HDL,fpga;vlsi;tool;open-source,Modern Python-based hardware description language and toolchain.
+https://github.com/SpinalHDL/SpinalHDL,SpinalHDL,fpga;vlsi;tool;open-source,Scala-based hardware description language that generates Verilog/VHDL.
+https://www.chisel-lang.org/,Chisel,fpga;vlsi;tool;open-source,Scala-embedded hardware construction language used for RISC-V cores like Rocket.
+https://github.com/enjoy-digital/litex,LiteX,fpga;tool;open-source,"Python framework for building FPGA SoCs with CPUs, DRAM, Ethernet, and other cores."
+https://github.com/The-OpenROAD-Project/OpenROAD,OpenROAD,vlsi;tool;open-source,"Open-source RTL-to-GDSII physical design engine for floorplanning, placement, CTS, and routing."
+https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts,OpenROAD Flow Scripts,vlsi;tool;open-source,Ready-to-run RTL-to-GDS flow built on OpenROAD for several open PDKs.
+https://github.com/The-OpenROAD-Project/OpenLane,OpenLane,vlsi;tool;open-source,"Automated RTL-to-GDSII ASIC flow combining Yosys, OpenROAD, Magic, KLayout, and more."
+http://opencircuitdesign.com/magic/,Magic VLSI,vlsi;tool;open-source,Open-source VLSI layout editor with DRC and parasitic extraction.
+https://www.klayout.de/,KLayout,vlsi;tool;open-source,Open-source GDS/OASIS layout viewer and editor with DRC/LVS scripting.
+https://xschem.sourceforge.io/stefan/index.html,Xschem,vlsi;tool;open-source,Open-source schematic capture tool for analog and mixed-signal IC design.
+https://ngspice.sourceforge.io/,ngspice,vlsi;simulator;tool;open-source,Open-source mixed-signal SPICE circuit simulator widely used with open PDKs.
+https://github.com/RTimothyEdwards/netgen,Netgen,vlsi;tool;open-source,Open-source netlist comparison (LVS) tool used in open ASIC flows.
+https://github.com/google/skywater-pdk,SkyWater SKY130 PDK,vlsi;tool;open-source,"Open-source 130 nm process design kit enabling free, manufacturable chip design."
+https://github.com/google/gf180mcu-pdk,GlobalFoundries GF180MCU PDK,vlsi;tool;open-source,Open-source 180 nm process design kit from GlobalFoundries and Google.
+https://github.com/IHP-GmbH/IHP-Open-PDK,IHP SG13G2 Open PDK,vlsi;tool;open-source,Open-source 130 nm BiCMOS process design kit from IHP.
+https://github.com/efabless/caravel,Caravel Harness,vlsi;pbl-project;open-source,Open-source SoC harness for placing user projects on open-PDK shuttle chips.
+https://tinytapeout.com/,Tiny Tapeout,vlsi;course;pbl-project;open-source,Educational project with free guides and templates for designing a small digital chip on open PDKs (fabrication slots cost money).
+https://github.com/YosysHQ/picorv32,PicoRV32,computer-architecture;fpga;pbl-project;open-source,Size-optimized open-source RISC-V CPU core in Verilog.
+https://github.com/olofk/serv,SERV,computer-architecture;fpga;pbl-project;open-source,"Award-winning bit-serial RISC-V CPU, one of the smallest open cores."
+https://github.com/stnolting/neorv32,NEORV32,computer-architecture;fpga;pbl-project;open-source,"Customizable, well-documented RISC-V microcontroller SoC in VHDL."
+https://github.com/SpinalHDL/VexRiscv,VexRiscv,computer-architecture;fpga;pbl-project;open-source,"FPGA-friendly, configurable RISC-V CPU written in SpinalHDL."
+https://github.com/lowRISC/ibex,Ibex,computer-architecture;vlsi;pbl-project;open-source,Production-quality 32-bit RISC-V core in SystemVerilog maintained by lowRISC.
+https://github.com/ZipCPU/zipcpu,ZipCPU,computer-architecture;fpga;pbl-project;open-source,"Open-source 32-bit soft CPU designed for FPGAs, with formal proofs."
+https://github.com/aolofsson/awesome-opensource-hardware,awesome-opensource-hardware,vlsi;fpga;open-source,Curated list of open-source silicon-proven hardware designs and EDA tools.
+https://github.com/mattvenn/awesome-opensource-asic-resources,awesome-opensource-asic-resources,vlsi;open-source,"Curated list of open-source ASIC tools, PDKs, and learning resources."
+https://github.com/Vitorian/awesome-fpga,awesome-fpga,fpga;open-source,"Curated list of FPGA boards, cores, toolchains, and tutorials."
+https://wavedrom.com/,WaveDrom,digital-electronics;tool;open-source,Open-source tool for rendering digital timing diagrams from text descriptions.
+https://www.reddit.com/r/FPGA/,r/FPGA,fpga;community,"Active Reddit community for FPGA design questions, projects, and career advice."
+https://www.reddit.com/r/chipdesign/,r/chipdesign,vlsi;community,"Reddit community for ASIC/VLSI design discussion, including analog and digital IC design."
+https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado.html,AMD Vivado ML Standard Edition,fpga;tool;free (proprietary),Vendor FPGA design suite whose Standard edition is free for supported AMD/Xilinx devices.
+https://www.intel.com/content/www/us/en/software-kit/quartus-prime-lite.html,Intel Quartus Prime Lite,fpga;tool;free (proprietary),Vendor FPGA design suite whose Lite edition is free for supported Intel/Altera devices.

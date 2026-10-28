@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Awesome Free Electronics</title>
+<meta name="description" content="A curated library of free and open-source electronics tools, simulators, calculators, courses, channels and projects.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="traces" aria-hidden="true"></div>
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker mono">// 100% free &amp; open-source</p>
+    <h1>Awesome Free<br><span>Electronics</span></h1>
+    <p class="lede">Tools, simulators, calculators, courses, channels and projects, from your first resistor to FPGA, PCB, RF and robotics. No freemium, no paywalls.</p>
+    <div class="stats mono">
+      <div><b id="statTotal">…</b><span>resources</span></div>
+      <div><b id="statCats">…</b><span>domains</span></div>
+      <div><b id="statNew">…</b><span>new this week</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="new" class="newbox" hidden>
+    <div class="newhead">
+      <h2><span class="pulse"></span>Latest finds</h2>
+      <button class="link mono" id="showAllNew">see all new →</button>
+    </div>
+    <div class="newrow" id="newRow"></div>
+  </section>
+
+  <div class="toolbar">
+    <div class="search">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.39A8 8 0 1 1 10 2m0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12"/></svg>
+      <input id="q" type="search" placeholder="Search KiCad, oscilloscope, Verilog, LoRa…" autocomplete="off">
+    </div>
+    <select id="tagSel" aria-label="Filter by tag"><option value="">All tags</option></select>
+  </div>
+  <nav class="chips" id="chips"></nav>
+  <p class="count mono" id="count"></p>
+  <section class="grid" id="grid"></section>
+  <button class="more" id="more" hidden>Load more</button>
+</main>
+
+<footer class="wrap foot">
+  <p>Every link keeps its own licence. Tools tagged <code>free (proprietary)</code> are free forever but closed-source.</p>
+  <p class="mono">Know a great free resource? <a href="CONTRIBUTING.md">Contribute</a> · List released under CC0</p>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

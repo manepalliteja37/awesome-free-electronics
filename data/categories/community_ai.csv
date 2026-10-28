@@ -1,0 +1,95 @@
+website,name,tags,description
+https://learn-arduino-red.vercel.app/,Learn Arduino (3D lessons),ai-built-tool;arduino;microcontrollers;beginner;simulator,"Claude Opus-built web app by Dilum Sanjaya teaching Arduino on an interactive 3D Uno with free lessons, code runner and serial monitor."
+https://drone-engineer.vercel.app/,Drone Lab (Drone Engineer),ai-built-tool;drones;robotics;fpv;simulator,"Vibe-coded interactive lab where you design, wire, smoke-test and fly 13 drone types from 5-inch FPV quads to VTOLs in a browser simulator."
+https://huggingface.co/spaces/nvidia/simready-central,NVIDIA SimReady Central (Hugging Face),ai-built-tool;robotics;3d-models;simulation;openusd,"Free Hugging Face Space to search 2,500+ open SimReady OpenUSD assets (robot arms, engines, equipment) in plain English, shared on X by Caleb Fahlgren."
+https://orionsandbox.vercel.app/,Orion Sandbox,ai-built-tool;esp32;simulator;iot;pcb,"Free browser ESP32 simulator where you wire 41 parts on a 3D canvas, describe behaviour in plain English, and follow 30 free lessons plus a PCB studio."
+https://pinlight.afreenorbit.tech/,Pinlight,ai-built-tool;datasheets;raspberry-pi;arduino;open-source,Open-source AI electronics tutor that turns datasheet PDFs into guided lessons beside a 3D Raspberry Pi 5 / Arduino Uno board.
+https://dmccreary.github.io/beginning-electronics/,Beginning Electronics (intelligent textbook),ai-built-tool;course;beginner;breadboard;simulator,"Free CC-licensed textbook with 26 chapters, 16 labs and 70+ AI-assisted browser MicroSims for learning breadboard electronics."
+https://dmccreary.github.io/learning-micropython/,Learning MicroPython and Physical Computing,ai-built-tool;course;micropython;microcontrollers;beginner,Free open companion textbook teaching MicroPython and physical computing on microcontrollers with hands-on projects.
+https://freecircuitsim.com/,FreeCircuitSim,ai-built-tool;simulator;circuits;beginner;open-source,"Free, no-signup CircuitJS1-based simulator with 360+ example circuits, guided lessons and an AI circuit-explainer prompt tool."
+https://voltlab.tekzo.dev/,VoltLab,ai-built-tool;simulator;circuits;beginner,"Browser circuit builder with a real nodal solver that animates charge flow and shows voltage, current and power at every node, no account needed."
+https://velxio.dev/,Velxio,ai-built-tool;simulator;arduino;esp32;spice;open-source,"AGPL open-source browser workbench running ngspice in WebAssembly and emulating 19 microcontrollers including Arduino, ESP32 and Pico."
+https://resistor.dev/,resistor.dev,ai-built-tool;simulator;spice;oscilloscope,"Free browser circuit simulator built on ngspice with a 4-channel oscilloscope and component-damage simulation, shared on r/SideProject."
+https://github.com/trickl/breadboard-lab,Breadboard Lab,ai-built-tool;breadboard;simulator;open-source;beginner,"MIT-licensed browser breadboard simulator that visualises hidden connections, voltages and currents in real time."
+https://simulator.solderhub.com/,SolderHub Simulator,ai-built-tool;arduino;esp32;simulator;open-source,"AGPL open-source drag-and-wire Arduino/ESP32 simulator with LEDs, buttons, buzzer and relay, no install or account."
+https://bhilaee-simulator.vercel.app/,Bhilai EE Circuit Simulator,ai-built-tool;simulator;ee-labs;oscilloscope;open-source,Open-source zero-dependency simulator with DC/AC/transient analysis and pre-built EE lab experiment templates.
+https://nilsparklab.github.io/,NIL SparkLab,ai-built-tool;electrical;motor-control;simulator,"Free virtual electrical & electronics lab with component inspector, IEC/IEEE symbols, circuit sandbox and DOL/star-delta motor starter sims."
+https://radiobench.dev/,The Radio Bench,ai-built-tool;rf;ham-radio;course;open-source,Open-source interactive radio and electronics course with 70+ calculators/explorers following the CEPT novice syllabus.
+https://github.com/bdeeps/ohmslawclear,Ohm's Law Clear,ai-built-tool;basics;explainer;open-source,Open-source interactive explainer that teaches Ohm's law visually.
+https://www.falstad.com/circuit/,Falstad Circuit Simulator (CircuitJS),ai-built-tool;simulator;circuits;open-source;classic,Classic GPL browser circuit simulator with animated current flow and hundreds of built-in example circuits.
+https://pinout.xyz/,Pinout.xyz,ai-built-tool;pinout;raspberry-pi;reference;open-source,CC BY-SA interactive Raspberry Pi GPIO pinout guide with hundreds of HAT pinouts.
+https://pinout-xyz.github.io/,Pinout.xyz family (Pico/ESP32),ai-built-tool;pinout;pico;esp32;reference,"Index of beautiful, accessible interactive pinouts for Raspberry Pi Pico, Pico 2, ESP32-C3/C5 and more."
+https://esp32pin.com/,ESP32 Pinout Studio,ai-built-tool;pinout;esp32;reference;open-source,"Free open-source ESP32-family pinout reference that flags strapping, flash-reserved and ADC2/Wi-Fi conflict pins on every diagram."
+https://thelastoutpostworkshop.github.io/esp-pinout-explorer/,ESP Pinout Explorer,ai-built-tool;pinout;esp32;reference,"Interactive ESP32-S3 and ESP board pinout explorer with pin-function filtering, hosted on GitHub Pages."
+https://micropinouts.com/,MicroPinouts,ai-built-tool;pinout;sensors;microcontrollers;reference,"Free interactive pinout database for dev boards, modules, sensors and logic ICs with clickable pins and specs."
+https://pinoutsearch.com/,PinoutSearch,ai-built-tool;pinout;datasheets;reference,"Fast, ad-free static reference of pin tables and manufacturer datasheet links for 760+ dev boards and 1,290+ chips."
+https://smiggy.com/bench-tools,Smiggy's Bench Tools,ai-built-tool;calculators;resistor;repair;reference,"Eleven free browser bench tools including resistor/capacitor code decoder, IC pinout finder and chip substitution cross-reference."
+https://gbmhunter.github.io/NinjaCalc/,NinjaCalc,ai-built-tool;calculators;embedded;pcb;open-source,"Open-source embedded engineering calculator toolbox for resistor, PCB, filter and other everyday calculations."
+https://kicanvas.org/,KiCanvas,ai-built-tool;kicad;pcb;viewer;open-source,"Open-source in-browser viewer for KiCad schematics and PCB layouts, no install."
+https://github.com/tscircuit/tscircuit,tscircuit,ai-built-tool;pcb;eda;code-first;open-source,MIT-licensed code-first PCB/electronics design toolkit popular with AI-assisted EDA workflows.
+https://ultimateelectronicsbook.com/,Ultimate Electronics Book,course;circuits;textbook;interactive,Free interactive online electronics textbook with embedded simulations covering circuit analysis fundamentals.
+https://www.youtube.com/@greatscottlab,GreatScott!,youtube;diy;projects;basics,Electronics Basics series and DIY builds explained clearly with real measurements.
+https://www.youtube.com/@EEVblog,EEVblog,youtube;teardowns;test-equipment;engineering,"Dave Jones's engineering vlog of teardowns, tutorials, test gear and practical design advice."
+https://www.youtube.com/@BenEater,Ben Eater,youtube;digital-electronics;computer-architecture;breadboard,Breadboard 8-bit computer and 6502 series that teach digital logic and computer architecture from scratch.
+https://www.youtube.com/@PhilsLab,Phil's Lab,youtube;pcb-design;kicad;embedded;dsp,"In-depth PCB design, KiCad, mixed-signal hardware and embedded DSP tutorials."
+https://www.youtube.com/@AndreasSpiess,Andreas Spiess,youtube;iot;esp32;lora;wireless,"Swiss-accented deep dives into ESP32, LoRa, IoT, sensors and wireless experiments."
+https://www.youtube.com/@Dronebotworkshop,DroneBot Workshop,youtube;arduino;raspberry-pi;robotics;beginner,"Long-form, well-documented Arduino, ESP32, Raspberry Pi and robotics tutorials."
+https://www.youtube.com/@ElectroBOOM,ElectroBOOM,youtube;fundamentals;safety;entertainment,Mehdi Sadaghdar's humorous but technically sound explanations of electrical concepts and safety.
+https://www.youtube.com/@w2aew,w2aew (Alan Wolke),youtube;test-equipment;rf;analog;oscilloscope,"Classic tutorials on oscilloscopes, RF, transistors and analog circuit fundamentals."
+https://www.youtube.com/@Afrotechmods,Afrotechmods,youtube;basics;components;beginner,"Short, clear beginner videos on components like capacitors, diodes, transistors and regulators."
+https://www.youtube.com/@paulmcwhorter,Paul McWhorter,youtube;arduino;raspberry-pi;jetson;course,"Structured lesson-by-lesson Arduino, Raspberry Pi and Jetson Nano courses with homework."
+https://www.youtube.com/@ALLABOUTELECTRONICS,ALL ABOUT ELECTRONICS,youtube;fundamentals;analog;digital;india,"Concept-focused lectures on circuit theory, analog and digital electronics, popular with Indian students."
+https://www.youtube.com/@nesoacademy,Neso Academy,youtube;digital-electronics;network-theory;gate-exam,"Full free lecture series on digital electronics, network theory and signals, aligned with university/GATE syllabi."
+https://www.youtube.com/@digikey,DigiKey,youtube;components;tutorials;embedded,"DigiKey's channel with Shawn Hymel-era intro series on FPGA, RTOS, ML and component explainers."
+https://www.youtube.com/@LowLevelTV,Low Level,youtube;low-level;c;security;embedded,"Low-level programming, C, assembly and security topics relevant to firmware engineers."
+https://www.youtube.com/@ShawnHymel,Shawn Hymel,youtube;embedded;edge-ai;fpga;rtos,"Embedded systems, edge AI, Zephyr/RTOS and FPGA tutorials from a veteran educator."
+https://www.youtube.com/@EngineeringMindset,The Engineering Mindset,youtube;electrical;fundamentals;animation,Animated explanations of electrical and electronics fundamentals.
+https://www.youtube.com/@RobertFeranec,Robert Feranec,youtube;pcb-design;high-speed;hardware,Hardware and PCB design interviews and tutorials with industry experts.
+https://www.youtube.com/@ELECTRONOOBS,Electronoobs,youtube;diy;arduino;power-electronics,"DIY electronics projects, homemade tools and Arduino builds explained step by step."
+https://www.youtube.com/@freecodecamp,freeCodeCamp,youtube;course;embedded;arduino;programming,"Free full-length courses including electronics, Arduino and embedded systems programming."
+https://hackaday.com/,Hackaday,blog;news;hacks;projects,"Daily blog of hardware hacks, electronics projects and engineering stories."
+https://www.digikey.in/en/maker/blogs/2024/creating-an-electronics-starter-kit,DigiKey Maker Blog: Creating an Electronics Starter Kit,blog;starter-kit;beginner;components,DigiKey Maker article on assembling a practical electronics starter kit.
+https://learn.adafruit.com/,Adafruit Learning System,blog;pbl-hub;tutorials;circuitpython,"Thousands of free step-by-step guides and projects covering sensors, CircuitPython and wearables."
+https://learn.sparkfun.com/,SparkFun Learn,blog;tutorials;basics;pbl-hub,Free tutorials from electronics basics to hookup guides for sensors and boards.
+https://randomnerdtutorials.com/,Random Nerd Tutorials,blog;esp32;esp8266;arduino;iot,"Free in-depth ESP32, ESP8266, Arduino and Raspberry Pi project tutorials."
+https://lastminuteengineers.com/,Last Minute Engineers,blog;modules;sensors;arduino,Beautifully illustrated guides explaining how common modules and sensors work with Arduino.
+https://circuitdigest.com/,Circuit Digest,blog;projects;india;tutorials,"India-based site with free electronics tutorials, news and hundreds of projects with code."
+https://www.electronics-tutorials.ws/,Electronics-Tutorials.ws,blog;fundamentals;theory;reference,"Free tutorials on basic electronics theory, components, op-amps and digital logic."
+https://embedded.fm/,Embedded.fm,blog;podcast;embedded;careers,Long-running podcast and blog about embedded systems engineering.
+https://interrupt.memfault.com/,Interrupt (Memfault),blog;embedded;firmware;debugging,"Free in-depth firmware engineering articles on debugging, toolchains and embedded best practices."
+https://www.build-electronic-circuits.com/,Build Electronic Circuits,blog;beginner;circuits;tutorials,Øyvind Nydal Dahl's beginner-friendly tutorials on understanding and building circuits.
+https://www.allaboutcircuits.com/textbook/,All About Circuits Textbook,course;textbook;fundamentals;open,Free multi-volume online textbook (Lessons in Electric Circuits) from DC through semiconductors and digital.
+https://nptel.ac.in/,NPTEL,course;india;iit;analog;digital;embedded,"Free IIT/IISc video courses in electronics, VLSI, embedded systems and signals (certification exam optional)."
+https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/,MIT OCW 6.002 Circuits and Electronics,course;circuits;fundamentals;university,"Free MIT course with lectures, notes and problem sets on circuit fundamentals and electronics."
+https://www.khanacademy.org/science/electrical-engineering,Khan Academy Electrical Engineering,course;circuits;fundamentals;beginner,"Free lessons on circuit analysis, semiconductors and amplifiers."
+https://www.nand2tetris.org/,Nand2Tetris,course;digital-logic;computer-architecture;pbl,Free project-based course building a computer from NAND gates up to an OS.
+https://github.com/QuantumLeaps/modern-embedded-programming-course,Modern Embedded Systems Programming Course,course;embedded;arm;rtos;open-source,Miro Samek's free video course and code on modern embedded programming from basics to RTOS and state machines.
+https://github.com/cpq/bare-metal-programming-guide,Bare Metal Programming Guide,course;embedded;stm32;bare-metal;open-source,Open guide to programming microcontrollers from scratch without frameworks.
+https://github.com/kitspace/awesome-electronics,awesome-electronics,roadmap;curated-list;tools;open-source,"Curated list of resources for electronic engineers and hobbyists: tools, learning, EDA and communities."
+https://github.com/nhivp/Awesome-Embedded,Awesome-Embedded,roadmap;embedded;curated-list;open-source,"Curated list of embedded programming resources, courses and interview prep."
+https://github.com/embedded-boston/awesome-embedded-systems,awesome-embedded-systems (embedded-boston),roadmap;embedded;rtos;libraries,"Curated list of embedded libraries, RTOSes, modules and references."
+https://github.com/xor-gate/awesome-embedded-systems,awesome-embedded-systems (xor-gate),roadmap;embedded;tools;curated-list,"CC0 curated list of embedded tools, books and papers focused on microcontrollers."
+https://github.com/m3y54m/Embedded-Engineering-Roadmap,Embedded Engineering Roadmap,roadmap;embedded;career;curated-list,Popular visual roadmap for embedded systems engineers with curated free learning resources per topic.
+https://github.com/mateustoin/Roadmap-to-Embedded-Engineering,Roadmap to Embedded Engineering,roadmap;embedded;hardware;software,Guide splitting embedded learning into hardware and software study paths.
+https://eee-roadmap.muhammadhazimiyusri.uk/,EEE Roadmap,roadmap;ai-built-tool;electrical;electronics;open-source,"MIT-licensed interactive roadmap.sh-style map for electrical & electronic engineering (AI-generated content, partly human-verified)."
+https://hackaday.io/,Hackaday.io,pbl-hub;projects;open-hardware;community,"Free platform where makers document open hardware projects with logs, files and build instructions."
+https://www.instructables.com/circuits/,Instructables Circuits,pbl-hub;projects;diy;beginner,Free community step-by-step electronics and Arduino project instructions.
+https://www.hackster.io/projects,Hackster.io Projects,pbl-hub;projects;iot;embedded,"Free community projects with schematics and code across Arduino, ESP32, Pi and edge AI."
+https://kitspace.org/,Kitspace,pbl-hub;open-hardware;pcb;bom,"Open-source site to share, find and build open hardware PCB projects with one-click BOMs."
+https://www.reddit.com/r/electronics/,r/electronics,community;reddit;projects;discussion,"Large Reddit community sharing electronics projects, news and discussion."
+https://www.reddit.com/r/embedded/,r/embedded,community;reddit;embedded;careers,Reddit community for embedded systems engineers and firmware questions.
+https://www.reddit.com/r/AskElectronics/,r/AskElectronics,community;reddit;help;troubleshooting,Reddit Q&A for component-level electronics design and repair questions.
+https://www.reddit.com/r/arduino/,r/arduino,community;reddit;arduino;beginner,Reddit community for Arduino projects and help.
+https://www.eevblog.com/forum/,EEVblog Forum,community;forum;engineering;test-equipment,"Active engineering forum covering design, repair, test gear and beginners' questions."
+https://electronics.stackexchange.com/,Electrical Engineering Stack Exchange,community;q-and-a;design;theory,Free Q&A site for electronics and electrical engineering professionals and students.
+https://forum.arduino.cc/,Arduino Forum,community;forum;arduino;help,Official Arduino community forum for project help and discussion.
+https://adafru.it/discord,Adafruit Discord,community;discord;circuitpython;makers,Official public Adafruit Discord server for makers and CircuitPython help.
+https://x.com/DilumSanjaya,Dilum Sanjaya (@DilumSanjaya),x;ai-built-tool;arduino;vibe-coding,Developer sharing Claude-built interactive hardware learning apps like Learn Arduino and AI-generated device prototypes.
+https://x.com/hackaday,Hackaday on X,x;news;hacks;projects,Hackaday's feed of daily hardware hacks and projects.
+https://x.com/adafruit,Adafruit on X,x;makers;open-hardware;news,"Adafruit's feed of open-source hardware news, guides and maker projects."
+https://www.instagram.com/adafruit/,Adafruit on Instagram,instagram;makers;open-hardware;projects,"Visual feed of Adafruit projects, new boards and maker builds."
+https://x.com/sparkfun,SparkFun on X,x;makers;tutorials;products,SparkFun's feed of tutorials and maker news.
+https://x.com/eevblog,EEVblog on X,x;engineering;teardowns,Dave Jones's engineering commentary and video updates.
+https://x.com/arduino,Arduino on X,x;arduino;projects;education,"Official Arduino feed of projects, education content and community highlights."
+https://www.instagram.com/arduino.cc/,Arduino on Instagram,instagram;arduino;projects;community,Official Arduino Instagram showcasing community projects.
+https://www.instagram.com/greatscottlab/,GreatScott! on Instagram,instagram;diy;projects,Behind-the-scenes and project snapshots from the GreatScott! channel.

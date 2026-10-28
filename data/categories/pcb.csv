@@ -1,0 +1,61 @@
+website,name,tags,description
+https://www.kicad.org/,KiCad EDA,pcb;tool;open-source;eda,"Full-featured GPL cross-platform suite for schematic capture, PCB layout, 3D viewing and Gerber output with no feature limits."
+https://librepcb.org/,LibrePCB,pcb;tool;open-source;eda,"Beginner-friendly GPL schematic and PCB editor with a strongly curated, unified part library system."
+https://horizon-eda.org/,Horizon EDA,pcb;tool;open-source;eda,"GPL EDA package with a pool-based part library and a fast interactive router, aimed at professional workflows."
+https://github.com/fritzing/fritzing-app,Fritzing (source code),pcb;tool;open-source;eda;beginner,"Breadboard-to-PCB tool whose source is GPLv3 and free to build, but official ready-made installers on fritzing.org require a payment (about $12 personal)."
+http://www.geda-project.org/,gEDA Project,pcb;tool;open-source;eda,"Long-running GPL suite of schematic, netlist and PCB tools for Linux/Unix users."
+http://repo.hu/projects/pcb-rnd/,pcb-rnd,pcb;tool;open-source;eda,"Actively maintained GPL modular PCB editor descended from gEDA PCB, with many import/export formats."
+https://www.freecad.org/,FreeCAD,pcb;tool;open-source;mechanical,LGPL parametric 3D CAD for designing enclosures and checking mechanical fit around PCBs.
+https://github.com/easyw/kicadStepUpMod,KiCad StepUp (FreeCAD workbench),pcb;tool;open-source;mechanical,FreeCAD workbench that syncs KiCad board outlines and 3D models to STEP for ECAD-MCAD collaboration.
+https://atopile.io/,atopile,pcb;tool;open-source;code-based-design,"MIT-licensed language and compiler for describing circuits as code, with reusable modules that build KiCad layouts."
+https://github.com/devbisme/skidl,SKiDL,pcb;tool;open-source;code-based-design;python,Python library to describe circuit netlists in code and export them to KiCad and other tools.
+https://github.com/tscircuit/tscircuit,tscircuit,pcb;tool;open-source;code-based-design,MIT-licensed TypeScript/React framework for designing schematics and PCBs as code with autorouting and Gerber export.
+https://github.com/openscopeproject/InteractiveHtmlBom,InteractiveHtmlBom,pcb;tool;open-source;assembly,KiCad plugin that generates an interactive HTML BOM highlighting each part on the board for hand assembly.
+https://github.com/INTI-CMNB/KiBot,KiBot,pcb;tool;open-source;automation,"Automates KiCad fabrication outputs (Gerbers, BOMs, PDFs, 3D renders) from a single YAML config, CI-friendly."
+https://kicanvas.org/,KiCanvas,pcb;tool;open-source;viewer,"MIT-licensed in-browser viewer for KiCad schematics and boards, handy for sharing designs from GitHub."
+https://github.com/yaqwsx/KiKit,KiKit,pcb;tool;open-source;fabrication,"KiCad toolkit for panelization, fab-ready output and multi-board projects."
+https://github.com/yaqwsx/PcbDraw,PcbDraw,pcb;tool;open-source;documentation,Converts KiCad boards into clean 2D drawings and pinout diagrams for documentation.
+https://github.com/Bouni/kicad-jlcpcb-tools,kicad-jlcpcb-tools,pcb;tool;open-source;fabrication,KiCad plugin to assign LCSC parts and produce JLCPCB-ready BOM and placement files.
+https://github.com/Steffen-W/Import-LIB-KiCad-Plugin,Import-LIB-KiCad-Plugin,pcb;tool;open-source;library,KiCad plugin that imports downloaded symbol/footprint ZIPs from part-library sites in one step.
+https://github.com/30350n/pcb2blender,pcb2blender,pcb;tool;open-source;rendering,"Exports KiCad boards to Blender for photorealistic renders, useful for content creation."
+https://github.com/freerouting/freerouting,Freerouting,pcb;tool;open-source;autorouter,GPL autorouter that works with KiCad and other EDA tools via Specctra DSN files.
+https://gerbv.github.io/,gerbv,pcb;tool;open-source;viewer,GPL Gerber and Excellon drill file viewer for checking fabrication outputs before ordering.
+https://tracespace.io/,tracespace,pcb;tool;open-source;viewer,Open-source in-browser Gerber viewer that renders board previews from your fab files.
+https://ngspice.sourceforge.io/,ngspice,pcb;tool;open-source;simulation,"Open-source SPICE circuit simulator, integrated into KiCad's schematic editor."
+https://ra3xdh.github.io/,Qucs-S,pcb;tool;open-source;simulation,"GPL circuit simulation GUI using ngspice/Xyce backends, good for RF and analog checks."
+https://saturnpcb.com/saturn-pcb-toolkit/,Saturn PCB Toolkit,pcb;tool;calculator;free (proprietary),"Freeware Windows calculator suite for trace current (IPC-2152), via current, impedance, crosstalk and more."
+https://www.protoexpress.com/tools/,Sierra Circuits PCB Tools,pcb;tool;calculator;free (proprietary),"Free online calculators for impedance, trace width, via design and stack-ups from a PCB fab house."
+https://jlcpcb.com/impedance,JLCPCB Impedance Calculator,pcb;tool;calculator;free (proprietary),Free online controlled-impedance calculator using JLCPCB's real stack-ups.
+https://gitlab.com/kicad/libraries/kicad-symbols,KiCad Official Symbol Library,pcb;library;open-source,Official CC-BY-SA KiCad schematic symbol library maintained by the KiCad librarians.
+https://gitlab.com/kicad/libraries/kicad-footprints,KiCad Official Footprint Library,pcb;library;open-source,Official KiCad footprint library following the KiCad Library Conventions.
+https://gitlab.com/kicad/libraries/kicad-packages3D,KiCad Official 3D Models,pcb;library;open-source,Official STEP/WRL 3D models matching KiCad footprints for 3D views and MCAD export.
+https://github.com/sparkfun/SparkFun-KiCad-Libraries,SparkFun KiCad Libraries,pcb;library;open-source,SparkFun's open KiCad symbols and footprints for parts used across their open-hardware boards.
+https://github.com/Digi-Key/digikey-kicad-library,Digi-Key KiCad Library,pcb;library;open-source,Atomic KiCad symbol/footprint library tied to Digi-Key part numbers.
+https://github.com/espressif/kicad-libraries,Espressif KiCad Libraries,pcb;library;open-source,"Official Espressif KiCad symbols, footprints and 3D models for ESP32 chips and modules."
+https://github.com/fritzing/fritzing-parts,Fritzing Parts,pcb;library;open-source,CC-BY-SA core parts library used by Fritzing.
+https://learn.pcbcupid.com/pcb-design/design/kicad/introduction-on-kicad,PCB Cupid – KiCad for Beginners,pcb;course;free (proprietary);kicad;beginner,Free step-by-step online KiCad lessons from schematic to layout for beginners.
+https://docs.kicad.org/,KiCad Documentation,pcb;course;open-source;kicad;docs,"Official KiCad manuals for every editor and tool, free and openly licensed."
+https://docs.kicad.org/9.0/en/getting_started_in_kicad/getting_started_in_kicad.html,Getting Started in KiCad,pcb;course;open-source;kicad;beginner,Official KiCad tutorial that walks through a complete first board from schematic to Gerbers.
+https://www.youtube.com/@PhilsLab,Phil's Lab,pcb;youtube;learning,"In-depth KiCad and mixed-signal hardware design tutorials, from STM32 boards to high-speed layout."
+https://www.youtube.com/@RobertFeranec,Robert Feranec,pcb;youtube;learning,"Free PCB layout, high-speed design and expert interview videos with designers like Rick Hartley."
+https://www.youtube.com/@EEVblog,EEVblog,pcb;youtube;learning,"Dave Jones' electronics engineering videos covering design, debugging, teardowns and PCB tips."
+https://www.youtube.com/@ContextualElectronics,Contextual Electronics (YouTube),pcb;youtube;learning;kicad,Free KiCad walkthroughs and hardware design streams by Chris Gammell (the paid membership site is separate).
+https://www.youtube.com/@ZachPeterson,Zach Peterson,pcb;youtube;learning,"Free videos on PCB layout, signal integrity, EMI and design-for-manufacturing."
+https://www.protoexpress.com/pcb-design-guides/,Sierra Circuits PCB Design Guides,pcb;blog;free (proprietary);ebook,"Free downloadable eBooks on DFM, HDI, high-speed, stack-up, impedance and EMI design (email form)."
+https://www.protoexpress.com/kb/pcb-design-resources/,Sierra Circuits Knowledge Base,pcb;blog;free (proprietary),"Free articles on layout rules, DFM/DFA mistakes and KiCad guides from a PCB fab house."
+https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/,MIT OCW 6.002 Circuits and Electronics,pcb;course;open-source;fundamentals,Free CC-licensed MIT circuits course giving the theory behind PCB-level design.
+https://www.ibiblio.org/kuphaldt/electricCircuits/,Lessons in Electric Circuits,pcb;course;open-source;fundamentals,"Free openly licensed textbook series on DC, AC, semiconductors and digital circuits."
+https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf,Hardware Design with RP2040,pcb;course;free (proprietary);reference-design,Free Raspberry Pi guide walking through a minimal RP2040 board design with KiCad files.
+https://forum.kicad.info/,KiCad Forum,pcb;community;open-source;kicad,"Official KiCad community forum for layout questions, library help and design reviews."
+https://www.eevblog.com/forum/,EEVblog Forum,pcb;community;learning,Large free engineering forum with dedicated PCB/EDA and project sections.
+https://www.reddit.com/r/PrintedCircuitBoard/,r/PrintedCircuitBoard,pcb;community;design-review,Reddit community for free schematic and layout reviews before you order boards.
+https://github.com/kitspace/awesome-electronics,awesome-electronics,pcb;awesome-list;open-source,"Curated list of open-source EDA, simulation, libraries and learning resources for electronics engineers."
+https://github.com/joanbono/awesome-kicad,awesome-kicad,pcb;awesome-list;open-source;kicad,"Curated list of KiCad plugins, libraries, scripts and resources."
+https://github.com/hackclub/hackpad,Hack Club Hackpad,pcb;pbl-project;open-source;beginner,Beginner open-hardware project: design your own macropad PCB in KiCad with guided docs.
+https://github.com/hackclub/OnBoard,Hack Club OnBoard,pcb;pbl-project;open-source,Repository of student-designed open PCB projects with guides for designing a first board.
+https://github.com/foostan/crkbd,Corne Keyboard (crkbd),pcb;pbl-project;open-source,"Open-source split keyboard with full KiCad PCB files, a popular intermediate build."
+https://github.com/ploopyco/classic-trackball,Ploopy Classic Trackball,pcb;pbl-project;open-source,"Open-hardware trackball with KiCad PCB, 3D-printable case and firmware."
+https://github.com/opulo-inc/lumenpnp,LumenPnP,pcb;pbl-project;open-source;fabrication,"Open-source desktop pick-and-place machine with PCBs, mechanical CAD and docs."
+https://github.com/greatscottgadgets/hackrf,HackRF One,pcb;pbl-project;open-source;rf,"Open-source software-defined radio with complete KiCad hardware design files, an advanced RF reference."
+https://certification.oshwa.org/list.html,OSHWA Certified Projects,pcb;pbl-project;open-source;directory,Directory of certified open-source hardware projects with links to their design files.
+https://hackaday.io/,Hackaday.io,pcb;pbl-project;community,Free platform with thousands of documented hardware builds for project ideas and design files.

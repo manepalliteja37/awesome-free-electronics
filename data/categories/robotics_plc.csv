@@ -1,0 +1,85 @@
+website,name,tags,description
+https://drone-engineer.vercel.app/,Drone Lab (Drone Engineer),drone;simulator;tool,"Free browser-based drone lab where you build a quad part by part, check thrust-to-weight and flight time, then fly it in angle/acro modes, gate races and FPV view."
+https://www.ros.org/,ROS 2 (Robot Operating System),robotics;tool;open-source,"Open-source middleware, drivers and tooling that form the standard software framework for building robot applications."
+https://docs.ros.org/en/jazzy/,ROS 2 Documentation & Tutorials,robotics;course;open-source,"Official free ROS 2 docs with beginner-to-advanced tutorials on nodes, topics, services, launch files and tf2."
+https://github.com/ros2/rviz,RViz2,robotics;tool;open-source,"Open-source 3D visualizer for ROS 2 sensor data, robot models, transforms and planning output."
+https://control.ros.org/,ros2_control,robotics;motor-control;tool;open-source,Open-source ROS 2 framework for hardware interfaces and real-time controllers driving robot joints and actuators.
+https://docs.nav2.org/,Nav2 (ROS 2 Navigation),robotics;tool;open-source,"Open-source ROS 2 navigation stack for mapping, localization, path planning and obstacle avoidance on mobile robots."
+https://micro.ros.org/,micro-ROS,robotics;tool;open-source,"Open-source framework that brings ROS 2 onto microcontrollers such as ESP32, STM32 and Raspberry Pi Pico."
+https://rosindustrial.org/,ROS-Industrial,robotics;plc;tool;open-source,"Open-source project extending ROS to industrial robots, PLC-connected cells and manufacturing automation."
+https://moveit.ai/,MoveIt 2,robotics;tool;open-source,"Open-source motion-planning framework for robot arms covering kinematics, collision checking, grasping and trajectory execution."
+https://gazebosim.org/,Gazebo,robotics;drone;simulator;open-source,"Open-source 3D robotics simulator with physics, sensor models and tight ROS 2, PX4 and ArduPilot integration."
+https://cyberbotics.com/,Webots,robotics;simulator;open-source,"Apache-licensed desktop robot simulator with a large library of robots, sensors and ROS 2 support."
+https://www.coppeliarobotics.com/,CoppeliaSim (Edu),robotics;simulator;free (proprietary),"Versatile robot simulator whose Edu edition is free for students, teachers and hobbyists (commercial use requires a paid licence)."
+https://mujoco.org/,MuJoCo,robotics;simulator;open-source,"Open-source fast physics engine for robotics, legged locomotion and reinforcement-learning research."
+https://pybullet.org/,PyBullet,robotics;simulator;open-source,"Open-source Python physics simulation for robots, grasping and reinforcement learning."
+https://drake.mit.edu/,Drake,robotics;simulator;tool;open-source,"MIT/TRI open-source toolbox for multibody dynamics, optimization-based planning and control of robots."
+https://github.com/AtsushiSakai/PythonRobotics,PythonRobotics,robotics;open-source;pbl-project,"Open-source collection of Python implementations of localization, SLAM, path-planning and control algorithms with animations."
+https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python,Kalman and Bayesian Filters in Python,robotics;drone;book;open-source,"Free interactive Jupyter book teaching Kalman, EKF, UKF and particle filters for sensor fusion."
+https://github.com/kiloreux/awesome-robotics,Awesome Robotics (kiloreux),robotics;open-source,"Curated GitHub list of robotics software, courses, books, papers and competitions."
+https://github.com/fkromer/awesome-ros2,Awesome ROS 2,robotics;open-source,"Curated GitHub list of ROS 2 packages, tutorials, tools and community resources."
+https://ardupilot.org/,ArduPilot,drone;robotics;tool;open-source,"Open-source autopilot firmware for multicopters, planes, rovers, boats and submarines, with full docs and SITL simulation."
+https://px4.io/,PX4 Autopilot,drone;tool;open-source,Open-source professional flight-control stack for drones and VTOLs with Gazebo simulation and MAVLink support.
+https://docs.px4.io/main/en/,PX4 User & Developer Guide,drone;course;open-source,"Free official guide covering PX4 airframe assembly, tuning, simulation and flight-controller development."
+https://betaflight.com/,Betaflight,drone;tool;open-source,Open-source flight-controller firmware and configurator focused on FPV racing and freestyle quadcopters.
+https://github.com/iNavFlight/inav,INAV,drone;tool;open-source,Open-source navigation-capable flight firmware for multirotors and fixed-wings with GPS return-to-home and waypoints.
+https://www.rotorflight.org/,Rotorflight,drone;tool;open-source,"Open-source flight-control firmware tailored to RC helicopters, derived from Betaflight."
+https://qgroundcontrol.com/,QGroundControl,drone;tool;open-source,"Open-source ground control station for configuring, mission-planning and flying PX4 and ArduPilot vehicles."
+https://ardupilot.org/planner/,Mission Planner,drone;tool;open-source,"Open-source Windows ground station for ArduPilot with mission planning, log analysis and parameter tuning."
+https://mavlink.io/,MAVLink,drone;tool;open-source,"Open lightweight messaging protocol used between drones, autopilots and ground stations, with libraries in many languages."
+https://github.com/mavlink/MAVSDK,MAVSDK,drone;tool;open-source,"Open-source SDK (C++, Python and more) for writing companion-computer and ground apps that control MAVLink drones."
+https://www.expresslrs.org/,ExpressLRS,drone;tool;open-source,"Open-source long-range, low-latency RC radio link firmware for drones and RC aircraft."
+https://www.edgetx.org/,EdgeTX,drone;tool;open-source,Open-source firmware for RC transmitter radios with Lua scripting and model management.
+https://www.bitcraze.io/,Bitcraze Crazyflie (open firmware),drone;open-source;pbl-project,"Open-source firmware, Python libraries and docs for the Crazyflie nano-quadcopter research and education platform."
+https://rosflight.org/,ROSflight,drone;robotics;tool;open-source,Open-source lean autopilot designed for research that offloads high-level control to ROS on a companion computer.
+https://github.com/paparazzi/paparazzi,Paparazzi UAV,drone;tool;open-source,"Open-source autopilot system for fixed-wing and multirotor UAVs, with ground station and simulation."
+https://oscarliang.com/,Oscar Liang,drone;blog,"Free in-depth blog guides on building, configuring and tuning FPV drones with Betaflight, ExpressLRS and EdgeTX."
+https://autonomylogic.com/,OpenPLC (Autonomy Logic),plc;tool;open-source,"Open-source IEC 61131-3 PLC runtime and editor that turns Arduino, ESP32 or Raspberry Pi into a soft PLC."
+https://github.com/thiagoralves/OpenPLC_v3,OpenPLC Runtime v3 (GitHub),plc;tool;open-source,"Source code of the OpenPLC runtime supporting Modbus, DNP3 and ladder, ST, FBD programs."
+https://beremiz.org/,Beremiz,plc;tool;open-source,Open-source integrated development environment for IEC 61131-3 PLC programming in all five languages.
+https://eclipse.dev/4diac/,Eclipse 4diac,plc;tool;open-source,Open-source IEC 61499 distributed-automation IDE and runtime (FORTE) for industrial control.
+https://store.codesys.com/,CODESYS Development System,plc;tool;simulator;free (proprietary),Free-to-download IEC 61131-3 PLC IDE with built-in soft-PLC simulation (vendor runtime licences sold separately).
+https://www.plcfiddle.com/,PLC Fiddle,plc;simulator;tool,Free browser-based ladder-logic simulator for writing and testing PLC rungs without hardware.
+https://github.com/pymodbus-dev/pymodbus,PyModbus,plc;tool;open-source,Open-source Python Modbus client/server for talking to PLCs and simulating industrial devices.
+https://github.com/libplctag/libplctag,libplctag,plc;tool;open-source,Open-source library for reading and writing tags on Allen-Bradley and Modbus PLCs over EtherNet/IP.
+https://www.open62541.org/,open62541,plc;tool;open-source,"Open-source C implementation of OPC UA for connecting PLCs, SCADA and IIoT devices."
+https://nodered.org/,Node-RED,plc;tool;open-source,Open-source flow-based programming tool widely used for IIoT dashboards and PLC/Modbus integration.
+https://linuxcnc.org/,LinuxCNC,plc;motor-control;tool;open-source,"Open-source real-time machine controller for CNC mills, lathes, robots and motion systems."
+https://simplefoc.com/,SimpleFOC,motor-control;tool;open-source,Open-source Arduino-compatible field-oriented control library and boards for BLDC and stepper motors.
+https://github.com/simplefoc/SimpleFOCStudio,SimpleFOC Studio,motor-control;tool;open-source,Open-source GUI for tuning and monitoring SimpleFOC motor controllers in real time.
+https://vesc-project.com/,VESC Project,motor-control;power-electronics;tool;open-source,"Open-source BLDC/FOC electronic speed controller hardware, firmware and VESC Tool used in e-skates, e-bikes and robots."
+https://github.com/vedderb/bldc,VESC BLDC Firmware,motor-control;power-electronics;open-source,"Open-source VESC motor-controller firmware source with FOC, sensorless observers and current control."
+https://github.com/odriverobotics/ODrive,"ODrive Firmware (v3, open-source)",motor-control;robotics;open-source,Open-source firmware and tools for the ODrive v3 high-performance dual BLDC servo controller.
+https://github.com/mjbots/moteus,moteus,motor-control;robotics;open-source,Open-source firmware and design files for the moteus brushless servo controller used in legged robots.
+https://ngspice.sourceforge.io/,ngspice,power-electronics;simulator;open-source,"Open-source mixed-signal SPICE simulator for analysing converters, drivers and analog circuits."
+https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html,LTspice,power-electronics;simulator;free (proprietary),Free SPICE simulator from Analog Devices with large switching-regulator and MOSFET model libraries.
+https://www.falstad.com/circuit/,Falstad CircuitJS,power-electronics;simulator;open-source,"Open-source in-browser animated circuit simulator, great for visualising buck/boost converters and inverters."
+https://openmodelica.org/,OpenModelica,power-electronics;motor-control;robotics;simulator;open-source,"Open-source Modelica environment for multi-domain modelling of electrical drives, power systems and mechatronics."
+https://www.scilab.org/software/xcos,Scilab Xcos,power-electronics;motor-control;simulator;open-source,"Open-source block-diagram dynamic-system simulator in Scilab, a free alternative to Simulink."
+https://ocw.mit.edu/courses/6-622-power-electronics-spring-2023/,MIT 6.622 Power Electronics (OCW),power-electronics;course,"Free MIT OpenCourseWare lectures, notes and problem sets on converters, magnetics and control."
+https://hades.mech.northwestern.edu/index.php/Modern_Robotics,Modern Robotics (Northwestern),robotics;book;course,"Free textbook PDF, video lectures and software from Lynch & Park covering kinematics, dynamics, planning and control."
+https://github.com/NxRLab/ModernRobotics,Modern Robotics Code Library,robotics;open-source,"Open-source Python, MATLAB and Mathematica code accompanying the Modern Robotics book."
+https://manipulation.csail.mit.edu/,MIT 6.4210 Robotic Manipulation,robotics;course;book,"Russ Tedrake's free online course notes and Drake-based exercises on perception, planning and manipulation."
+https://underactuated.mit.edu/,MIT Underactuated Robotics,robotics;course;book,"Free online course notes and videos on dynamics and control of walking robots, drones and other underactuated systems."
+https://docs.duckietown.com/,Duckietown,robotics;course;open-source;pbl-project,"Open-source autonomous-driving education platform with free docs, software and self-paced learning materials."
+https://articulatedrobotics.xyz/,Articulated Robotics,robotics;blog;course,Free tutorial site by Josh Newans walking through building a ROS 2 mobile robot from URDF to SLAM and navigation.
+https://github.com/joshnewans/articubot_one,articubot_one,robotics;pbl-project;open-source,Open-source ROS 2 differential-drive robot package that accompanies the Articulated Robotics build series.
+https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/,TurtleBot3 e-Manual,robotics;course;open-source,"Free official guide to TurtleBot3 with ROS 2 SLAM, navigation and Gazebo simulation tutorials."
+https://github.com/linorobot/linorobot2,linorobot2,robotics;pbl-project;open-source,"Open-source ROS 2 package for building your own 2WD, 4WD or mecanum robot with micro-ROS firmware."
+https://github.com/PetoiCamp/OpenCat,OpenCat (Petoi),robotics;pbl-project;open-source,Open-source quadruped robot-pet framework for Arduino and ESP32 with gait and posture code.
+https://github.com/stanfordroboticsclub/StanfordQuadruped,Stanford Pupper,robotics;pbl-project;open-source,Open-source low-cost quadruped robot design and Raspberry Pi control code from Stanford Student Robotics.
+https://github.com/nasa-jpl/open-source-rover,NASA JPL Open Source Rover,robotics;pbl-project;open-source,Open-source build plans and code for a six-wheel rocker-bogie rover made from off-the-shelf parts.
+https://github.com/BCN3D/BCN3D-Moveo,BCN3D Moveo,robotics;pbl-project;open-source,Open-source 3D-printable five-axis robot arm with build instructions for education.
+https://www.youtube.com/@jamesbruton,James Bruton (YouTube),robotics;motor-control;youtube,"Free videos on building ambitious open-source robots, exoskeletons and actuators from scratch."
+https://www.youtube.com/@ArticulatedRobotics,Articulated Robotics (YouTube),robotics;youtube,Free step-by-step ROS 2 video tutorials for building and simulating a real mobile robot.
+https://www.youtube.com/@TheConstruct,The Construct (YouTube),robotics;youtube,Free ROS and ROS 2 tutorial videos and live classes (the separate Academy platform is paid and not included).
+https://www.youtube.com/@roboticsbackend,Robotics Back-End (YouTube),robotics;youtube,Free beginner-friendly ROS 2 and Raspberry Pi programming tutorials.
+https://www.youtube.com/@JoopBrokking,Joop Brokking (YouTube),drone;youtube,"Free videos on building an Arduino quadcopter flight controller from scratch, including PID and gyro code."
+https://www.youtube.com/@JoshuaBardwell,Joshua Bardwell (YouTube),drone;youtube,"Free in-depth FPV drone build, Betaflight tuning and troubleshooting videos."
+https://www.youtube.com/@Painless360,Painless360 (YouTube),drone;youtube,"Free tutorials on INAV, ArduPilot, EdgeTX radios and RC aircraft setup."
+https://www.youtube.com/@realpars,RealPars (YouTube),plc;youtube,"Free animated explainer videos on PLCs, SCADA, HMIs, VFDs and industrial automation."
+https://www.youtube.com/@PLCGuru,PLC Guru (YouTube),plc;youtube,Free PLC programming tutorials covering ladder logic and practical automation examples.
+https://www.youtube.com/@plcprofessor,PLC Professor (YouTube),plc;youtube,Free lecture-style PLC and industrial controls videos for learners.
+https://www.youtube.com/@BrianDouglas,Brian Douglas (YouTube),motor-control;robotics;drone;youtube,"Free intuitive videos on control theory, PID, state-space and Kalman filtering."
+https://www.youtube.com/@SteveBrunton,Steve Brunton (YouTube),motor-control;robotics;youtube,"Free university-level lectures on control bootcamp, system dynamics and data-driven control."
+https://www.youtube.com/@electronoobs,ELECTRONOOBS (YouTube),drone;motor-control;power-electronics;youtube,"Free projects on DIY ESCs, BLDC drivers, PID drones and power electronics with schematics."
