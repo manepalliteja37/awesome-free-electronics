@@ -1,35 +1,109 @@
-// awesome-free-electronics: reads every CSV in data/categories and renders the index.
-// Add a resource by adding a row (website,name,tags,description) to a CSV. Daily finds go in
-// daily_additions.csv with a tag "added YYYY-MM-DD"; they are filed into a section by their tags
-// and listed under "Recently added".
+// awesome-free-electronics: static, client-rendered directory.
+// Data source of truth: data/categories/*.csv (website,name,tags,description).
+// Daily finds live in daily_additions.csv with an "added YYYY-MM-DD" tag and are filed into a
+// category by their tags. No backend, no tracking: just fetch the CSVs and render.
 (() => {
+"use strict";
 const REPO = "https://github.com/manepalliteja37/awesome-free-electronics";
-// key, title, resistor colour (colour code 0-9, then gold)
-const SECTIONS = [
-  ["basics_analog",     "Basics & Analog",               "#1b1b1b"],
-  ["digital_fpga_vlsi", "Digital, FPGA & VLSI",          "#7b4a2a"],
-  ["pcb",               "PCB Design",                    "#c0392b"],
-  ["embedded_iot",      "Embedded & IoT",                "#e07b1a"],
-  ["robotics_plc",      "Robotics, PLC & Drones",        "#e3b505"],
-  ["rf_dsp",            "RF, SDR & DSP",                 "#2e8b57"],
-  ["power_energy_test", "Power, Solar & Test",           "#2763c4"],
-  ["other_fields",      "Semiconductors, Audio, Bio & TinyML", "#7a4fc0"],
-  ["calculators",       "Calculators & Reference",       "#8a8a8a"],
-  ["community_assets",  "Community Projects & Free Assets", "#f2f2f2"],
-  ["community_ai",      "Channels, Courses, Blogs & AI Tools", "#b8902f"],
-];
-const DAILY = "daily_additions";
-const TYPES = ["tool","simulator","calculator","course","youtube","blog","book","pbl-project","ai-built-tool","library","reference","community","3d-models"];
-const TYPE_LABEL = {"pbl-project":"project","ai-built-tool":"ai-built","3d-models":"3d-models","youtube":"youtube"};
-const NEW_DAYS = 7, LOG_DAYS = 3;
 
-const $ = s => document.querySelector(s);
-const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const norm = u => u.toLowerCase().replace(/^https?:\/\//,"").replace(/^www\./,"").replace(/\/+$/,"");
+const CATS = [
+  {key:"basics_analog", name:"Basics & Analog", icon:"wave", h:205, desc:"Circuit fundamentals, components, op-amps, filters and analog simulation."},
+  {key:"digital_fpga_vlsi", name:"Digital, FPGA & VLSI", icon:"chip", h:22, desc:"Logic design, Verilog and VHDL, FPGA toolchains and open-source chip design."},
+  {key:"pcb", name:"PCB Design", icon:"board", h:145, desc:"Schematic capture, board layout, Gerber viewers, footprints and manufacturing prep."},
+  {key:"embedded_iot", name:"Embedded & IoT", icon:"cpu", h:42, desc:"Microcontrollers, Arduino, ESP32, STM32, RTOS, firmware and connected devices."},
+  {key:"robotics_plc", name:"Robotics, PLC & Drones", icon:"robot", h:2, desc:"Robot software, motor control, industrial PLC programming and drone flight stacks."},
+  {key:"rf_dsp", name:"RF, SDR & DSP", icon:"antenna", h:178, desc:"Antennas, software-defined radio, wireless protocols and signal processing."},
+  {key:"power_energy_test", name:"Power, Solar & Test", icon:"bolt", h:225, desc:"Converters, batteries, solar and EV systems, plus test and measurement tools."},
+  {key:"other_fields", name:"Semiconductors, Audio, Bio & TinyML", icon:"atom", h:275, desc:"Device physics, audio electronics, biomedical circuits and machine learning on microcontrollers."},
+  {key:"calculators", name:"Calculators & Reference", icon:"calc", h:200, desc:"Resistor, LED, filter, trace-width and other calculators, plus quick-reference sheets."},
+  {key:"community_assets", name:"Community Projects & Free Assets", icon:"box", h:330, desc:"Open hardware projects, 3D models, symbol libraries and community hubs."},
+  {key:"community_ai", name:"Channels, Courses, Blogs & AI Tools", icon:"play", h:48, desc:"YouTube channels, free courses, in-depth blogs and AI-built learning tools."},
+];
+const CAT = Object.fromEntries(CATS.map(c => [c.key, c]));
+const DAILY = "daily_additions";
+
+// tag -> resource type, in priority order
+const TYPE_MAP = [["simulator","Simulator"],["calculator","Calculator"],["ai-built-tool","AI tool"],["course","Course"],
+  ["youtube","Video channel"],["video","Video channel"],["book","Book"],["blog","Blog"],["pbl-project","Project"],["projects","Project"],["project","Project"],
+  ["3d-models","Free assets"],["library","Library"],["reference","Reference"],["community","Community"],["tool","Software"]];
+const CONTENT_TYPES = ["Course","Video channel","Book","Blog","Reference","Community"];
+const LIC = {oss:"Open source", closed:"Free, closed-source", content:"Free learning content", free:"Free to use"};
+
+const has = (x, arr) => arr.some(t => x.tags.includes(t));
+const GOALS = [
+  {key:"basics", title:"Learn electronics basics", text:"Understand components, circuits, voltage and current.", icon:"book", h:205,
+    test:x => has(x,["basics","beginner","fundamentals"]) || (x.cat==="basics_analog" && CONTENT_TYPES.includes(x.type))},
+  {key:"simulate", title:"Simulate a circuit", text:"Test circuits without buying a single component.", icon:"scope", h:160,
+    test:x => has(x,["simulator","spice"]) || /simulat/.test(x.tagsL)},
+  {key:"pcb", title:"Design a PCB", text:"Draw schematics, lay out boards and export manufacturing files.", icon:"board", h:145,
+    test:x => x.cat==="pcb" || has(x,["pcb"])},
+  {key:"arduino", title:"Build Arduino projects", text:"Microcontrollers, sensors and DIY builds.", icon:"cpu", h:42,
+    test:x => /\b(arduino|esp32|esp8266|microcontrollers?|avr|attiny|rp2040)\b/.test(x.hay)},
+  {key:"embedded", title:"Learn embedded systems", text:"Firmware, RTOS, debuggers and development tools.", icon:"wifi", h:35,
+    test:x => x.cat==="embedded_iot" || has(x,["embedded","firmware","rtos"])},
+  {key:"fpga", title:"Explore FPGA and digital logic", text:"Digital design, HDL and programmable logic.", icon:"chip", h:22,
+    test:x => x.cat==="digital_fpga_vlsi" || has(x,["fpga","vlsi","verilog","vhdl","digital-electronics"])},
+  {key:"robots", title:"Build robots", text:"Robotics, automation, PLCs, drones and motor control.", icon:"robot", h:2,
+    test:x => x.cat==="robotics_plc" || has(x,["robotics","drone","plc","ros","motor-control"])},
+  {key:"rf", title:"Work with RF and wireless", text:"Antennas, SDR, LoRa and wireless communication.", icon:"antenna", h:178,
+    test:x => x.cat==="rf_dsp" || has(x,["rf","sdr","lora","antenna","wireless"])},
+  {key:"calc", title:"Find electronics calculators", text:"Resistor values, LED current, filters and more.", icon:"calc", h:200,
+    test:x => x.type==="Calculator" || x.cat==="calculators"},
+  {key:"learn", title:"Learn from videos and courses", text:"Free courses, YouTube channels, books and deep blogs.", icon:"play", h:48,
+    test:x => ["Course","Video channel","Blog","Book"].includes(x.type)},
+  {key:"power", title:"Explore power electronics", text:"Converters, solar, batteries and power systems.", icon:"bolt", h:225,
+    test:x => x.cat==="power_energy_test" || has(x,["power-electronics","solar","battery"])},
+  {key:"ai", title:"Discover AI electronics tools", text:"AI-built and AI-assisted tools for learning and design.", icon:"spark", h:265,
+    test:x => has(x,["ai-built-tool","ai","llm","machine-learning"]) || /\bai\b/.test(x.tagsL)},
+];
+const GOAL = Object.fromEntries(GOALS.map(g => [g.key, g]));
+const POPULAR = ["KiCad","Arduino","circuit simulator","LED resistor","Verilog","oscilloscope","LoRa","solar"];
+const PICKS = ["falstad","kicad","ngspice","wokwi","logisim","verilator","gnu radio","freecodecamp","qucs","digital","fritzing","openscad"];
+const TOPIC_PHRASES = ["circuit simulator","online circuit simulator","led resistor calculator","pcb design","arduino tutorial","arduino simulator",
+  "verilog simulator","fpga toolchain","oscilloscope software","free electronics course","op-amp","555 timer","smith chart","lora","esp32","stm32","solar","battery management","motor control","spice"];
+
+// natural-language search: stop words and synonyms
+const STOP = new Set("a an the i im i'm to how can could do does want wanna would like find get for of with my me and or in on is are was be using use some best good great free from scratch learn learning about what which where who tool tools resource resources make build building need help please any that this it you your".split(" "));
+const SYN = {
+  simulate:["simulator","simulation","spice"], simulator:["simulator","simulation","spice"], simulation:["simulator","spice"], sim:["simulator"],
+  test:["simulator","test-measurement","testing"], online:["browser","web","online"], browser:["browser","web","online"], web:["browser","web"],
+  pcb:["pcb","circuit board","kicad","gerber"], board:["pcb","circuit board"], gerber:["gerber","pcb"], schematic:["schematic","eda","kicad"], eda:["eda","pcb","schematic"],
+  resistor:["resistor","resistance"], led:["led","resistor"], calculate:["calculator"], calculator:["calculator"], calc:["calculator"], formula:["calculator","reference"],
+  course:["course","mooc","lecture"], class:["course","lecture"], video:["youtube","video","channel"], youtube:["youtube","video"], tutorial:["tutorial","course","blog","youtube"],
+  book:["book","textbook"], blog:["blog","handbook"],
+  arduino:["arduino","avr","atmega"], microcontroller:["microcontroller","arduino","esp32","stm32","mcu","embedded"], mcu:["microcontroller","mcu","embedded"],
+  embedded:["embedded","firmware","microcontroller","rtos"], firmware:["firmware","embedded"], rtos:["rtos","freertos","zephyr"],
+  verilog:["verilog","systemverilog","hdl"], vhdl:["vhdl","hdl"], hdl:["hdl","verilog","vhdl"], fpga:["fpga","verilog","vhdl","yosys"],
+  vlsi:["vlsi","asic","chip design"], asic:["asic","vlsi"], chip:["chip","asic","vlsi","ic"], logic:["logic","digital"], digital:["digital","logic"],
+  oscilloscope:["oscilloscope","scope","test-measurement"], scope:["oscilloscope"], multimeter:["multimeter","test-measurement"], measure:["test-measurement","oscilloscope"],
+  "op-amp":["op-amp","opamp","operational amplifier"], opamp:["op-amp","opamp"], amplifier:["amplifier","op-amp"], filter:["filter"],
+  robot:["robot","robotics","ros"], robotics:["robotics","robot","ros"], drone:["drone","uav","quadcopter","px4","ardupilot"], plc:["plc","ladder","iec 61131"],
+  motor:["motor","motor-control"], wireless:["wireless","rf","lora","bluetooth","wifi","sdr","zigbee"], rf:["rf","radio"], antenna:["antenna","rf"],
+  sdr:["sdr","software defined radio","gnu radio"], radio:["radio","sdr","rf"], lora:["lora","lorawan"], dsp:["dsp","signal processing"],
+  solar:["solar","pv","renewable"], battery:["battery","bms"], power:["power","converter","smps"], ev:["ev","electric vehicle"],
+  ai:["ai","ai-built-tool","machine learning","llm"], ml:["machine learning","tinyml"], tinyml:["tinyml","machine learning"],
+  iot:["iot","esp32","mqtt"], esp32:["esp32","esp8266"], raspberry:["raspberry pi","raspberry"], spice:["spice","ngspice","ltspice"],
+  "3d":["3d","3d-models","step"], beginner:["beginner","basics","fundamentals"], basics:["basics","beginner","fundamentals"],
+  circuit:["circuit"], semiconductor:["semiconductor","device"], audio:["audio","amplifier"], project:["project","pbl-project"], projects:["project","pbl-project"],
+};
+
+// ---------- utils ----------
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const icon = (n, cls="") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const ico = (n, h, cls="") => `<span class="ico ${cls}" style="--h:${h}">${icon(n)}</span>`;
 const host = u => { try { const x = new URL(u); return (x.hostname.replace(/^www\./,"") + x.pathname).replace(/\/+$/,""); } catch { return u; } };
+const normUrl = u => u.toLowerCase().replace(/^https?:\/\//,"").replace(/^www\./,"").replace(/\/+$/,"");
 const fmtDate = d => new Date(d + "T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+const slug = s => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,60) || "item";
+const plural = (n, w) => `${n.toLocaleString("en-IN")} ${w}${n===1?"":"s"}`;
+const debounce = (f, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => f(...a), ms); }; };
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const EXT = (name) => `target="_blank" rel="noopener" aria-label="Open ${esc(name)} website (opens in a new tab)"`;
 
 function parseCSV(t){
+  t = t.replace(/^\uFEFF/, "");
   const rows=[]; let r=[], f="", q=false;
   for (let i=0;i<t.length;i++){ const c=t[i];
     if (q){ if (c=='"'){ if (t[i+1]=='"'){ f+='"'; i++; } else q=false; } else f+=c; }
@@ -49,9 +123,9 @@ function sectionFor(tags){
     [/calculator|smith|k-map/, "calculators"],
     [/ pcb|kicad|open-hardware|gerber/, "pcb"],
     [/fpga|vlsi|verilog|vhdl|digital|asic|risc-v|computer-architecture/, "digital_fpga_vlsi"],
-    [/rf |sdr|dsp|antenna|radio/, "rf_dsp"],
-    [/power|solar|battery|ev |test-measurement|oscilloscope/, "power_energy_test"],
-    [/robot|plc|drone|ros|motor/, "robotics_plc"],
+    [/ rf |sdr|dsp|antenna|radio/, "rf_dsp"],
+    [/power|solar|battery| ev |test-measurement|oscilloscope/, "power_energy_test"],
+    [/robot|plc|drone| ros |motor/, "robotics_plc"],
     [/embedded|iot|arduino|esp32|stm32|rtos|firmware|microcontroller/, "embedded_iot"],
     [/analog|basics|spice|circuit|op-amp/, "basics_analog"],
     [/semiconductor|audio|biomedical|tinyml|automotive|optoelectronics|mems/, "other_fields"],
@@ -61,160 +135,541 @@ function sectionFor(tags){
   return "community_ai";
 }
 
-let all = [];
-const state = { q:"", type:"", tag:"", oss:false };
+// ---------- data ----------
+let DATA = [], BYID = {}, NEWEST = "", TOPICS = [];
 
 async function load(){
-  const keys = [DAILY, ...SECTIONS.map(s=>s[0])];
-  const texts = await Promise.all(keys.map(k => fetch(`data/categories/${k}.csv`).then(r=>r.ok?r.text():"").catch(()=>"")));
-  const byUrl = new Map(), daily = [];
+  const keys = [...CATS.map(c=>c.key), DAILY];
+  const get = (k, tries=3) => fetch(`data/categories/${k}.csv`).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+    .catch(e => tries > 1 ? new Promise(res => setTimeout(res, 400)).then(() => get(k, tries-1)) : "");
+  const texts = await Promise.all(keys.map(k => get(k)));
+  const byUrl = new Map(), ids = new Set();
+  let order = 0;
   texts.forEach((txt,i)=>{
-    if (!txt) return;
     const key = keys[i];
-    for (const r of parseCSV(txt)){
-      if (!r.website) continue;
-      const tags = r.tags.split(/[;,]/).map(s=>s.trim()).filter(Boolean);
-      const at = tags.find(t=>/^added \d{4}-\d{2}-\d{2}$/.test(t));
+    for (const r of (txt ? parseCSV(txt) : [])){
+      if (!r.website || !r.name) continue;
+      const raw = (r.tags||"").split(/[;,]/).map(s=>s.trim()).filter(Boolean);
+      const at = raw.find(t=>/^added \d{4}-\d{2}-\d{2}$/.test(t));
       const added = at ? at.slice(6) : null;
-      const clean = tags.filter(t=>t!==at && t!=="free");
-      const k = norm(r.website);
+      const tags = raw.filter(t=>t!==at && t!=="free").map(t=>t.toLowerCase());
+      const k = normUrl(r.website);
       if (byUrl.has(k)){ const o = byUrl.get(k); if (added && !o.added) o.added = added; continue; }
-      const sec = key===DAILY ? sectionFor(clean) : key;
-      const item = { url:r.website, name:r.name, desc:r.description, tags:clean, added, sec,
-        prop: clean.some(t=>/proprietary/.test(t)),
-        hay: (r.name+" "+r.description+" "+clean.join(" ")+" "+r.website).toLowerCase() };
-      byUrl.set(k,item);
+      const cat = key===DAILY ? sectionFor(tags) : key;
+      const tm = TYPE_MAP.find(([t]) => tags.includes(t));
+      const type = tm ? tm[1] : "Resource";
+      const desc = r.description || "";
+      const lic = tags.some(t=>/proprietary/.test(t)) ? "closed"
+        : (tags.includes("open-source") || tags.includes("open-hardware")) ? "oss"
+        : CONTENT_TYPES.includes(type) ? "content" : "free";
+      const web = !CONTENT_TYPES.includes(type) && (tags.some(t=>/^(browser|web|online|web-app|webapp)$/.test(t)) || /\b(in-browser|browser-based|web-based|in the browser|in your browser|runs in (?:a |the |any )?browser|web app)\b/i.test(desc));
+      let id = slug(r.name); while (ids.has(id)) id += "-x"; ids.add(id);
+      const x = { id, url:r.website, name:r.name, desc, tags, added, cat, type, lic, web,
+        level: tags.includes("beginner") ? "Beginner" : null, order: order++,
+        nameL: r.name.toLowerCase(), descL: desc.toLowerCase(), tagsL: tags.join(" | "), catL: CAT[cat].name.toLowerCase() };
+      x.hay = `${x.nameL} ${x.descL} ${x.tagsL} ${x.catL} ${k}`;
+      byUrl.set(k, x);
     }
   });
-  all = [...byUrl.values()];
-  const newest = all.reduce((m,x)=>x.added && x.added>m ? x.added : m, "");
-  const cutoff = newest ? Date.parse(newest) - (NEW_DAYS-1)*864e5 : 0;
-  all.forEach(x => x.isNew = !!x.added && Date.parse(x.added) >= cutoff);
-  $("#mTotal").textContent = all.length.toLocaleString("en-IN");
-  $("#mSections").textContent = SECTIONS.length;
-  $("#mUpdated").textContent = newest ? fmtDate(newest) : "–";
-  readURL(); buildSide(); buildLog(); bind(); render();
+  DATA = [...byUrl.values()];
+  DATA.forEach(x => BYID[x.id] = x);
+  NEWEST = DATA.reduce((m,x)=>x.added && x.added>m ? x.added : m, "");
+  const cut = NEWEST ? Date.parse(NEWEST) - 6*864e5 : Infinity;
+  DATA.forEach(x => x.isNew = !!x.added && Date.parse(x.added) >= cut);
+  const tc = {}; DATA.forEach(x=>x.tags.forEach(t=>{ if (!/proprietary|^open-source$|^tool$/.test(t)) tc[t]=(tc[t]||0)+1; }));
+  TOPICS = [...new Set([...TOPIC_PHRASES, ...Object.keys(tc).filter(t=>tc[t]>=3).sort((a,b)=>tc[b]-tc[a])])];
 }
 
-function readURL(){
-  const p = new URLSearchParams(location.search);
-  state.q = p.get("q")||""; state.type = p.get("type")||""; state.tag = p.get("tag")||""; state.oss = p.get("oss")==="1";
-  $("#q").value = state.q; $("#ossOnly").checked = state.oss;
-}
-function writeURL(){
-  const p = new URLSearchParams();
-  if (state.q) p.set("q",state.q); if (state.type) p.set("type",state.type);
-  if (state.tag) p.set("tag",state.tag); if (state.oss) p.set("oss","1");
-  const s = p.toString();
-  history.replaceState(null,"",location.pathname + (s?"?"+s:"") + location.hash);
-}
-
-function buildSide(){
-  const counts = {}; all.forEach(x=>counts[x.sec]=(counts[x.sec]||0)+1);
-  $("#toc").innerHTML = SECTIONS.map(([k,t,c],i)=>
-    `<li><a href="#s-${k}" data-sec="${k}"><span class="no">${String(i+1).padStart(2,"0")}</span><span class="band" style="background:${c}"></span><span>${esc(t)}</span><span class="n">${counts[k]||0}</span></a></li>`).join("");
-  const tc = {}; all.forEach(x=>x.tags.forEach(t=>{ if (TYPES.includes(t)) tc[t]=(tc[t]||0)+1; }));
-  $("#types").innerHTML = TYPES.filter(t=>tc[t]>=3).sort((a,b)=>tc[b]-tc[a]).map(t=>
-    `<button type="button" data-type="${t}" aria-pressed="false">${esc(TYPE_LABEL[t]||t)}<span class="c">${tc[t]}</span></button>`).join("");
-  if (matchMedia("(max-width:900px)").matches) $("#filters").open = false;
-}
-
-function buildLog(){
-  const days = {};
-  all.filter(x=>x.added).forEach(x=>(days[x.added] ||= []).push(x));
-  const dates = Object.keys(days).sort().reverse();
-  if (!dates.length){ $("#changelog").remove(); return; }
-  const secName = k => (SECTIONS.find(s=>s[0]===k)||[,""])[1];
-  const dayHTML = d => `<div class="day"><div class="day-h"><b>${fmtDate(d)}</b>+${days[d].length} added</div><ul>${
-    days[d].map(x=>`<li><a href="${esc(x.url)}" rel="noopener">${esc(x.name)}</a> <span>· ${esc(secName(x.sec))}</span></li>`).join("")}</ul></div>`;
-  const log = $("#log");
-  log.innerHTML = dates.slice(0,LOG_DAYS).map(dayHTML).join("");
-  if (dates.length > LOG_DAYS){
-    const b = document.createElement("button"); b.className="more-log"; b.type="button";
-    b.textContent = `Show ${dates.length-LOG_DAYS} earlier day${dates.length-LOG_DAYS>1?"s":""}`;
-    b.onclick = () => { log.innerHTML = dates.map(dayHTML).join(""); };
-    log.after(b);
-  }
-}
-
-function bind(){
-  let to;
-  $("#q").addEventListener("input", e => { clearTimeout(to); to = setTimeout(()=>{ state.q = e.target.value.trim(); render(); }, 120); });
-  $("#types").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state.type = state.type===b.dataset.type ? "" : b.dataset.type; render(); });
-  $("#ossOnly").addEventListener("change", e => { state.oss = e.target.checked; render(); });
-  $("#results").addEventListener("click", e => { const b = e.target.closest("[data-tag]"); if (!b) return; state.tag = b.dataset.tag; render(); $("#main").scrollIntoView({block:"start"}); });
-  $("#active").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return;
-    const k = b.dataset.k; if (k==="all"){ state.q=""; state.type=""; state.tag=""; state.oss=false; $("#q").value=""; $("#ossOnly").checked=false; }
-    else { state[k] = k==="oss" ? false : ""; if (k==="q") $("#q").value=""; if (k==="oss") $("#ossOnly").checked=false; }
-    render(); });
-  document.addEventListener("keydown", e => {
-    if (e.key==="/" && !/input|textarea|select/i.test(document.activeElement.tagName)){ e.preventDefault(); $("#q").focus(); }
-    if (e.key==="Escape" && document.activeElement===$("#q")){ $("#q").value=""; state.q=""; render(); }
+// ---------- search ----------
+function prep(q){
+  let s = q.toLowerCase().replace(/op\s+amps?/g,"op-amp").replace(/circuit boards?/g,"pcb").replace(/printed circuit/g,"pcb")
+    .replace(/[?!.,"']/g," ").trim();
+  let words = s.split(/\s+/).filter(Boolean);
+  let meaningful = words.filter(w => !STOP.has(w));
+  if (!meaningful.length) meaningful = words;
+  const groups = meaningful.map(w => {
+    let base = SYN[w] ? w : (w.length>3 && w.endsWith("s") && SYN[w.slice(0,-1)]) ? w.slice(0,-1) : w;
+    const terms = [w, ...(base!==w ? [base] : []), ...(SYN[base]||[])];
+    return [...new Set(terms)].map(t => ({t, re: t.length<=3 ? new RegExp(`(^|[^a-z0-9])${reEsc(t)}([^a-z0-9]|$)`) : null, orig: t===w || t===base}));
   });
+  return {groups, phrase: s, hl: [...new Set(groups.flat().filter(g=>g.t.length>=2 && (g.orig || g.t.length>=3)).map(g=>g.t))]};
+}
+const hit = (hay, g) => g.re ? g.re.test(hay) : hay.includes(g.t);
+function score(x, P){
+  let total = 0, matched = 0;
+  for (const grp of P.groups){
+    let best = 0;
+    for (const g of grp){
+      let s = 0;
+      if (hit(x.nameL, g)) s = x.nameL.startsWith(g.t) ? 14 : 10;
+      else if (x.tags.includes(g.t)) s = 7;
+      else if (hit(x.tagsL, g)) s = 5;
+      else if (hit(x.catL, g)) s = 3;
+      else if (hit(x.descL, g)) s = 2;
+      if (!g.orig) s *= .7;
+      if (s > best) best = s;
+    }
+    if (best) { matched++; total += best; }
+  }
+  const need = Math.max(1, Math.ceil(P.groups.length * .5));
+  if (matched < need) return 0;
+  if (P.phrase.length > 2 && x.nameL.includes(P.phrase)) total += 25;
+  return total * (matched / P.groups.length);
+}
+function hl(text, P){
+  const s = String(text ?? "");
+  if (!P || !P.hl.length) return esc(s);
+  const re = new RegExp("(" + P.hl.sort((a,b)=>b.length-a.length).map(reEsc).join("|") + ")", "gi");
+  return s.split(re).map((p,i)=> i%2 ? `<mark>${esc(p)}</mark>` : esc(p)).join("");
 }
 
-function hl(text, q){
-  if (!q) return esc(text);
-  const words = q.toLowerCase().split(/\s+/).filter(w=>w.length>1).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
-  if (!words.length) return esc(text);
-  return String(text).split(new RegExp("("+words.join("|")+")","gi")).map((part,i)=> i%2 ? `<mark>${esc(part)}</mark>` : esc(part)).join("");
+// ---------- shared renderers ----------
+function labels(x, showCat){
+  let h = `<span class="lbl">${esc(x.type)}</span>`;
+  h += `<span class="lbl ${x.lic==="oss"?"oss":x.lic==="closed"?"closed":""}" title="${x.lic==="closed"?"Free to use, but the source code isn't open":""}">${LIC[x.lic]}</span>`;
+  if (x.web) h += `<span class="lbl">Runs in browser</span>`;
+  if (x.isNew) h += `<span class="lbl new" title="Added ${esc(x.added)}">New</span>`;
+  if (showCat) h += `<a class="lbl cat-l" href="#/c/${x.cat}">${esc(CAT[x.cat].name)}</a>`;
+  return h;
+}
+const SKIP_TAGS = /proprietary|^open-source$|^tool$|^simulator$|^calculator$|^course$|^youtube$|^blog$|^book$|^pbl-project$|^ai-built-tool$|^library$|^reference$|^community$/;
+const tagBtns = (x, n=4) => x.tags.filter(t=>!SKIP_TAGS.test(t)).slice(0,n).map(t=>`<button type="button" class="tag" data-tag="${esc(t)}">#${esc(t)}</button>`).join("");
+function card(x){
+  const c = CAT[x.cat];
+  return `<article class="rcard">
+    <div class="rc-top">${ico(c.icon,c.h,"sm")}<div class="rc-title"><h3><a href="#/r/${x.id}">${esc(x.name)}</a></h3><span class="host">${esc(host(x.url))}</span></div>
+    <a class="ext" href="${esc(x.url)}" ${EXT(x.name)}>${icon("ext")}</a></div>
+    <p class="rdesc">${esc(x.desc)}</p>
+    <div class="labels">${labels(x,true)}</div>
+    <div class="tags">${tagBtns(x)}</div></article>`;
+}
+function row(x, P, showCat){
+  const c = CAT[x.cat];
+  return `<li class="rrow">${ico(c.icon,c.h,"sm")}<div class="body">
+    <div class="head"><h3><a href="#/r/${x.id}">${hl(x.name,P)}</a></h3><span class="host">${esc(host(x.url))}</span></div>
+    <p class="rdesc">${hl(x.desc,P)}</p>
+    <div class="labels">${labels(x,showCat)}</div>
+    <div class="tags">${tagBtns(x)}</div></div>
+    <a class="ext" href="${esc(x.url)}" ${EXT(x.name)}>${icon("ext")}</a></li>`;
+}
+function dayGroups(limitDays){
+  const days = {}; DATA.filter(x=>x.added).forEach(x=>(days[x.added] ||= []).push(x));
+  const dates = Object.keys(days).sort().reverse();
+  return {days, dates: limitDays ? dates.slice(0,limitDays) : dates, total: dates.length};
+}
+function recentHTML(limitDays, perDay){
+  const {days, dates} = dayGroups(limitDays);
+  if (!dates.length) return `<p class="muted">Nothing added yet.</p>`;
+  return `<div class="recent">${dates.map(d=>{
+    const list = perDay ? days[d].slice(0,perDay) : days[d];
+    return `<div class="rday"><div class="rday-h"><b>${fmtDate(d)}</b>${plural(days[d].length,"resource")} added</div><ul>${
+      list.map(x=>`<li><a href="#/r/${x.id}">${esc(x.name)}</a><span class="c">${esc(CAT[x.cat].name)}</span><p>${esc(x.desc)}</p></li>`).join("")}${
+      perDay && days[d].length>perDay ? `<li><a class="link-more" href="#/recent">+${days[d].length-perDay} more from this day</a></li>` : ""}</ul></div>`;
+  }).join("")}</div>`;
+}
+const popularHTML = (label="Popular searches:") => `<div class="popular"><span>${label}</span>${POPULAR.map(p=>`<a class="chip" href="#/explore?q=${encodeURIComponent(p)}">${esc(p)}</a>`).join("")}</div>`;
+function downloadHTML(h="h2"){
+  return `<div class="dl"><div>
+    <${h}>Take the whole list with you</${h}>
+    <p>Download all ${DATA.length.toLocaleString("en-IN")} resources for offline browsing, research or your own projects. Columns: website, name, tags, description, category.</p>
+    <ul><li>${icon("check")}All 11 categories in one file</li><li>${icon("check")}Updated as new resources are added</li><li>${icon("check")}CC0: use it however you like</li></ul>
+  </div><div class="dl-actions">
+    <a class="btn btn-primary" href="data/all_resources.csv" download>${icon("download")}<span>Download CSV<small>${DATA.length} entries</small></span></a>
+    <a class="btn" href="data/Electronics_Resources.xlsx" download>${icon("download")}<span>Download Excel (XLSX)<small>One sheet per category</small></span></a>
+    <a class="btn" href="${REPO}" target="_blank" rel="noopener">${icon("github")}<span>View source on GitHub<small>Opens in a new tab</small></span></a>
+    <a class="btn" href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${icon("plus")}<span>Contribute a resource<small>Opens in a new tab</small></span></a>
+  </div></div>`;
 }
 
-function entry(x, q){
-  const shown = x.tags.filter(t=>!/proprietary|^open-source$/.test(t)).slice(0,5);
-  return `<li class="entry">
-    <div class="e-head"><a class="e-name" href="${esc(x.url)}" rel="noopener">${hl(x.name,q)}</a><span class="e-host">${esc(host(x.url))}</span>${x.isNew?`<span class="flag new" title="Added ${esc(x.added)}">new</span>`:""}${x.prop?`<span class="flag prop" title="Free to use, but not open-source">closed-source</span>`:""}</div>
-    <p class="e-desc">${hl(x.desc,q)}</p>
-    <p class="e-tags">${shown.map(t=>`<button type="button" data-tag="${esc(t)}">#${esc(t)}</button>`).join("")}</p>
-  </li>`;
+// ---------- search combobox ----------
+let sbCount = 0;
+function searchBox({value="", placeholder, small=false, label="Search resources"}){
+  const id = "sb" + (++sbCount);
+  return `<div class="search ${small?"search-sm":""}" data-sb="${id}">
+    <label class="vh" for="${id}">${esc(label)}</label>
+    <div class="search-box">${icon("search")}
+      <input id="${id}" type="search" value="${esc(value)}" placeholder="${esc(placeholder)}" autocomplete="off" spellcheck="false"
+        role="combobox" aria-expanded="false" aria-controls="${id}-list" aria-autocomplete="list">
+      <button type="button" class="search-clear" aria-label="Clear search" ${value?"":"hidden"}>${icon("x")}</button>
+      ${small?"":`<button type="button" class="btn btn-primary sb-go">Search</button>`}
+    </div>
+    <ul class="suggest" id="${id}-list" role="listbox" aria-label="Suggestions" hidden></ul></div>`;
+}
+function suggestions(q){
+  const ql = q.toLowerCase().trim(); if (ql.length < 2) return [];
+  const topics = TOPICS.filter(t => t.includes(ql) && t !== ql).sort((a,b)=>(b.startsWith(ql)-a.startsWith(ql))||a.length-b.length).slice(0,5);
+  const names = DATA.filter(x => x.nameL.includes(ql)).sort((a,b)=>(b.nameL.startsWith(ql)-a.nameL.startsWith(ql))||a.name.length-b.name.length).slice(0,5);
+  return [{kind:"search", label:q.trim()}, ...topics.map(t=>({kind:"topic",label:t})), ...names.map(x=>({kind:"res",label:x.name,id:x.id,cat:CAT[x.cat].name}))];
+}
+function bindSearch(root, {onSubmit, onInput}){
+  const input = $("input", root), list = $(".suggest", root), clear = $(".search-clear", root), go = $(".sb-go", root);
+  let items = [], active = -1;
+  const close = () => { list.hidden = true; input.setAttribute("aria-expanded","false"); input.removeAttribute("aria-activedescendant"); active = -1; };
+  const choose = it => {
+    close();
+    if (!it) return onSubmit(input.value.trim());
+    if (it.kind==="res") return void (location.hash = "#/r/" + it.id);
+    input.value = it.label; clear.hidden = !input.value; onSubmit(it.label);
+  };
+  const paint = () => {
+    items = suggestions(input.value);
+    if (!items.length){ close(); return; }
+    let h = "", i = 0;
+    for (const it of items){
+      if (it.kind==="topic" && (i===1)) h += `<li class="s-head" role="presentation">Topics</li>`;
+      if (it.kind==="res" && (i===0 || items[i-1].kind!=="res")) h += `<li class="s-head" role="presentation">Resources</li>`;
+      const lid = `${input.id}-o${i}`;
+      h += `<li id="${lid}" role="option" data-i="${i}" aria-selected="false">${icon(it.kind==="res"?"arrow":"search")}<span>${it.kind==="search"?`Search for “${esc(it.label)}”`:esc(it.label)}</span>${it.kind==="res"?`<span class="s-kind">${esc(it.cat)}</span>`:""}</li>`;
+      i++;
+    }
+    list.innerHTML = h; list.hidden = false; input.setAttribute("aria-expanded","true"); active = -1;
+  };
+  const setActive = n => {
+    const opts = $$("[role=option]", list); if (!opts.length) return;
+    active = (n + opts.length) % opts.length;
+    opts.forEach((o,i)=>o.setAttribute("aria-selected", i===active));
+    input.setAttribute("aria-activedescendant", opts[active].id); opts[active].scrollIntoView({block:"nearest"});
+  };
+  const live = onInput ? debounce(v => onInput(v), 140) : null;
+  input.addEventListener("input", () => { clear.hidden = !input.value; paint(); live && live(input.value.trim()); });
+  input.addEventListener("keydown", e => {
+    if (e.key==="ArrowDown"){ e.preventDefault(); if (list.hidden) paint(); setActive(active+1); }
+    else if (e.key==="ArrowUp"){ e.preventDefault(); setActive(active-1); }
+    else if (e.key==="Enter"){ e.preventDefault(); choose(active>=0 ? items[active] : null); }
+    else if (e.key==="Escape"){ if (!list.hidden) close(); else if (input.value){ input.value=""; clear.hidden=true; live && live(""); } }
+  });
+  input.addEventListener("blur", () => setTimeout(close, 150));
+  list.addEventListener("mousedown", e => e.preventDefault());
+  list.addEventListener("click", e => { const li = e.target.closest("[role=option]"); if (li) choose(items[+li.dataset.i]); });
+  clear.addEventListener("click", () => { input.value=""; clear.hidden=true; close(); input.focus(); onInput ? onInput("") : null; });
+  go && go.addEventListener("click", () => choose(null));
+  return input;
 }
 
-function render(){
-  writeURL();
-  const words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
-  const list = all.filter(x =>
-    (!state.type || x.tags.includes(state.type)) &&
-    (!state.tag || x.tags.includes(state.tag)) &&
-    (!state.oss || !x.prop) &&
-    words.every(w => x.hay.includes(w)));
-  const filtering = !!(state.q || state.type || state.tag || state.oss);
+// ---------- views ----------
+const view = () => $("#view");
+function setTitle(t){ document.title = t ? `${t} · awesome-free-electronics` : "awesome-free-electronics: discover the best free electronics resources"; }
 
-  document.querySelectorAll("#types button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.type===state.type));
-  const chips = [];
-  if (state.q) chips.push(["q",`“${state.q}”`]);
-  if (state.type) chips.push(["type",`type: ${TYPE_LABEL[state.type]||state.type}`]);
-  if (state.tag) chips.push(["tag",`#${state.tag}`]);
-  if (state.oss) chips.push(["oss","open-source only"]);
-  $("#active").innerHTML = chips.map(([k,l])=>`<button type="button" data-k="${k}" aria-label="Remove filter ${esc(l)}">${esc(l)} ×</button>`).join("") +
-    (chips.length>1 ? `<button type="button" class="clear" data-k="all">Clear all</button>` : "");
-  $("#count").textContent = filtering ? `${list.length} of ${all.length} entries` : `${all.length} entries`;
-  const cl = $("#changelog"); if (cl) cl.hidden = filtering;
+function viewHome(){
+  setTitle("");
+  const picks = []; for (const p of PICKS){ const x = DATA.find(d => d.nameL.startsWith(p) && !picks.includes(d)); if (x) picks.push(x); if (picks.length===6) break; }
+  const counts = {}; DATA.forEach(x=>counts[x.cat]=(counts[x.cat]||0)+1);
+  view().innerHTML = `
+  <section class="hero"><div class="wrap">
+    <h1 tabindex="-1">Discover the best <em>free electronics</em> resources</h1>
+    <p class="lede">Free tools, simulators, calculators, tutorials, courses and projects for learning electronics and building real circuits. From your first LED to PCB design, FPGA development, robotics and embedded systems.</p>
+    <ul class="trust">
+      <li>${icon("check")}<span><b>${DATA.length.toLocaleString("en-IN")}</b> curated resources</span></li>
+      <li>${icon("check")}<span><b>11</b> categories</span></li>
+      <li>${icon("check")}<span>Free to use, no paywalls</span></li>
+      <li>${icon("check")}<span>Updated regularly${NEWEST?`, last on ${fmtDate(NEWEST)}`:""}</span></li>
+    </ul>
+    ${searchBox({placeholder:"What do you want to learn or build? Try Arduino, PCB design, or circuit simulation…", label:"What do you want to learn or build?"})}
+    ${popularHTML()}
+  </div></section>
 
-  const groups = {}; list.forEach(x=>(groups[x.sec] ||= []).push(x));
-  $("#results").innerHTML = SECTIONS.map(([k,t,c],i)=>{
-    const g = groups[k]; if (!g) return "";
-    return `<section class="sec" id="s-${k}" aria-labelledby="h-${k}">
-      <div class="sec-head"><h2 id="h-${k}"><span class="no">${String(i+1).padStart(2,"0")}</span><span class="band" style="background:${c}"></span>${esc(t)}</h2>
-      <span class="n">${g.length}</span><a class="sec-edit" href="${REPO}/blob/main/data/categories/${k}.csv" rel="noopener">Edit on GitHub ↗</a></div>
-      <ul class="list">${g.map(x=>entry(x,state.q)).join("")}</ul></section>`;
-  }).join("");
-  $("#empty").hidden = list.length > 0;
-  document.querySelectorAll("#toc li").forEach(li=>{ const k = li.firstChild.dataset.sec; li.hidden = filtering && !groups[k]; li.querySelector(".n").textContent = (groups[k]||[]).length; });
-  observe();
+  <section class="section" aria-labelledby="goals-h"><div class="wrap">
+    <div class="sec-h"><div><h2 id="goals-h">Start with your goal</h2><p>No need to know the jargon. Pick what you want to do.</p></div></div>
+    <div class="goals">${GOALS.map(g=>{ const n = DATA.filter(g.test).length;
+      return `<a class="goal" href="#/explore?goal=${g.key}">${ico(g.icon,g.h)}<div><h3>${esc(g.title)}</h3><p>${esc(g.text)}</p><span class="count mono">${n} resources</span></div></a>`; }).join("")}</div>
+  </div></section>
+
+  <section class="section" aria-labelledby="cat-h"><div class="wrap">
+    <div class="sec-h"><div><h2 id="cat-h">Browse by category</h2><p>The full collection, organised the way engineers think about it.</p></div><a class="link-more" href="#/categories">All categories ${icon("arrow")}</a></div>
+    <div class="cats">${CATS.map(c=>`<a class="cat" href="#/c/${c.key}">${ico(c.icon,c.h)}<h3>${esc(c.name)}</h3><span class="count mono">${counts[c.key]||0} resources</span></a>`).join("")}</div>
+  </div></section>
+
+  ${picks.length ? `<section class="section" aria-labelledby="picks-h"><div class="wrap">
+    <div class="sec-h"><div><h2 id="picks-h">Good places to start</h2><p>Editor's picks of widely used, well-maintained projects. A starting point, not a ranking.</p></div><a class="link-more" href="#/explore">Explore all ${icon("arrow")}</a></div>
+    <div class="rgrid">${picks.map(card).join("")}</div>
+  </div></section>` : ""}
+
+  <section class="section" aria-labelledby="recent-h"><div class="wrap">
+    <div class="sec-h"><div><h2 id="recent-h">Recently added</h2><p>New finds land here most days.</p></div><a class="link-more" href="#/recent">View all ${icon("arrow")}</a></div>
+    ${recentHTML(2, 4)}
+  </div></section>
+
+  <section class="section" id="download" aria-label="Download the collection"><div class="wrap">${downloadHTML()}</div></section>`;
+  bindSearch($(".hero .search"), {onSubmit: q => { location.hash = "#/explore" + (q ? "?q=" + encodeURIComponent(q) : ""); }});
 }
 
-let io;
-function observe(){
-  if (io) io.disconnect();
-  const links = new Map([...document.querySelectorAll("#toc a")].map(a=>[a.dataset.sec,a]));
-  io = new IntersectionObserver(es => {
-    es.forEach(e => { if (e.isIntersecting){
-      links.forEach(a=>a.removeAttribute("aria-current"));
-      const a = links.get(e.target.id.slice(2)); if (a){ a.setAttribute("aria-current","true"); if (matchMedia("(max-width:900px)").matches) a.scrollIntoView({inline:"center",block:"nearest"}); }
-    }});
-  }, { rootMargin:"-120px 0px -70% 0px" });
-  document.querySelectorAll(".sec").forEach(s=>io.observe(s));
+function viewCategories(){
+  setTitle("Categories");
+  const counts = {}; DATA.forEach(x=>counts[x.cat]=(counts[x.cat]||0)+1);
+  view().innerHTML = `<div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span><span aria-current="page">Categories</span></nav>
+    <div class="page-head"><div><h1 tabindex="-1">All categories</h1><p>Eleven categories covering ${DATA.length.toLocaleString("en-IN")} free resources. Not sure where to look? <a href="#/">Start with your goal</a> instead.</p></div></div>
+    <div class="cats cats-lg">${CATS.map(c=>`<a class="cat" href="#/c/${c.key}">${ico(c.icon,c.h)}<h3>${esc(c.name)}</h3><p>${esc(c.desc)}</p><span class="count mono">${counts[c.key]||0} resources</span></a>`).join("")}</div>
+  </div>`;
 }
 
-load();
+function viewRecent(){
+  setTitle("Recently added");
+  const {total} = dayGroups();
+  view().innerHTML = `<div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span><span aria-current="page">Recently added</span></nav>
+    <div class="page-head"><div><h1 tabindex="-1">Recently added</h1><p>Every resource added since daily updates began, newest first, across ${plural(total,"day")}. The full change log is on <a href="${REPO}/commits/main" target="_blank" rel="noopener">GitHub<span class="vh"> (opens in a new tab)</span></a>.</p></div></div>
+    ${recentHTML(0,0)}
+  </div>`;
+}
+
+function viewDownload(){
+  setTitle("Download data");
+  view().innerHTML = `<div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span><span aria-current="page">Download data</span></nav>
+    <div class="page-head"><div><h1 tabindex="-1">Download the collection</h1><p>The directory is plain data, so it's yours to filter in a spreadsheet, import into a notebook or build on.</p></div></div>
+    ${downloadHTML("h2")}
+  </div>`;
+}
+
+function viewDetail(id){
+  const x = BYID[id];
+  if (!x){ return viewNotFound(); }
+  const c = CAT[x.cat];
+  setTitle(x.name);
+  const related = DATA.filter(o => o!==x && o.cat===x.cat).map(o => [o, o.tags.filter(t=>x.tags.includes(t) && !SKIP_TAGS.test(t)).length]).filter(p=>p[1]>0)
+    .sort((a,b)=>b[1]-a[1]).slice(0,5).map(p=>p[0]);
+  view().innerHTML = `<div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span><a href="#/c/${c.key}">${esc(c.name)}</a><span aria-hidden="true">›</span><span aria-current="page">${esc(x.name)}</span></nav>
+    <div class="detail"><article class="dcard">
+      <div class="d-head">${ico(c.icon,c.h)}<div><h1 tabindex="-1">${esc(x.name)}</h1><span class="host">${esc(host(x.url))}</span></div></div>
+      <p class="d-desc">${esc(x.desc)}</p>
+      <dl class="facts">
+        <div><dt>Type</dt><dd>${esc(x.type)}</dd></div>
+        <div><dt>Category</dt><dd><a href="#/c/${c.key}">${esc(c.name)}</a></dd></div>
+        <div><dt>Licence</dt><dd>${LIC[x.lic]}</dd></div>
+        <div><dt>Access</dt><dd>${x.web ? "Runs in the browser" : "See the project's site"}</dd></div>
+        ${x.added ? `<div><dt>Added</dt><dd>${fmtDate(x.added)}</dd></div>` : ""}
+      </dl>
+      <div class="tags">${x.tags.filter(t=>!/proprietary/.test(t)).map(t=>`<button type="button" class="tag" data-tag="${esc(t)}">#${esc(t)}</button>`).join("")}</div>
+      <div class="d-actions">
+        <a class="btn btn-primary" href="${esc(x.url)}" target="_blank" rel="noopener">Open website ${icon("ext")}<span class="vh"> (opens in a new tab)</span></a>
+        <a class="btn" href="#/c/${c.key}">${icon("back")} More in ${esc(c.name)}</a>
+      </div>
+      <p class="d-note">Details come from the curated list. Something wrong or out of date? <a href="${REPO}/issues/new?title=${encodeURIComponent("Fix: " + x.name)}" target="_blank" rel="noopener">Report it on GitHub<span class="vh"> (opens in a new tab)</span></a>.</p>
+    </article>
+    ${related.length ? `<aside class="aside" aria-labelledby="rel-h"><h2 id="rel-h">Similar resources</h2><ul class="mini">${related.map(o=>`<li><a href="#/r/${o.id}"><b>${esc(o.name)}</b><span>${esc(o.desc)}</span></a></li>`).join("")}</ul></aside>` : ""}
+    </div></div>`;
+}
+
+function viewNotFound(){
+  setTitle("Not found");
+  view().innerHTML = `<div class="wrap page-top"><div class="empty" style="margin-top:40px"><h1 tabindex="-1" style="font-size:22px">That page isn't here</h1><p>It may have been renamed. Try searching instead.</p><a class="btn btn-primary" href="#/explore">Explore resources</a></div></div>`;
+}
+
+// ---------- listing (explore + category) ----------
+const FACETS = [
+  {key:"type", label:"Resource type", get:x=>x.type, multi:true},
+  {key:"lic", label:"Licence", get:x=>x.lic, names:LIC, multi:true},
+  {key:"web", label:"Access", get:x=>x.web?"browser":null, names:{browser:"Runs in the browser"}},
+  {key:"level", label:"Level", get:x=>x.level, names:{Beginner:"Beginner-friendly"}},
+  {key:"cat", label:"Category", get:x=>x.cat, names:Object.fromEntries(CATS.map(c=>[c.key,c.name])), multi:true, exploreOnly:true, advanced:true},
+];
+const PAGE = 24;
+
+function viewListing(catKey, params){
+  const c = catKey ? CAT[catKey] : null;
+  if (catKey && !c) return viewNotFound();
+  const hashBase = c ? `#/c/${c.key}` : "#/explore";
+  const S = { q: params.get("q")||"", tag: params.get("tag")||"", goal: GOAL[params.get("goal")] ? params.get("goal") : "", sort: params.get("sort")||"", shown: PAGE, sel:{} };
+  FACETS.forEach(f => { const v = params.get(f.key); S.sel[f.key] = v ? new Set(v.split(",")) : new Set(); });
+  const scope = c ? DATA.filter(x=>x.cat===c.key) : DATA;
+  const facets = FACETS.filter(f => !(c && f.exploreOnly));
+  const g = S.goal ? GOAL[S.goal] : null;
+  const title = c ? c.name : g ? g.title : "Explore resources";
+  setTitle(title);
+  const topicChips = c ? (() => { const tc={}; scope.forEach(x=>x.tags.forEach(t=>{ if(!SKIP_TAGS.test(t) && t!==c.key) tc[t]=(tc[t]||0)+1; }));
+    return Object.keys(tc).filter(t=>tc[t]>=3).sort((a,b)=>tc[b]-tc[a]).slice(0,10); })() : [];
+
+  view().innerHTML = `<div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span>${c?`<a href="#/categories">Categories</a><span aria-hidden="true">›</span>`:""}<span aria-current="page">${esc(title)}</span></nav>
+    <div class="page-head">${c?ico(c.icon,c.h):g?ico(g.icon,g.h):""}<div><h1 tabindex="-1">${esc(title)}</h1>
+      <p>${c ? esc(c.desc) + ` <span class="mono muted">${scope.length} resources</span>` : g ? esc(g.text) : "Search and filter the whole collection. Plain-English questions work too, like “test a circuit online” or “calculate a resistor for an LED”."}</p></div></div>
+    ${topicChips.length ? `<div class="topics" aria-label="Popular topics in this category">${topicChips.map(t=>`<button type="button" class="chip" data-tag="${esc(t)}">${esc(t)}</button>`).join("")}</div>` : ""}
+    <div class="listing">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="drawer-head"><h2>Filters</h2><button type="button" class="icon-btn" data-close aria-label="Close filters">${icon("x")}</button></div>
+        <h2>Filters</h2>
+        <div id="fgroups"></div>
+        <div class="drawer-foot"><button type="button" class="btn btn-primary" data-close>Show results</button></div>
+      </aside>
+      <div>
+        <div class="toolbar">
+          ${searchBox({value:S.q, small:true, placeholder: c ? `Search within ${c.name}…` : "Search tools, topics or questions…", label: c ? `Search within ${c.name}` : "Search all resources"})}
+          <button type="button" class="btn filter-btn" id="filterBtn" aria-controls="filters" aria-expanded="false">${icon("filter")} Filters <span id="fcount"></span></button>
+          <label class="sort">Sort <select id="sort" aria-label="Sort results"></select></label>
+        </div>
+        <div class="resline" id="resline" aria-live="polite"></div>
+        <div id="results"></div>
+        <div class="more-wrap" id="more"></div>
+      </div>
+    </div></div>`;
+
+  const root = view().firstElementChild;
+  const input = bindSearch($(".toolbar .search"), {
+    onSubmit: q => { S.q = q; S.shown = PAGE; update(); },
+    onInput: q => { S.q = q; S.shown = PAGE; update(); }
+  });
+  if (params.get("focus")) setTimeout(() => input.focus(), 50);
+
+  const fEl = $("#filters"), fBtn = $("#filterBtn");
+  let scrim = null;
+  const openDrawer = open => {
+    fEl.classList.toggle("open", open); fBtn.setAttribute("aria-expanded", open);
+    if (open){ scrim = document.createElement("div"); scrim.className="scrim"; scrim.onclick = () => openDrawer(false); document.body.appendChild(scrim); $("[data-close]", fEl).focus(); }
+    else if (scrim){ scrim.remove(); scrim = null; }
+  };
+  fBtn.onclick = () => openDrawer(true);
+  $$("[data-close]", fEl).forEach(b => b.onclick = () => { openDrawer(false); fBtn.focus(); });
+  fEl.addEventListener("keydown", e => { if (e.key==="Escape" && fEl.classList.contains("open")){ openDrawer(false); fBtn.focus(); } });
+  let showAdvanced = false;
+  fEl.addEventListener("change", e => {
+    const i = e.target; if (!i.dataset.f) return;
+    const set = S.sel[i.dataset.f]; const f = FACETS.find(f=>f.key===i.dataset.f);
+    if (!f.multi) set.clear();
+    i.checked ? set.add(i.value) : set.delete(i.value);
+    S.shown = PAGE; update();
+  });
+  fEl.addEventListener("click", e => { if (e.target.closest(".fmore")){ showAdvanced = !showAdvanced; paintFacets(lastBase); } });
+  $("#sort").onchange = e => { S.sort = e.target.value; S.shown = PAGE; update(); };
+  root.addEventListener("click", e => {
+    const t = e.target.closest("[data-tag]"); if (t){ S.tag = t.dataset.tag; S.shown = PAGE; update(); $("#resline").scrollIntoView({block:"center"}); return; }
+    const a = e.target.closest("[data-rm]"); if (a){ const k = a.dataset.rm, v = a.dataset.v;
+      if (k==="q"){ S.q=""; input.value=""; $(".search-clear", input.parentNode).hidden = true; }
+      else if (k==="tag") S.tag=""; else if (k==="goal") { location.hash = "#/explore"; return; }
+      else if (k==="all"){ S.q=""; S.tag=""; input.value=""; $(".search-clear", input.parentNode).hidden = true; FACETS.forEach(f=>S.sel[f.key].clear()); }
+      else S.sel[k].delete(v);
+      S.shown = PAGE; update(); }
+    if (e.target.closest("#moreBtn")){ S.shown += PAGE; update(true); }
+  });
+
+  let lastBase = [];
+  function passes(x, except){
+    for (const f of facets){ if (f.key===except) continue; const set = S.sel[f.key]; if (set.size && !set.has(String(f.get(x)))) return false; }
+    return true;
+  }
+  function paintFacets(baseList){
+    let h = "";
+    for (const f of facets){
+      if (f.advanced && !showAdvanced && !S.sel[f.key].size) continue;
+      const counts = {}; baseList.forEach(x=>{ if (passes(x,f.key)){ const v = f.get(x); if (v!=null) counts[v]=(counts[v]||0)+1; } });
+      const allVals = [...new Set(scope.map(f.get).filter(v=>v!=null))];
+      if (!allVals.length) continue;
+      const vals = f.key==="cat" ? CATS.map(c=>c.key).filter(k=>allVals.includes(k)) : allVals.sort((a,b)=>(counts[b]||0)-(counts[a]||0));
+      h += `<fieldset class="fgroup"><legend>${f.label}</legend>${vals.map(v=>{ const n = counts[v]||0, on = S.sel[f.key].has(String(v));
+        return `<label class="fopt ${n||on?"":"zero"}"><input type="checkbox" data-f="${f.key}" value="${esc(v)}" ${on?"checked":""}><span>${esc(f.names?.[v]||v)}</span><span class="n mono"><span class="vh">, </span>${n}<span class="vh"> resources</span></span></label>`; }).join("")}</fieldset>`;
+    }
+    if (facets.some(f=>f.advanced)) h += `<button type="button" class="fmore">${showAdvanced ? "Fewer filters" : "More filters (category)"}</button>`;
+    $("#fgroups").innerHTML = h;
+  }
+  function update(keepScroll){
+    // base: scope + goal + tag + query
+    let P = S.q ? prep(S.q) : null;
+    let base = scope;
+    if (g) base = base.filter(g.test);
+    if (S.tag) base = base.filter(x=>x.tags.includes(S.tag));
+    let scored = base.map(x => [x, P ? score(x,P) : 1]).filter(p=>p[1]>0);
+    lastBase = scored.map(p=>p[0]);
+    const scoreOf = new Map(scored);
+    let list = lastBase.filter(x=>passes(x,null));
+    // sort
+    const sortOpts = [[ "", S.q ? "Relevance" : "Curated order" ], ["name","Name (A–Z)"], ["recent","Recently added"], ...(c ? [] : [["cat","Category"]])];
+    if (!sortOpts.some(o=>o[0]===S.sort)) S.sort = "";
+    $("#sort").innerHTML = sortOpts.map(([v,l])=>`<option value="${v}" ${v===S.sort?"selected":""}>${l}</option>`).join("");
+    const catIdx = Object.fromEntries(CATS.map((c,i)=>[c.key,i]));
+    const cmp = {
+      "": S.q ? (a,b)=>scoreOf.get(b)-scoreOf.get(a)||a.name.length-b.name.length||a.order-b.order : (a,b)=>a.order-b.order,
+      name: (a,b)=>a.name.localeCompare(b.name,"en",{sensitivity:"base"}),
+      recent: (a,b)=>(b.added||"").localeCompare(a.added||"")||a.order-b.order,
+      cat: (a,b)=>catIdx[a.cat]-catIdx[b.cat]||a.order-b.order,
+    }[S.sort];
+    list = [...list].sort(cmp);
+    paintFacets(lastBase);
+    // chips
+    const chips = [];
+    if (g) chips.push(["goal","",`Goal: ${g.title}`]);
+    if (S.q) chips.push(["q","",`“${S.q}”`]);
+    if (S.tag) chips.push(["tag","",`#${S.tag}`]);
+    facets.forEach(f => S.sel[f.key].forEach(v => chips.push([f.key, v, f.names?.[v]||v])));
+    const nf = facets.reduce((n,f)=>n+S.sel[f.key].size,0);
+    $("#fcount").textContent = nf ? `(${nf})` : "";
+    $("#resline").innerHTML = `<p class="rescount"><b>${list.length.toLocaleString("en-IN")}</b> ${list.length===1?"resource":"resources"}${chips.length?" for":""}</p>` +
+      chips.map(([k,v,l])=>`<button type="button" class="achip" data-rm="${k}" data-v="${esc(v)}" aria-label="Remove ${esc(l)}">${esc(l)}${icon("x")}</button>`).join("") +
+      (chips.length>1 ? `<button type="button" class="aclear" data-rm="all">Clear all</button>` : "");
+    // results
+    if (!list.length){
+      $("#results").innerHTML = `<div class="empty"><h2>No matches${S.q?` for “${esc(S.q)}”`:""}</h2><p>Try fewer words, a broader term, or remove a filter. These usually help:</p>${popularHTML("Try:")}
+        <p style="margin-top:16px">Still missing? <a href="${REPO}/issues/new?title=${encodeURIComponent("Suggest: " + (S.q||"a resource"))}" target="_blank" rel="noopener">Suggest a resource<span class="vh"> (opens in a new tab)</span></a></p></div>`;
+      $("#more").innerHTML = "";
+    } else {
+      const showCat = !c;
+      $("#results").innerHTML = `<ul class="rlist">${list.slice(0,S.shown).map(x=>row(x,P,showCat)).join("")}</ul>`;
+      const left = list.length - S.shown;
+      $("#more").innerHTML = left > 0 ? `<button type="button" class="btn" id="moreBtn">Show ${Math.min(PAGE,left)} more <span class="muted">(${left} left)</span></button>` : "";
+    }
+    // url
+    const p = new URLSearchParams();
+    if (S.goal) p.set("goal", S.goal); if (S.q) p.set("q", S.q); if (S.tag) p.set("tag", S.tag); if (S.sort) p.set("sort", S.sort);
+    facets.forEach(f => { if (S.sel[f.key].size) p.set(f.key, [...S.sel[f.key]].join(",")); });
+    const s = p.toString();
+    history.replaceState(null, "", location.pathname + location.search + hashBase + (s ? "?" + s : ""));
+  }
+  update();
+}
+
+// ---------- router ----------
+let first = true;
+function route(){
+  const h = location.hash.slice(1) || "/";
+  const [path, qs] = h.split("?");
+  const params = new URLSearchParams(qs || "");
+  const parts = path.split("/").filter(Boolean);
+  const top = parts[0] || "home";
+  $("#nav").classList.remove("open"); $("#menuBtn").setAttribute("aria-expanded","false");
+  $$(".scrim").forEach(s=>s.remove());
+  $$("#nav [data-nav]").forEach(a => a.toggleAttribute("aria-current", false));
+  const navKey = top==="c" ? "categories" : top==="r" ? "" : top;
+  const cur = $(`#nav [data-nav="${navKey}"]`); if (cur) cur.setAttribute("aria-current","page");
+  if (top==="home") viewHome();
+  else if (top==="explore") viewListing(null, params);
+  else if (top==="categories") viewCategories();
+  else if (top==="c") viewListing(parts[1], params);
+  else if (top==="r") viewDetail(decodeURIComponent(parts[1]||""));
+  else if (top==="recent") viewRecent();
+  else if (top==="download") viewDownload();
+  else viewNotFound();
+  if (!first){ window.scrollTo(0,0); if (!params.get("focus")){ const h1 = $("#view h1"); h1 && h1.focus({preventScroll:true}); } }
+  first = false;
+}
+
+// home/detail: tag click goes to explore
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-tag]");
+  if (t && !$(".listing")){ location.hash = "#/explore?tag=" + encodeURIComponent(t.dataset.tag); }
+});
+
+// theme
+function applyThemeBtn(){
+  const dark = document.documentElement.dataset.theme !== "light";
+  const b = $("#themeBtn"); b.innerHTML = icon(dark ? "sun" : "moon");
+  b.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+  $('meta[name="theme-color"]').setAttribute("content", dark ? "#0f1115" : "#f6f7f9");
+}
+$("#themeBtn").addEventListener("click", () => {
+  const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next; try { localStorage.setItem("afe-theme", next); } catch {}
+  applyThemeBtn();
+});
+$("#menuBtn").addEventListener("click", () => {
+  const open = !$("#nav").classList.contains("open");
+  $("#nav").classList.toggle("open", open); $("#menuBtn").setAttribute("aria-expanded", open);
+});
+document.addEventListener("keydown", e => {
+  if (e.key==="/" && !/input|textarea|select/i.test(document.activeElement.tagName)){ const i = $("#view .search input"); if (i){ e.preventDefault(); i.focus(); } }
+  if (e.key==="Escape" && $("#nav").classList.contains("open")){ $("#nav").classList.remove("open"); $("#menuBtn").setAttribute("aria-expanded","false"); $("#menuBtn").focus(); }
+});
+applyThemeBtn();
+
+load().then(() => { window.addEventListener("hashchange", route); route(); })
+  .catch(err => { view().innerHTML = `<div class="wrap loading">Couldn't load the resource list. <a href="data/all_resources.csv">Download the CSV</a> instead.</div>`; console.error(err); });
 })();
