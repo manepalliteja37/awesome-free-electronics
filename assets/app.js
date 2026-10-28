@@ -158,11 +158,44 @@ function sectionFor(tags){
 // ---------- data ----------
 let DATA = [], BYID = {}, NEWEST = "", TOPICS = [];
 
-async function load(){
+const CACHE_KEY = "afe-data-v1";
+async function fetchTexts(){
   const keys = [...CATS.map(c=>c.key), DAILY];
-  const get = (k, tries=3) => fetch(`data/categories/${k}.csv`).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
-    .catch(e => tries > 1 ? new Promise(res => setTimeout(res, 400)).then(() => get(k, tries-1)) : "");
-  const texts = await Promise.all(keys.map(k => get(k)));
+  try {
+    const r = await fetch("data/resources.json", {cache:"no-cache"});
+    if (!r.ok) throw new Error(r.status);
+    const j = await r.json();
+    return { v: j.v, files: j.files };
+  } catch (e) {
+    const get = (k, tries=3) => fetch(`data/categories/${k}.csv`).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .catch(err => tries > 1 ? new Promise(res => setTimeout(res, 400)).then(() => get(k, tries-1)) : "");
+    const texts = await Promise.all(keys.map(k => get(k)));
+    const files = {}; keys.forEach((k,i) => files[k] = texts[i]);
+    return { v: "csv", files };
+  }
+}
+function readCache(){ try { const c = JSON.parse(localStorage.getItem(CACHE_KEY)); return c && c.files ? c : null; } catch { return null; } }
+function writeCache(d){ try { localStorage.setItem(CACHE_KEY, JSON.stringify(d)); } catch {} }
+let DATA_V = "";
+async function load(){
+  const cached = readCache();
+  const meta = document.querySelector('meta[name="data-version"]');
+  const pageV = meta ? meta.content : "";
+  if (cached){
+    build(cached.files); DATA_V = cached.v;
+    if (!pageV || cached.v !== pageV){   // refresh quietly in the background
+      fetchTexts().then(d => { if (d.v !== DATA_V){ if (d.v !== "csv") writeCache(d); build(d.files); DATA_V = d.v; route(); } }).catch(()=>{});
+    }
+    return;
+  }
+  const d = await fetchTexts();
+  if (d.v !== "csv") writeCache(d);
+  build(d.files); DATA_V = d.v;
+}
+function build(files){
+  const keys = [...CATS.map(c=>c.key), DAILY];
+  const texts = keys.map(k => files[k] || "");
+  for (const k in BYID) delete BYID[k];
   const byUrl = new Map(), ids = new Set();
   let order = 0;
   texts.forEach((txt,i)=>{
