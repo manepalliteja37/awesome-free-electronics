@@ -7,17 +7,17 @@
 const REPO = "https://github.com/manepalliteja37/awesome-free-electronics";
 
 const CATS = [
-  {key:"basics_analog", name:"Basics & Analog", icon:"wave", h:205, desc:"Circuit fundamentals, components, op-amps, filters and analog simulation."},
-  {key:"digital_fpga_vlsi", name:"Digital, FPGA & VLSI", icon:"chip", h:22, desc:"Logic design, Verilog and VHDL, FPGA toolchains and open-source chip design."},
-  {key:"pcb", name:"PCB Design", icon:"board", h:145, desc:"Schematic capture, board layout, Gerber viewers, footprints and manufacturing prep."},
-  {key:"embedded_iot", name:"Embedded & IoT", icon:"cpu", h:42, desc:"Microcontrollers, Arduino, ESP32, STM32, RTOS, firmware and connected devices."},
-  {key:"robotics_plc", name:"Robotics, PLC & Drones", icon:"robot", h:2, desc:"Robot software, motor control, industrial PLC programming and drone flight stacks."},
-  {key:"rf_dsp", name:"RF, SDR & DSP", icon:"antenna", h:178, desc:"Antennas, software-defined radio, wireless protocols and signal processing."},
-  {key:"power_energy_test", name:"Power, Solar & Test", icon:"bolt", h:225, desc:"Converters, batteries, solar and EV systems, plus test and measurement tools."},
-  {key:"other_fields", name:"Semiconductors, Audio, Bio & TinyML", icon:"atom", h:275, desc:"Device physics, audio electronics, biomedical circuits and machine learning on microcontrollers."},
-  {key:"calculators", name:"Calculators & Reference", icon:"calc", h:200, desc:"Resistor, LED, filter, trace-width and other calculators, plus quick-reference sheets."},
-  {key:"community_assets", name:"Community Projects & Free Assets", icon:"box", h:330, desc:"Open hardware projects, 3D models, symbol libraries and community hubs."},
-  {key:"community_ai", name:"Channels, Courses, Blogs & AI Tools", icon:"play", h:48, desc:"YouTube channels, free courses, in-depth blogs and AI-built learning tools."},
+  {key:"basics_analog", name:"Basics & Analog", icon:"wave", h:212, s:75, desc:"Circuit fundamentals, components, op-amps, filters and analog simulation."},
+  {key:"digital_fpga_vlsi", name:"Digital, FPGA & VLSI", icon:"chip", h:22, s:85, desc:"Logic design, Verilog and VHDL, FPGA toolchains and open-source chip design."},
+  {key:"pcb", name:"PCB Design", icon:"board", h:145, s:60, desc:"Schematic capture, board layout, Gerber viewers, footprints and manufacturing prep."},
+  {key:"embedded_iot", name:"Embedded & IoT", icon:"cpu", h:48, s:85, desc:"Microcontrollers, Arduino, ESP32, STM32, RTOS, firmware and connected devices."},
+  {key:"robotics_plc", name:"Robotics, PLC & Drones", icon:"robot", h:355, s:70, desc:"Robot software, motor control, industrial PLC programming and drone flight stacks."},
+  {key:"rf_dsp", name:"RF, SDR & DSP", icon:"antenna", h:180, s:65, desc:"Antennas, software-defined radio, wireless protocols and signal processing."},
+  {key:"power_energy_test", name:"Power, Solar & Test", icon:"bolt", h:235, s:70, desc:"Converters, batteries, solar and EV systems, plus test and measurement tools."},
+  {key:"other_fields", name:"Semiconductors, Audio, Bio & TinyML", icon:"atom", h:282, s:60, desc:"Device physics, audio electronics, biomedical circuits and machine learning on microcontrollers."},
+  {key:"calculators", name:"Calculators & Reference", icon:"calc", h:205, s:32, desc:"Resistor, LED, filter, trace-width and other calculators, plus quick-reference sheets."},
+  {key:"community_assets", name:"Community Projects & Free Assets", icon:"box", h:328, s:65, desc:"Open hardware projects, 3D models, symbol libraries and community hubs."},
+  {key:"community_ai", name:"Channels, Courses, Blogs & AI Tools", icon:"play", h:72, s:55, desc:"YouTube channels, free courses, in-depth blogs and AI-built learning tools."},
 ];
 const CAT = Object.fromEntries(CATS.map(c => [c.key, c]));
 const DAILY = "daily_additions";
@@ -31,29 +31,29 @@ const LIC = {oss:"Open source", closed:"Free, closed-source", content:"Free lear
 
 const has = (x, arr) => arr.some(t => x.tags.includes(t));
 const GOALS = [
-  {key:"basics", title:"Learn electronics basics", text:"Understand components, circuits, voltage and current.", icon:"book", h:205,
+  {key:"basics", title:"Learn electronics basics", text:"Understand components, circuits, voltage and current.", icon:"book", h:212,
     test:x => has(x,["basics","beginner","fundamentals"]) || (x.cat==="basics_analog" && CONTENT_TYPES.includes(x.type))},
-  {key:"simulate", title:"Simulate a circuit", text:"Test circuits without buying a single component.", icon:"scope", h:160,
+  {key:"simulate", title:"Simulate a circuit", text:"Test circuits without buying a single component.", icon:"scope", h:265,
     test:x => has(x,["simulator","spice"]) || /simulat/.test(x.tagsL)},
   {key:"pcb", title:"Design a PCB", text:"Draw schematics, lay out boards and export manufacturing files.", icon:"board", h:145,
     test:x => x.cat==="pcb" || has(x,["pcb"])},
-  {key:"arduino", title:"Build Arduino projects", text:"Microcontrollers, sensors and DIY builds.", icon:"cpu", h:42,
+  {key:"arduino", title:"Build Arduino projects", text:"Microcontrollers, sensors and DIY builds.", icon:"cpu", h:185,
     test:x => /\b(arduino|esp32|esp8266|microcontrollers?|avr|attiny|rp2040)\b/.test(x.hay)},
-  {key:"embedded", title:"Learn embedded systems", text:"Firmware, RTOS, debuggers and development tools.", icon:"wifi", h:35,
+  {key:"embedded", title:"Learn embedded systems", text:"Firmware, RTOS, debuggers and development tools.", icon:"wifi", h:48,
     test:x => x.cat==="embedded_iot" || has(x,["embedded","firmware","rtos"])},
   {key:"fpga", title:"Explore FPGA and digital logic", text:"Digital design, HDL and programmable logic.", icon:"chip", h:22,
     test:x => x.cat==="digital_fpga_vlsi" || has(x,["fpga","vlsi","verilog","vhdl","digital-electronics"])},
-  {key:"robots", title:"Build robots", text:"Robotics, automation, PLCs, drones and motor control.", icon:"robot", h:2,
+  {key:"robots", title:"Build robots", text:"Robotics, automation, PLCs, drones and motor control.", icon:"robot", h:355,
     test:x => x.cat==="robotics_plc" || has(x,["robotics","drone","plc","ros","motor-control"])},
-  {key:"rf", title:"Work with RF and wireless", text:"Antennas, SDR, LoRa and wireless communication.", icon:"antenna", h:178,
+  {key:"rf", title:"Work with RF and wireless", text:"Antennas, SDR, LoRa and wireless communication.", icon:"antenna", h:165,
     test:x => x.cat==="rf_dsp" || has(x,["rf","sdr","lora","antenna","wireless"])},
   {key:"calc", title:"Find electronics calculators", text:"Resistor values, LED current, filters and more.", icon:"calc", h:200,
     test:x => x.type==="Calculator" || x.cat==="calculators"},
-  {key:"learn", title:"Learn from videos and courses", text:"Free courses, YouTube channels, books and deep blogs.", icon:"play", h:48,
+  {key:"learn", title:"Learn from videos and courses", text:"Free courses, YouTube channels, books and deep blogs.", icon:"play", h:72,
     test:x => ["Course","Video channel","Blog","Book"].includes(x.type)},
-  {key:"power", title:"Explore power electronics", text:"Converters, solar, batteries and power systems.", icon:"bolt", h:225,
+  {key:"power", title:"Explore power electronics", text:"Converters, solar, batteries and power systems.", icon:"bolt", h:235,
     test:x => x.cat==="power_energy_test" || has(x,["power-electronics","solar","battery"])},
-  {key:"ai", title:"Discover AI electronics tools", text:"AI-built and AI-assisted tools for learning and design.", icon:"spark", h:265,
+  {key:"ai", title:"Discover AI electronics tools", text:"AI-built and AI-assisted tools for learning and design.", icon:"spark", h:295,
     test:x => has(x,["ai-built-tool","ai","llm","machine-learning"]) || /\bai\b/.test(x.tagsL)},
 ];
 const GOAL = Object.fromEntries(GOALS.map(g => [g.key, g]));
@@ -61,6 +61,21 @@ const POPULAR = ["KiCad","Arduino","circuit simulator","LED resistor","Verilog",
 const PICKS = ["falstad","kicad","ngspice","wokwi","logisim","verilator","gnu radio","freecodecamp","qucs","digital","fritzing","openscad"];
 const TOPIC_PHRASES = ["circuit simulator","online circuit simulator","led resistor calculator","pcb design","arduino tutorial","arduino simulator",
   "verilog simulator","fpga toolchain","oscilloscope software","free electronics course","op-amp","555 timer","smith chart","lora","esp32","stm32","solar","battery management","motor control","spice"];
+
+// "Good for" lines are derived only from each resource's curated tags (never invented)
+const GOOD_FOR = [["beginner","Beginners getting started"],["basics","Learning the fundamentals"],["simulator","Simulating circuits before you build them"],
+  ["spice","SPICE analysis: DC, AC and transient"],["schematic","Drawing schematics"],["layout","Laying out circuit boards"],["pcb","PCB design and manufacturing prep"],
+  ["gerber","Viewing or exporting Gerber files"],["eda","Schematic capture and board layout (EDA)"],["cad","Mechanical and electronics CAD"],["library","Ready-made component libraries"],["footprints","Component footprints"],["calculator","Quick component and circuit calculations"],["resistor","Working out resistor values"],
+  ["filter","Designing filters"],["op-amp","Op-amp circuits"],["verilog","Writing and simulating Verilog"],["vhdl","Writing and simulating VHDL"],
+  ["fpga","FPGA development"],["vlsi","Chip (VLSI) design"],["asic","ASIC design flows"],["arduino","Arduino projects"],["esp32","ESP32 projects"],
+  ["stm32","STM32 development"],["rtos","Real-time firmware (RTOS)"],["embedded","Embedded systems work"],["firmware","Writing firmware"],["python","Electronics with Python"],["rust","Embedded Rust"],["communication","Communication systems"],["semiconductor","Semiconductor devices"],["audio","Audio electronics"],["iot","IoT and connected devices"],
+  ["robotics","Robotics projects"],["plc","PLC and industrial automation"],["drone","Drones and flight controllers"],["motor-control","Motor control"],
+  ["sdr","Software-defined radio experiments"],["rf","RF design"],["antenna","Antenna design"],["dsp","Signal processing"],["oscilloscope","Viewing and measuring signals"],
+  ["test-measurement","Test and measurement"],["power-electronics","Power electronics"],["solar","Solar and renewable energy"],["battery","Battery systems"],
+  ["3d-models","Free 3D models for boards and enclosures"],["ai-built-tool","AI-assisted learning or design"],["course","Structured lessons you can follow"],
+  ["youtube","Learning by watching video tutorials"],["blog","In-depth written tutorials"],["book","Reading a free textbook"],["pbl-project","Hands-on project-based learning"],
+  ["browser","Working without installing anything"],["open-hardware","Studying real open hardware designs"]];
+const goodFor = x => { const out = GOOD_FOR.filter(([t]) => x.tags.includes(t)).map(g=>g[1]); if (x.web && !out.includes(GOOD_FOR.find(g=>g[0]==="browser")[1])) out.push("Working without installing anything"); return out.slice(0,6); };
 
 // natural-language search: stop words and synonyms
 const STOP = new Set("a an the i im i'm to how can could do does want wanna would like find get for of with my me and or in on is are was be using use some best good great free from scratch learn learning about what which where who tool tools resource resources make build building need help please any that this it you your".split(" "));
@@ -92,7 +107,12 @@ const $ = (s, r=document) => r.querySelector(s);
 const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const icon = (n, cls="") => `<svg class="${cls}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
-const ico = (n, h, cls="") => `<span class="ico ${cls}" style="--h:${h}">${icon(n)}</span>`;
+const ico = (n, h, cls="", sat=60) => `<span class="ico ${cls}" style="--h:${h};--s:${sat}%">${icon(n)}</span>`;
+const cico = (c, cls="") => ico(c.icon, c.h, cls, c.s);
+const hostname = u => { try { return new URL(u).hostname.replace(/^www\./,""); } catch { return ""; } };
+const fav = (x, cls="") => { const c = CAT[x.cat], hn = hostname(x.url);
+  return `<span class="ico fav ${cls}" style="--h:${c.h};--s:${c.s}%">${icon(c.icon)}${hn?`<img src="https://icons.duckduckgo.com/ip3/${esc(hn)}.ico" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`:""}</span>`; };
+const catStyle = c => `--h:${c.h};--s:${c.s}%`;
 const host = u => { try { const x = new URL(u); return (x.hostname.replace(/^www\./,"") + x.pathname).replace(/\/+$/,""); } catch { return u; } };
 const normUrl = u => u.toLowerCase().replace(/^https?:\/\//,"").replace(/^www\./,"").replace(/\/+$/,"");
 const fmtDate = d => new Date(d + "T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
@@ -229,7 +249,7 @@ function labels(x, showCat){
   h += `<span class="lbl ${x.lic==="oss"?"oss":x.lic==="closed"?"closed":""}" title="${x.lic==="closed"?"Free to use, but the source code isn't open":""}">${LIC[x.lic]}</span>`;
   if (x.web) h += `<span class="lbl">Runs in browser</span>`;
   if (x.isNew) h += `<span class="lbl new" title="Added ${esc(x.added)}">New</span>`;
-  if (showCat) h += `<a class="lbl cat-l" href="#/c/${x.cat}">${esc(CAT[x.cat].name)}</a>`;
+  if (showCat) h += `<a class="lbl cat-l" style="${catStyle(CAT[x.cat])}" href="#/c/${x.cat}">${esc(CAT[x.cat].name)}</a>`;
   return h;
 }
 const SKIP_TAGS = /proprietary|^open-source$|^tool$|^simulator$|^calculator$|^course$|^youtube$|^blog$|^book$|^pbl-project$|^ai-built-tool$|^library$|^reference$|^community$/;
@@ -237,7 +257,7 @@ const tagBtns = (x, n=4) => x.tags.filter(t=>!SKIP_TAGS.test(t)).slice(0,n).map(
 function card(x){
   const c = CAT[x.cat];
   return `<article class="rcard">
-    <div class="rc-top">${ico(c.icon,c.h,"sm")}<div class="rc-title"><h3><a href="#/r/${x.id}">${esc(x.name)}</a></h3><span class="host">${esc(host(x.url))}</span></div>
+    <div class="rc-top">${fav(x,"sm")}<div class="rc-title"><h3><a href="#/r/${x.id}" data-detail="${x.id}">${esc(x.name)}</a></h3><span class="host">${esc(host(x.url))}</span></div>
     <a class="ext" href="${esc(x.url)}" ${EXT(x.name)}>${icon("ext")}</a></div>
     <p class="rdesc">${esc(x.desc)}</p>
     <div class="labels">${labels(x,true)}</div>
@@ -245,12 +265,12 @@ function card(x){
 }
 function row(x, P, showCat){
   const c = CAT[x.cat];
-  return `<li class="rrow">${ico(c.icon,c.h,"sm")}<div class="body">
-    <div class="head"><h3><a href="#/r/${x.id}">${hl(x.name,P)}</a></h3><span class="host">${esc(host(x.url))}</span></div>
+  return `<li class="rrow">${fav(x,"sm")}<div class="body">
+    <div class="head"><h3><a href="#/r/${x.id}" data-detail="${x.id}">${hl(x.name,P)}</a></h3><span class="host">${esc(host(x.url))}</span></div>
     <p class="rdesc">${hl(x.desc,P)}</p>
     <div class="labels">${labels(x,showCat)}</div>
     <div class="tags">${tagBtns(x)}</div></div>
-    <a class="ext" href="${esc(x.url)}" ${EXT(x.name)}>${icon("ext")}</a></li>`;
+    <div class="row-act"><a class="ext" href="${esc(x.url)}" ${EXT(x.name)}>${icon("ext")}</a><a class="dbtn" href="#/r/${x.id}" data-detail="${x.id}">Details</a></li>`;
 }
 function dayGroups(limitDays){
   const days = {}; DATA.filter(x=>x.added).forEach(x=>(days[x.added] ||= []).push(x));
@@ -263,7 +283,7 @@ function recentHTML(limitDays, perDay){
   return `<div class="recent">${dates.map(d=>{
     const list = perDay ? days[d].slice(0,perDay) : days[d];
     return `<div class="rday"><div class="rday-h"><b>${fmtDate(d)}</b>${plural(days[d].length,"resource")} added</div><ul>${
-      list.map(x=>`<li><a href="#/r/${x.id}">${esc(x.name)}</a><span class="c">${esc(CAT[x.cat].name)}</span><p>${esc(x.desc)}</p></li>`).join("")}${
+      list.map(x=>`<li><a href="#/r/${x.id}" data-detail="${x.id}">${esc(x.name)}</a><span class="c" style="${catStyle(CAT[x.cat])}">${esc(CAT[x.cat].name)}</span><p>${esc(x.desc)}</p></li>`).join("")}${
       perDay && days[d].length>perDay ? `<li><a class="link-more" href="#/recent">+${days[d].length-perDay} more from this day</a></li>` : ""}</ul></div>`;
   }).join("")}</div>`;
 }
@@ -371,12 +391,12 @@ function viewHome(){
   <section class="section" aria-labelledby="goals-h"><div class="wrap">
     <div class="sec-h"><div><h2 id="goals-h">Start with your goal</h2><p>No need to know the jargon. Pick what you want to do.</p></div></div>
     <div class="goals">${GOALS.map(g=>{ const n = DATA.filter(g.test).length;
-      return `<a class="goal" href="#/explore?goal=${g.key}">${ico(g.icon,g.h)}<div><h3>${esc(g.title)}</h3><p>${esc(g.text)}</p><span class="count mono">${n} resources</span></div></a>`; }).join("")}</div>
+      return `<a class="goal" href="#/explore?goal=${g.key}" style="--h:${g.h};--s:65%">${ico(g.icon,g.h,"",65)}<div><h3>${esc(g.title)}</h3><p>${esc(g.text)}</p><span class="count mono">${n} resources</span></div></a>`; }).join("")}</div>
   </div></section>
 
   <section class="section" aria-labelledby="cat-h"><div class="wrap">
     <div class="sec-h"><div><h2 id="cat-h">Browse by category</h2><p>The full collection, organised the way engineers think about it.</p></div><a class="link-more" href="#/categories">All categories ${icon("arrow")}</a></div>
-    <div class="cats">${CATS.map(c=>`<a class="cat" href="#/c/${c.key}">${ico(c.icon,c.h)}<h3>${esc(c.name)}</h3><span class="count mono">${counts[c.key]||0} resources</span></a>`).join("")}</div>
+    <div class="cats">${CATS.map(c=>`<a class="cat" href="#/c/${c.key}" style="${catStyle(c)}">${cico(c)}<h3>${esc(c.name)}</h3><span class="count mono">${counts[c.key]||0} resources</span></a>`).join("")}</div>
   </div></section>
 
   ${picks.length ? `<section class="section" aria-labelledby="picks-h"><div class="wrap">
@@ -399,7 +419,7 @@ function viewCategories(){
   view().innerHTML = `<div class="wrap page-top">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span><span aria-current="page">Categories</span></nav>
     <div class="page-head"><div><h1 tabindex="-1">All categories</h1><p>Eleven categories covering ${DATA.length.toLocaleString("en-IN")} free resources. Not sure where to look? <a href="#/">Start with your goal</a> instead.</p></div></div>
-    <div class="cats cats-lg">${CATS.map(c=>`<a class="cat" href="#/c/${c.key}">${ico(c.icon,c.h)}<h3>${esc(c.name)}</h3><p>${esc(c.desc)}</p><span class="count mono">${counts[c.key]||0} resources</span></a>`).join("")}</div>
+    <div class="cats cats-lg">${CATS.map(c=>`<a class="cat" href="#/c/${c.key}" style="${catStyle(c)}">${cico(c)}<h3>${esc(c.name)}</h3><p>${esc(c.desc)}</p><span class="count mono">${counts[c.key]||0} resources</span></a>`).join("")}</div>
   </div>`;
 }
 
@@ -422,34 +442,55 @@ function viewDownload(){
   </div>`;
 }
 
+function relatedOf(x){
+  return DATA.filter(o => o!==x && o.cat===x.cat).map(o => [o, o.tags.filter(t=>x.tags.includes(t) && !SKIP_TAGS.test(t)).length]).filter(p=>p[1]>0)
+    .sort((a,b)=>b[1]-a[1]).slice(0,4).map(p=>p[0]);
+}
+function detailBody(x, inDialog){
+  const c = CAT[x.cat], gf = goodFor(x), rel = relatedOf(x), H = inDialog ? "h2" : "h1";
+  return `<div class="d-head">${fav(x,"lg")}<div class="d-title"><${H} ${inDialog?'id="dlg-title"':'tabindex="-1"'}>${esc(x.name)}</${H}><a class="host" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(host(x.url))}<span class="vh"> (opens in a new tab)</span></a>
+      <div class="labels">${labels(x,true)}</div></div>
+      <a class="btn btn-primary d-open" href="${esc(x.url)}" target="_blank" rel="noopener">Open website ${icon("ext")}<span class="vh"> (opens in a new tab)</span></a></div>
+    <p class="d-desc">${esc(x.desc)}</p>
+    ${gf.length ? `<h3 class="d-sub">Good for</h3><ul class="goodfor">${gf.map(t=>`<li>${icon("check")}${esc(t)}</li>`).join("")}</ul>` : ""}
+    <h3 class="d-sub">At a glance</h3>
+    <dl class="facts">
+      <div><dt>Type</dt><dd>${esc(x.type)}</dd></div>
+      <div><dt>Category</dt><dd><a href="#/c/${c.key}">${esc(c.name)}</a></dd></div>
+      <div><dt>Licence</dt><dd>${LIC[x.lic]}</dd></div>
+      <div><dt>Access</dt><dd>${x.web ? "Runs in the browser" : "See the project's site"}</dd></div>
+      ${x.level ? `<div><dt>Level</dt><dd>${x.level}</dd></div>` : ""}
+      ${x.added ? `<div><dt>Added</dt><dd>${fmtDate(x.added)}</dd></div>` : ""}
+    </dl>
+    <div class="tags">${x.tags.filter(t=>!/proprietary/.test(t)).map(t=>`<button type="button" class="tag" data-tag="${esc(t)}">#${esc(t)}</button>`).join("")}</div>
+    ${rel.length ? `<h3 class="d-sub">Similar in ${esc(c.name)}</h3><ul class="mini">${rel.map(o=>`<li><a href="#/r/${o.id}" data-detail="${o.id}">${fav(o,"sm")}<span><b>${esc(o.name)}</b><span>${esc(o.desc)}</span></span></a></li>`).join("")}</ul>` : ""}
+    <p class="d-note">From the curated list. Something wrong or out of date? <a href="${REPO}/issues/new?title=${encodeURIComponent("Fix: " + x.name)}" target="_blank" rel="noopener">Report it on GitHub<span class="vh"> (opens in a new tab)</span></a>.</p>`;
+}
 function viewDetail(id){
   const x = BYID[id];
   if (!x){ return viewNotFound(); }
   const c = CAT[x.cat];
   setTitle(x.name);
-  const related = DATA.filter(o => o!==x && o.cat===x.cat).map(o => [o, o.tags.filter(t=>x.tags.includes(t) && !SKIP_TAGS.test(t)).length]).filter(p=>p[1]>0)
-    .sort((a,b)=>b[1]-a[1]).slice(0,5).map(p=>p[0]);
   view().innerHTML = `<div class="wrap page-top">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span><a href="#/c/${c.key}">${esc(c.name)}</a><span aria-hidden="true">›</span><span aria-current="page">${esc(x.name)}</span></nav>
-    <div class="detail"><article class="dcard">
-      <div class="d-head">${ico(c.icon,c.h)}<div><h1 tabindex="-1">${esc(x.name)}</h1><span class="host">${esc(host(x.url))}</span></div></div>
-      <p class="d-desc">${esc(x.desc)}</p>
-      <dl class="facts">
-        <div><dt>Type</dt><dd>${esc(x.type)}</dd></div>
-        <div><dt>Category</dt><dd><a href="#/c/${c.key}">${esc(c.name)}</a></dd></div>
-        <div><dt>Licence</dt><dd>${LIC[x.lic]}</dd></div>
-        <div><dt>Access</dt><dd>${x.web ? "Runs in the browser" : "See the project's site"}</dd></div>
-        ${x.added ? `<div><dt>Added</dt><dd>${fmtDate(x.added)}</dd></div>` : ""}
-      </dl>
-      <div class="tags">${x.tags.filter(t=>!/proprietary/.test(t)).map(t=>`<button type="button" class="tag" data-tag="${esc(t)}">#${esc(t)}</button>`).join("")}</div>
-      <div class="d-actions">
-        <a class="btn btn-primary" href="${esc(x.url)}" target="_blank" rel="noopener">Open website ${icon("ext")}<span class="vh"> (opens in a new tab)</span></a>
-        <a class="btn" href="#/c/${c.key}">${icon("back")} More in ${esc(c.name)}</a>
-      </div>
-      <p class="d-note">Details come from the curated list. Something wrong or out of date? <a href="${REPO}/issues/new?title=${encodeURIComponent("Fix: " + x.name)}" target="_blank" rel="noopener">Report it on GitHub<span class="vh"> (opens in a new tab)</span></a>.</p>
-    </article>
-    ${related.length ? `<aside class="aside" aria-labelledby="rel-h"><h2 id="rel-h">Similar resources</h2><ul class="mini">${related.map(o=>`<li><a href="#/r/${o.id}"><b>${esc(o.name)}</b><span>${esc(o.desc)}</span></a></li>`).join("")}</ul></aside>` : ""}
-    </div></div>`;
+    <a class="back" href="#/c/${c.key}">${icon("back")} Back to ${esc(c.name)}</a>
+    <article class="dcard detail-page" style="${catStyle(c)}">${detailBody(x,false)}</article></div>`;
+}
+
+// details card (dialog) opened from any list
+let dlg;
+function openDetail(id){
+  const x = BYID[id]; if (!x) return;
+  if (!dlg){
+    dlg = document.createElement("dialog"); dlg.className = "dlg"; dlg.setAttribute("aria-labelledby","dlg-title");
+    document.body.appendChild(dlg);
+    dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+  }
+  dlg.style.cssText = catStyle(CAT[x.cat]);
+  dlg.innerHTML = `<div class="dlg-in"><div class="dlg-bar"><a class="dlg-full" href="#/r/${x.id}">Open as page</a><button type="button" class="icon-btn" data-dlg-close aria-label="Close details">${icon("x")}</button></div>${detailBody(x,true)}</div>`;
+  $("[data-dlg-close]", dlg).onclick = () => dlg.close();
+  if (!dlg.open) dlg.showModal();
+  dlg.scrollTop = 0; $(".dlg-in", dlg).scrollTop = 0;
 }
 
 function viewNotFound(){
@@ -483,7 +524,7 @@ function viewListing(catKey, params){
 
   view().innerHTML = `<div class="wrap page-top">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">›</span>${c?`<a href="#/categories">Categories</a><span aria-hidden="true">›</span>`:""}<span aria-current="page">${esc(title)}</span></nav>
-    <div class="page-head">${c?ico(c.icon,c.h):g?ico(g.icon,g.h):""}<div><h1 tabindex="-1">${esc(title)}</h1>
+    <div class="page-head ${c?"tinted":""}" ${c?`style="${catStyle(c)}"`:""}>${c?cico(c):g?ico(g.icon,g.h):""}<div><h1 tabindex="-1">${esc(title)}</h1>
       <p>${c ? esc(c.desc) + ` <span class="mono muted">${scope.length} resources</span>` : g ? esc(g.text) : "Search and filter the whole collection. Plain-English questions work too, like “test a circuit online” or “calculate a resistor for an LED”."}</p></div></div>
     ${topicChips.length ? `<div class="topics" aria-label="Popular topics in this category">${topicChips.map(t=>`<button type="button" class="chip" data-tag="${esc(t)}">${esc(t)}</button>`).join("")}</div>` : ""}
     <div class="listing">
@@ -644,9 +685,13 @@ function route(){
 
 // home/detail: tag click goes to explore
 document.addEventListener("click", e => {
+  const d = e.target.closest("a[data-detail]");
+  if (d && !(e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1)){ e.preventDefault(); openDetail(d.dataset.detail); return; }
   const t = e.target.closest("[data-tag]");
-  if (t && !$(".listing")){ location.hash = "#/explore?tag=" + encodeURIComponent(t.dataset.tag); }
+  const inDlg = dlg && dlg.contains(t);
+  if (t && (inDlg || !$(".listing"))){ if (inDlg) dlg.close(); location.hash = "#/explore?tag=" + encodeURIComponent(t.dataset.tag); }
 });
+window.addEventListener("hashchange", () => { if (dlg && dlg.open) dlg.close(); });
 
 // theme
 function applyThemeBtn(){
