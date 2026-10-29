@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-730-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-740-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (30)
+- [🆕 Latest Additions](#latest-additions) (40)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -835,6 +835,16 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [TraceMaker router benchmark (PUNKFAB)](https://punkfab.com/blog/tracemaker-router/) | Practical benchmark write-up of TraceMaker, a new open-source C++/CUDA KiCad autorouter, against a commercial router. | `pcb` `blog` `open-source` `added 2026-10-28` |
 | [OSHWA Open Source Hardware Definition](https://www.oshwa.org/definition/) | The community definition of open source hardware that underpins OSHWA certification. | `open-hardware` `pcb` `community` `open-source` `added 2026-10-28` |
 | [Seeed OPL KiCad Library](https://github.com/Seeed-Studio/OPL_Kicad_Library) | Seeed Studio's open parts library of KiCad symbols and footprints for parts stocked in its fabrication service. | `pcb` `3d-models` `open-source` `added 2026-10-28` |
+| [TinyGo](https://github.com/tinygo-org/tinygo) | Go compiler for microcontrollers and WebAssembly supporting many boards. | `embedded` `tool` `open-source` `added 2026-10-29` |
+| [TinyUSB](https://github.com/hathach/tinyusb) | Open-source cross-platform USB host/device stack for embedded systems. | `embedded` `tool` `open-source` `added 2026-10-29` |
+| [probe-rs](https://github.com/probe-rs/probe-rs) | Rust-based debugging and flashing toolkit for ARM and RISC-V targets. | `embedded` `tool` `open-source` `added 2026-10-29` |
+| [CMSIS 6](https://github.com/ARM-software/CMSIS_6) | Arm's open vendor-independent software interface for Cortex-M microcontrollers. | `embedded` `tool` `open-source` `added 2026-10-29` |
+| [Unity Test](https://github.com/ThrowTheSwitch/Unity) | Lightweight C unit-testing framework designed for embedded firmware. | `embedded` `tool` `open-source` `added 2026-10-29` |
+| [OpenThread](https://github.com/openthread/openthread) | Open-source implementation of the Thread mesh networking protocol. | `iot` `tool` `open-source` `added 2026-10-29` |
+| [matter.js](https://github.com/matter-js/matter.js) | TypeScript implementation of the Matter smart-home protocol. | `iot` `tool` `open-source` `added 2026-10-29` |
+| [mruby](https://github.com/mruby/mruby) | Lightweight embeddable Ruby for resource-constrained devices. | `embedded` `tool` `open-source` `added 2026-10-29` |
+| [BasicMAC LoRaWAN](https://github.com/lorabasics/basicmac) | Open LoRaWAN MAC stack for microcontroller end nodes. | `iot` `tool` `open-source` `added 2026-10-29` |
+| [Mbed OS](https://github.com/ARMmbed/mbed-os) | Open-source embedded OS for connected Arm Cortex-M devices. | `embedded` `iot` `tool` `open-source` `added 2026-10-29` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -849,4 +859,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-10-28.</sub>
+<sub>Last generated 2026-10-29.</sub>

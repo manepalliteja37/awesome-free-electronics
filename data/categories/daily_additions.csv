@@ -29,3 +29,13 @@ https://forum.kicad.info/t/stripforge-0-2-0-beta-stripboard-layout-inside-kicad-
 https://punkfab.com/blog/tracemaker-router/,TraceMaker router benchmark (PUNKFAB),pcb;blog;open-source;added 2026-10-28,"Practical benchmark write-up of TraceMaker, a new open-source C++/CUDA KiCad autorouter, against a commercial router."
 https://www.oshwa.org/definition/,OSHWA Open Source Hardware Definition,open-hardware;pcb;community;open-source;added 2026-10-28,The community definition of open source hardware that underpins OSHWA certification.
 https://github.com/Seeed-Studio/OPL_Kicad_Library,Seeed OPL KiCad Library,pcb;3d-models;open-source;added 2026-10-28,Seeed Studio's open parts library of KiCad symbols and footprints for parts stocked in its fabrication service.
+https://github.com/tinygo-org/tinygo,TinyGo,embedded;tool;open-source;added 2026-10-29,Go compiler for microcontrollers and WebAssembly supporting many boards.
+https://github.com/hathach/tinyusb,TinyUSB,embedded;tool;open-source;added 2026-10-29,Open-source cross-platform USB host/device stack for embedded systems.
+https://github.com/probe-rs/probe-rs,probe-rs,embedded;tool;open-source;added 2026-10-29,Rust-based debugging and flashing toolkit for ARM and RISC-V targets.
+https://github.com/ARM-software/CMSIS_6,CMSIS 6,embedded;tool;open-source;added 2026-10-29,Arm's open vendor-independent software interface for Cortex-M microcontrollers.
+https://github.com/ThrowTheSwitch/Unity,Unity Test,embedded;tool;open-source;added 2026-10-29,Lightweight C unit-testing framework designed for embedded firmware.
+https://github.com/openthread/openthread,OpenThread,iot;tool;open-source;added 2026-10-29,Open-source implementation of the Thread mesh networking protocol.
+https://github.com/matter-js/matter.js,matter.js,iot;tool;open-source;added 2026-10-29,TypeScript implementation of the Matter smart-home protocol.
+https://github.com/mruby/mruby,mruby,embedded;tool;open-source;added 2026-10-29,Lightweight embeddable Ruby for resource-constrained devices.
+https://github.com/lorabasics/basicmac,BasicMAC LoRaWAN,iot;tool;open-source;added 2026-10-29,Open LoRaWAN MAC stack for microcontroller end nodes.
+https://github.com/ARMmbed/mbed-os,Mbed OS,embedded;iot;tool;open-source;added 2026-10-29,Open-source embedded OS for connected Arm Cortex-M devices.
