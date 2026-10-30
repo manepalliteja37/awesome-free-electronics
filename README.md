@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-740-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-751-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (40)
+- [🆕 Latest Additions](#latest-additions) (51)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -845,6 +845,17 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [mruby](https://github.com/mruby/mruby) | Lightweight embeddable Ruby for resource-constrained devices. | `embedded` `tool` `open-source` `added 2026-10-29` |
 | [BasicMAC LoRaWAN](https://github.com/lorabasics/basicmac) | Open LoRaWAN MAC stack for microcontroller end nodes. | `iot` `tool` `open-source` `added 2026-10-29` |
 | [Mbed OS](https://github.com/ARMmbed/mbed-os) | Open-source embedded OS for connected Arm Cortex-M devices. | `embedded` `iot` `tool` `open-source` `added 2026-10-29` |
+| [TRLC-DK1 (open source dev kit)](https://github.com/robot-learning-co/trlc-dk1) | Apache-2.0 hardware CAD, URDF and LeRobot plugin for a low-cost AI-native robot arm. | `robotics` `tool` `open-source` `added 2026-10-30` |
+| [MuJoCo Robotics Lab](https://github.com/ozkannceylan/mujoco-robotics-lab) | Hands-on curriculum from 2-link arm kinematics to dual-arm and locomotion in MuJoCo with Pinocchio. | `robotics` `pbl-project` `open-source` `added 2026-10-30` |
+| [Autonomous UAV Guide](https://github.com/guilyx/autonomous-uav-guide) | From-scratch Python algorithms with runnable simulations for multirotor, VTOL and fixed-wing UAVs. | `drones` `pbl-project` `open-source` `added 2026-10-30` |
+| [Quadcopter Modeling & Simulation (MathWorks)](https://github.com/MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation) | Interactive MATLAB live scripts teaching quadcopter modeling up to package-delivery simulation. | `drones` `course` `free (proprietary)` `added 2026-10-30` |
+| [SES 598 Space Robotics and AI](https://github.com/DREAMS-lab/ses598-space-robotics-and-ai-2026) | CC BY ASU course materials on PX4, ROS 2, LQR, SLAM and RL. | `robotics` `drones` `course` `open-source` `added 2026-10-30` |
+| [RoboCup SSL Electronics Textbook](https://github.com/sjtu-src/RoboCup_SSL_Textbook_Electronics) | Open community textbook on robot power, sensing and control electronics. | `robotics` `power` `book` `open-source` `added 2026-10-30` |
+| [Advanced Mobile Robots Book](https://github.com/Pouya-Mansournia/advanced-mobile-robotics-book) | Open book on drive systems, odometry, SLAM, ROS 2 and ESP32 control. | `robotics` `book` `open-source` `added 2026-10-30` |
+| [Robot System Quest (RSQ)](https://github.com/mertcookimg/robot-system-quest) | Games and lessons for learning ROS 2. | `robotics` `pbl-project` `open-source` `added 2026-10-30` |
+| [NeoRacer V2](https://github.com/Neobotics-Foundation-Inc/neoracer-v2) | 3D-printable open chassis for autonomous racing education. | `robotics` `3d-models` `open-source` `added 2026-10-30` |
+| [ros2top](https://github.com/AhmedARadwan/ros2top) | Top-style live monitor for ROS 2 nodes. | `robotics` `tool` `open-source` `added 2026-10-30` |
+| [Physical AI & Humanoid Robotics Interactive Textbook](https://github.com/abdullahzunorain/text-book-AI-Humanoid-Rebotics-CLAUDE) | Claude-built interactive textbook covering ROS 2, Gazebo, Isaac and VLA models. | `robotics` `ai-built-tool` `book` `open-source` `added 2026-10-30` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -859,4 +870,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-10-29.</sub>
+<sub>Last generated 2026-10-30.</sub>

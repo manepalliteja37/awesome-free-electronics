@@ -39,3 +39,14 @@ https://github.com/matter-js/matter.js,matter.js,iot;tool;open-source;added 2026
 https://github.com/mruby/mruby,mruby,embedded;tool;open-source;added 2026-10-29,Lightweight embeddable Ruby for resource-constrained devices.
 https://github.com/lorabasics/basicmac,BasicMAC LoRaWAN,iot;tool;open-source;added 2026-10-29,Open LoRaWAN MAC stack for microcontroller end nodes.
 https://github.com/ARMmbed/mbed-os,Mbed OS,embedded;iot;tool;open-source;added 2026-10-29,Open-source embedded OS for connected Arm Cortex-M devices.
+https://github.com/robot-learning-co/trlc-dk1,TRLC-DK1 (open source dev kit),robotics;tool;open-source;added 2026-10-30,"Apache-2.0 hardware CAD, URDF and LeRobot plugin for a low-cost AI-native robot arm."
+https://github.com/ozkannceylan/mujoco-robotics-lab,MuJoCo Robotics Lab,robotics;pbl-project;open-source;added 2026-10-30,Hands-on curriculum from 2-link arm kinematics to dual-arm and locomotion in MuJoCo with Pinocchio.
+https://github.com/guilyx/autonomous-uav-guide,Autonomous UAV Guide,drones;pbl-project;open-source;added 2026-10-30,"From-scratch Python algorithms with runnable simulations for multirotor, VTOL and fixed-wing UAVs."
+https://github.com/MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation,Quadcopter Modeling & Simulation (MathWorks),drones;course;free (proprietary);added 2026-10-30,Interactive MATLAB live scripts teaching quadcopter modeling up to package-delivery simulation.
+https://github.com/DREAMS-lab/ses598-space-robotics-and-ai-2026,SES 598 Space Robotics and AI,robotics;drones;course;open-source;added 2026-10-30,"CC BY ASU course materials on PX4, ROS 2, LQR, SLAM and RL."
+https://github.com/sjtu-src/RoboCup_SSL_Textbook_Electronics,RoboCup SSL Electronics Textbook,robotics;power;book;open-source;added 2026-10-30,"Open community textbook on robot power, sensing and control electronics."
+https://github.com/Pouya-Mansournia/advanced-mobile-robotics-book,Advanced Mobile Robots Book,robotics;book;open-source;added 2026-10-30,"Open book on drive systems, odometry, SLAM, ROS 2 and ESP32 control."
+https://github.com/mertcookimg/robot-system-quest,Robot System Quest (RSQ),robotics;pbl-project;open-source;added 2026-10-30,Games and lessons for learning ROS 2.
+https://github.com/Neobotics-Foundation-Inc/neoracer-v2,NeoRacer V2,robotics;3d-models;open-source;added 2026-10-30,3D-printable open chassis for autonomous racing education.
+https://github.com/AhmedARadwan/ros2top,ros2top,robotics;tool;open-source;added 2026-10-30,Top-style live monitor for ROS 2 nodes.
+https://github.com/abdullahzunorain/text-book-AI-Humanoid-Rebotics-CLAUDE,Physical AI & Humanoid Robotics Interactive Textbook,robotics;ai-built-tool;book;open-source;added 2026-10-30,"Claude-built interactive textbook covering ROS 2, Gazebo, Isaac and VLA models."
