@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-751-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-763-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (51)
+- [🆕 Latest Additions](#latest-additions) (63)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -856,6 +856,18 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [NeoRacer V2](https://github.com/Neobotics-Foundation-Inc/neoracer-v2) | 3D-printable open chassis for autonomous racing education. | `robotics` `3d-models` `open-source` `added 2026-10-30` |
 | [ros2top](https://github.com/AhmedARadwan/ros2top) | Top-style live monitor for ROS 2 nodes. | `robotics` `tool` `open-source` `added 2026-10-30` |
 | [Physical AI & Humanoid Robotics Interactive Textbook](https://github.com/abdullahzunorain/text-book-AI-Humanoid-Rebotics-CLAUDE) | Claude-built interactive textbook covering ROS 2, Gazebo, Isaac and VLA models. | `robotics` `ai-built-tool` `book` `open-source` `added 2026-10-30` |
+| [multimon-ng](https://github.com/EliasOenal/multimon-ng) | Decoder for POCSAG, FLEX, DTMF and other digital radio modes. | `rf` `sdr` `tool` `open-source` `added 2026-10-31` |
+| [PothosSDR (PothosCore)](https://github.com/pothosware/PothosCore) | Dataflow framework for SDR and DSP with a GUI flow editor. | `rf` `sdr` `tool` `open-source` `added 2026-10-31` |
+| [NanoVNA](https://github.com/ttrftech/NanoVNA) | Original open-source pocket vector network analyzer design. | `rf` `open-hardware` `open-source` `added 2026-10-31` |
+| [HackRF](https://github.com/mossmann/hackrf) | Open-source half-duplex SDR transceiver hardware and firmware. | `rf` `sdr` `open-hardware` `open-source` `added 2026-10-31` |
+| [SDR++ source](https://github.com/AlexandreRouma/SDRPlusPlus) | Cross-platform bloat-free SDR receiver software. | `rf` `sdr` `tool` `open-source` `added 2026-10-31` |
+| [SciPy signal module](https://github.com/scipy/scipy) | Python filter design, spectral analysis and signal processing library. | `dsp` `tool` `open-source` `added 2026-10-31` |
+| [pyrtlsdr](https://github.com/pyrtlsdr/pyrtlsdr) | Python wrapper for RTL-SDR dongles. | `sensors` `rf` `sdr` `tool` `open-source` `added 2026-10-31` |
+| [GNSS-SDR](https://github.com/gnss-sdr/gnss-sdr) | Open-source software-defined GNSS receiver. | `rf` `sdr` `open-source` `added 2026-10-31` |
+| [KISS FFT](https://github.com/mborgerding/kissfft) | Small, simple, permissively-licensed FFT library in C. | `dsp` `tool` `open-source` `added 2026-10-31` |
+| [FFTW](https://github.com/FFTW/fftw3) | Fast C library for computing discrete Fourier transforms. | `dsp` `tool` `open-source` `added 2026-10-31` |
+| [CMSIS-DSP](https://github.com/ARM-software/CMSIS-DSP) | Optimized DSP functions for Arm Cortex-M microcontrollers. | `dsp` `embedded` `tool` `open-source` `added 2026-10-31` |
+| [Ubertooth](https://github.com/greatscottgadgets/ubertooth) | Open-source 2.4 GHz wireless development platform for Bluetooth. | `rf` `open-hardware` `open-source` `added 2026-10-31` |
 
 <sub>[⬆ back to top](#contents)</sub>
 

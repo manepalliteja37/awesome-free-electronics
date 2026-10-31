@@ -50,3 +50,15 @@ https://github.com/mertcookimg/robot-system-quest,Robot System Quest (RSQ),robot
 https://github.com/Neobotics-Foundation-Inc/neoracer-v2,NeoRacer V2,robotics;3d-models;open-source;added 2026-10-30,3D-printable open chassis for autonomous racing education.
 https://github.com/AhmedARadwan/ros2top,ros2top,robotics;tool;open-source;added 2026-10-30,Top-style live monitor for ROS 2 nodes.
 https://github.com/abdullahzunorain/text-book-AI-Humanoid-Rebotics-CLAUDE,Physical AI & Humanoid Robotics Interactive Textbook,robotics;ai-built-tool;book;open-source;added 2026-10-30,"Claude-built interactive textbook covering ROS 2, Gazebo, Isaac and VLA models."
+https://github.com/EliasOenal/multimon-ng,multimon-ng,rf;sdr;tool;open-source;added 2026-10-31,"Decoder for POCSAG, FLEX, DTMF and other digital radio modes."
+https://github.com/pothosware/PothosCore,PothosSDR (PothosCore),rf;sdr;tool;open-source;added 2026-10-31,Dataflow framework for SDR and DSP with a GUI flow editor.
+https://github.com/ttrftech/NanoVNA,NanoVNA,rf;open-hardware;open-source;added 2026-10-31,Original open-source pocket vector network analyzer design.
+https://github.com/mossmann/hackrf,HackRF,rf;sdr;open-hardware;open-source;added 2026-10-31,Open-source half-duplex SDR transceiver hardware and firmware.
+https://github.com/AlexandreRouma/SDRPlusPlus,SDR++ source,rf;sdr;tool;open-source;added 2026-10-31,Cross-platform bloat-free SDR receiver software.
+https://github.com/scipy/scipy,SciPy signal module,dsp;tool;open-source;added 2026-10-31,"Python filter design, spectral analysis and signal processing library."
+https://github.com/pyrtlsdr/pyrtlsdr,pyrtlsdr,sensors;rf;sdr;tool;open-source;added 2026-10-31,Python wrapper for RTL-SDR dongles.
+https://github.com/gnss-sdr/gnss-sdr,GNSS-SDR,rf;sdr;open-source;added 2026-10-31,Open-source software-defined GNSS receiver.
+https://github.com/mborgerding/kissfft,KISS FFT,dsp;tool;open-source;added 2026-10-31,"Small, simple, permissively-licensed FFT library in C."
+https://github.com/FFTW/fftw3,FFTW,dsp;tool;open-source;added 2026-10-31,Fast C library for computing discrete Fourier transforms.
+https://github.com/ARM-software/CMSIS-DSP,CMSIS-DSP,dsp;embedded;tool;open-source;added 2026-10-31,Optimized DSP functions for Arm Cortex-M microcontrollers.
+https://github.com/greatscottgadgets/ubertooth,Ubertooth,rf;open-hardware;open-source;added 2026-10-31,Open-source 2.4 GHz wireless development platform for Bluetooth.
