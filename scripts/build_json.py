@@ -1,5 +1,5 @@
 """Bundle every data/categories/*.csv into data/resources.json (one request for the site),
-and stamp asset/data versions into index.html so browsers can cache aggressively."""
+and stamp asset versions into index.html so browsers can cache aggressively."""
 import os, glob, json, hashlib, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -10,6 +10,7 @@ h = lambda p: hashlib.sha1(open(p, "rb").read()).hexdigest()[:10]
 idx = open("index.html", encoding="utf-8").read()
 idx = re.sub(r'assets/style\.css(\?v=\w+)?', f'assets/style.css?v={h("assets/style.css")}', idx)
 idx = re.sub(r'assets/app\.js(\?v=\w+)?', f'assets/app.js?v={h("assets/app.js")}', idx)
-idx = re.sub(r'<meta name="data-version" content="\w*">', f'<meta name="data-version" content="{v}">', idx)
+# data-version is no longer stamped: the site loads live data from GitHub, so daily
+# data updates leave index.html untouched and don't trigger a Netlify deploy.
 open("index.html", "w", encoding="utf-8").write(idx)
 print("resources.json", v, len(files), "files")

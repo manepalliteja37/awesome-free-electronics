@@ -159,13 +159,23 @@ function sectionFor(tags){
 let DATA = [], BYID = {}, NEWEST = "", TOPICS = [];
 
 const CACHE_KEY = "afe-data-v1";
+// Live data comes straight from GitHub, so daily data commits need no Netlify deploy.
+// The copy bundled with the site is the fallback if GitHub is unreachable.
+const REPO_RAW = "https://raw.githubusercontent.com/manepalliteja37/awesome-free-electronics/main/";
+async function fetchJSON(url){
+  const r = await fetch(url, {cache:"no-cache"});
+  if (!r.ok) throw new Error(r.status);
+  const j = await r.json();
+  if (!j || !j.files) throw new Error("bad data");
+  return { v: j.v, files: j.files };
+}
 async function fetchTexts(){
   const keys = [...CATS.map(c=>c.key), DAILY];
   try {
-    const r = await fetch("data/resources.json", {cache:"no-cache"});
-    if (!r.ok) throw new Error(r.status);
-    const j = await r.json();
-    return { v: j.v, files: j.files };
+    return await fetchJSON(REPO_RAW + "data/resources.json");
+  } catch (e0) {}
+  try {
+    return await fetchJSON("data/resources.json");
   } catch (e) {
     const get = (k, tries=3) => fetch(`data/categories/${k}.csv`).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
       .catch(err => tries > 1 ? new Promise(res => setTimeout(res, 400)).then(() => get(k, tries-1)) : "");
@@ -183,7 +193,7 @@ async function load(){
   const pageV = meta ? meta.content : "";
   if (cached){
     build(cached.files); DATA_V = cached.v;
-    if (!pageV || cached.v !== pageV){   // refresh quietly in the background
+    {   // always refresh quietly in the background (live data lives on GitHub)
       fetchTexts().then(d => { if (d.v !== DATA_V){ if (d.v !== "csv") writeCache(d); build(d.files); DATA_V = d.v; route(); } }).catch(()=>{});
     }
     return;
@@ -327,8 +337,8 @@ function downloadHTML(h="h2"){
     <p>Download all ${DATA.length.toLocaleString("en-IN")} resources for offline browsing, research or your own projects. Columns: website, name, tags, description, category.</p>
     <ul><li>${icon("check")}All 11 categories in one file</li><li>${icon("check")}Updated as new resources are added</li><li>${icon("check")}CC0: use it however you like</li></ul>
   </div><div class="dl-actions">
-    <a class="btn btn-primary" href="data/all_resources.csv" download>${icon("download")}<span>Download CSV<small>${DATA.length} entries</small></span></a>
-    <a class="btn" href="data/Electronics_Resources.xlsx" download>${icon("download")}<span>Download Excel (XLSX)<small>One sheet per category</small></span></a>
+    <a class="btn btn-primary" href="${REPO_RAW}data/all_resources.csv" download>${icon("download")}<span>Download CSV<small>${DATA.length} entries</small></span></a>
+    <a class="btn" href="${REPO_RAW}data/Electronics_Resources.xlsx" download>${icon("download")}<span>Download Excel (XLSX)<small>One sheet per category</small></span></a>
     <a class="btn" href="${REPO}" target="_blank" rel="noopener">${icon("github")}<span>View source on GitHub<small>Opens in a new tab</small></span></a>
     <a class="btn" href="${REPO}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">${icon("plus")}<span>Contribute a resource<small>Opens in a new tab</small></span></a>
   </div></div>`;
