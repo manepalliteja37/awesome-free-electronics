@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-763-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-770-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (63)
+- [🆕 Latest Additions](#latest-additions) (70)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -868,6 +868,13 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [FFTW](https://github.com/FFTW/fftw3) | Fast C library for computing discrete Fourier transforms. | `dsp` `tool` `open-source` `added 2026-10-31` |
 | [CMSIS-DSP](https://github.com/ARM-software/CMSIS-DSP) | Optimized DSP functions for Arm Cortex-M microcontrollers. | `dsp` `embedded` `tool` `open-source` `added 2026-10-31` |
 | [Ubertooth](https://github.com/greatscottgadgets/ubertooth) | Open-source 2.4 GHz wireless development platform for Bluetooth. | `rf` `open-hardware` `open-source` `added 2026-10-31` |
+| [The Radio Bench](https://github.com/jemcik/the-radio-bench) | Open-source interactive radio and electronics course with 70+ calculators and 250+ quiz questions. | `basics` `rf` `course` `ai-built-tool` `open-source` `added 2026-11-01` |
+| [homebrew-lab](https://www.worldprogramming.org/posts/homebrew-lab-an-ai-generated-self-directed-bench-driven-electronics-course-for-hams-and-makers-learning-analog-by-seeing-it-on-a-scope-veqch2) | AI-generated bench-driven analog electronics course where every experiment ends in a scope measurement. | `analog` `course` `ai-built-tool` `pbl-project` `added 2026-11-01` |
+| [UBU Electrical Basic](https://github.com/ThummarosR/ubu-electrical-basic) | Apache-2.0 teaching app for IEC 60617 schematics, DC/AC/3-phase analysis and control block diagrams. | `basics` `simulator` `tool` `open-source` `added 2026-11-01` |
+| [kicad-breadboard](https://github.com/kerstensrobin/kicad-breadboard) | KiCad 9/10 plugin that turns a schematic into a virtual breadboard with SPICE checks. | `pcb` `basics` `tool` `open-source` `added 2026-11-01` |
+| [Interactive HTML Labs for Power Electronics](https://zenodo.org/records/23284179) | Thirteen interactive HTML laboratories for university-level power electronics teaching. | `power` `simulator` `course` `open-source` `added 2026-11-01` |
+| [GeckoCIRCUITS Tutorials](https://tinix84.github.io/GeckoCIRCUITS/tutorials/) | Tutorial series for power electronics simulation with the open-source GeckoCIRCUITS. | `power` `simulator` `course` `open-source` `added 2026-11-01` |
+| [Marelleo ESP32 Story Box](https://zebra.rodeo/en/blog/marelleo/) | Build log of an open-source ESP32 and NFC screenless story box for kids. | `embedded` `iot` `blog` `pbl-project` `open-source` `added 2026-11-01` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -882,4 +889,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-10-31.</sub>
+<sub>Last generated 2026-11-01.</sub>
