@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-770-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-780-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (70)
+- [🆕 Latest Additions](#latest-additions) (80)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -875,6 +875,16 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Interactive HTML Labs for Power Electronics](https://zenodo.org/records/23284179) | Thirteen interactive HTML laboratories for university-level power electronics teaching. | `power` `simulator` `course` `open-source` `added 2026-11-01` |
 | [GeckoCIRCUITS Tutorials](https://tinix84.github.io/GeckoCIRCUITS/tutorials/) | Tutorial series for power electronics simulation with the open-source GeckoCIRCUITS. | `power` `simulator` `course` `open-source` `added 2026-11-01` |
 | [Marelleo ESP32 Story Box](https://zebra.rodeo/en/blog/marelleo/) | Build log of an open-source ESP32 and NFC screenless story box for kids. | `embedded` `iot` `blog` `pbl-project` `open-source` `added 2026-11-01` |
+| [neospice](https://github.com/razorback16/neospice) | MIT-licensed C++20 SPICE engine with Python and browser APIs, benchmarked about 2x faster than ngspice. | `basics` `analog` `simulator` `open-source` `added 2026-11-02` |
+| [RSpice](https://github.com/JaimeHW/RSpice) | Rust analog and mixed-signal SPICE simulator checked against ngspice and Xyce, with CLI, IDE and WebAssembly. | `analog` `simulator` `open-source` `added 2026-11-02` |
+| [repath](https://github.com/Agustin-Delgado/repath) | Free open-source mixed-signal circuit simulator running in the browser with a Rust-to-WASM engine. | `analog` `simulator` `open-source` `added 2026-11-02` |
+| [Kirho](https://github.com/pabdan2003/Kirho) | Open-source analog, digital and mixed-signal circuit simulator built with Python and PyQt6. | `analog` `simulator` `open-source` `added 2026-11-02` |
+| [Wirely](https://wirely-app.github.io) | Free open-source browser and desktop circuit simulator with 84 parts, live LEDs and motors, and a 4-probe scope. | `basics` `analog` `simulator` `ai-built-tool` `open-source` `added 2026-11-02` |
+| [Symbulator Solver](https://github.com/Symbulator/solver) | Symbolic linear-circuit analysis engine built on SymPy. | `analog` `calculator` `open-source` `added 2026-11-02` |
+| [VAJAX](https://github.com/ChipFlow/vajax) | JAX-based SPICE simulator with OpenVAF Verilog-A model support. | `analog` `simulator` `open-source` `added 2026-11-02` |
+| [Open Hardware Software Docs](https://github.com/lmcapacho/open-hardware-software) | Curated docs on open-source EDA and electronics tools with versions and licenses. | `basics` `tool` `open-source` `added 2026-11-02` |
+| [EWsim.io](https://ewsim.io) | Free browser mixed-signal simulator that runs AVR, PIC and 8051 firmware alongside analog circuits. | `basics` `analog` `simulator` `free (proprietary)` `added 2026-11-02` |
+| [JosephsonCircuits.jl](https://github.com/kpobrien/JosephsonCircuits.jl) | Julia harmonic-balance simulator for nonlinear circuits with Josephson junctions, including S-parameters and noise. | `analog` `simulator` `open-source` `added 2026-11-02` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -889,4 +899,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-01.</sub>
+<sub>Last generated 2026-11-02.</sub>

@@ -69,3 +69,13 @@ https://github.com/kerstensrobin/kicad-breadboard,kicad-breadboard,pcb;basics;to
 https://zenodo.org/records/23284179,Interactive HTML Labs for Power Electronics,power;simulator;course;open-source;added 2026-11-01,Thirteen interactive HTML laboratories for university-level power electronics teaching.
 https://tinix84.github.io/GeckoCIRCUITS/tutorials/,GeckoCIRCUITS Tutorials,power;simulator;course;open-source;added 2026-11-01,Tutorial series for power electronics simulation with the open-source GeckoCIRCUITS.
 https://zebra.rodeo/en/blog/marelleo/,Marelleo ESP32 Story Box,embedded;iot;blog;pbl-project;open-source;added 2026-11-01,Build log of an open-source ESP32 and NFC screenless story box for kids.
+https://github.com/razorback16/neospice,neospice,basics;analog;simulator;open-source;added 2026-11-02,"MIT-licensed C++20 SPICE engine with Python and browser APIs, benchmarked about 2x faster than ngspice."
+https://github.com/JaimeHW/RSpice,RSpice,analog;simulator;open-source;added 2026-11-02,"Rust analog and mixed-signal SPICE simulator checked against ngspice and Xyce, with CLI, IDE and WebAssembly."
+https://github.com/Agustin-Delgado/repath,repath,analog;simulator;open-source;added 2026-11-02,Free open-source mixed-signal circuit simulator running in the browser with a Rust-to-WASM engine.
+https://github.com/pabdan2003/Kirho,Kirho,analog;simulator;open-source;added 2026-11-02,"Open-source analog, digital and mixed-signal circuit simulator built with Python and PyQt6."
+https://wirely-app.github.io,Wirely,basics;analog;simulator;ai-built-tool;open-source;added 2026-11-02,"Free open-source browser and desktop circuit simulator with 84 parts, live LEDs and motors, and a 4-probe scope."
+https://github.com/Symbulator/solver,Symbulator Solver,analog;calculator;open-source;added 2026-11-02,Symbolic linear-circuit analysis engine built on SymPy.
+https://github.com/ChipFlow/vajax,VAJAX,analog;simulator;open-source;added 2026-11-02,JAX-based SPICE simulator with OpenVAF Verilog-A model support.
+https://github.com/lmcapacho/open-hardware-software,Open Hardware Software Docs,basics;tool;open-source;added 2026-11-02,Curated docs on open-source EDA and electronics tools with versions and licenses.
+https://ewsim.io,EWsim.io,basics;analog;simulator;free (proprietary);added 2026-11-02,"Free browser mixed-signal simulator that runs AVR, PIC and 8051 firmware alongside analog circuits."
+https://github.com/kpobrien/JosephsonCircuits.jl,JosephsonCircuits.jl,analog;simulator;open-source;added 2026-11-02,"Julia harmonic-balance simulator for nonlinear circuits with Josephson junctions, including S-parameters and noise."
