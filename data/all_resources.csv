@@ -779,3 +779,10 @@ https://github.com/ChipFlow/vajax,VAJAX,analog;simulator;open-source;added 2026-
 https://github.com/lmcapacho/open-hardware-software,Open Hardware Software Docs,basics;tool;open-source;added 2026-11-02,Curated docs on open-source EDA and electronics tools with versions and licenses.,Latest Additions
 https://ewsim.io,EWsim.io,basics;analog;simulator;free (proprietary);added 2026-11-02,"Free browser mixed-signal simulator that runs AVR, PIC and 8051 firmware alongside analog circuits.",Latest Additions
 https://github.com/kpobrien/JosephsonCircuits.jl,JosephsonCircuits.jl,analog;simulator;open-source;added 2026-11-02,"Julia harmonic-balance simulator for nonlinear circuits with Josephson junctions, including S-parameters and noise.",Latest Additions
+https://github.com/openhwgroup/cva6,CVA6,digital;RISC-V CPU;open-source;added 2026-11-03,Open-source application-class 64/32-bit RISC-V core that boots Linux.,Latest Additions
+https://github.com/lowRISC/opentitan,OpenTitan,digital;digital;vlsi;open-source;added 2026-11-03,"Open-source silicon root-of-trust chip design with RTL, verification and docs.",Latest Additions
+https://github.com/google/xls,Google XLS,digital;digital;vlsi;open-source;added 2026-11-03,High-level synthesis toolchain turning DSLX code into Verilog.,Latest Additions
+https://github.com/verilog-to-routing/vtr-verilog-to-routing,VTR,digital;fpga;open-source;added 2026-11-03,"Open-source CAD flow for FPGA architecture exploration, synthesis and place-and-route.",Latest Additions
+https://github.com/clash-lang/clash-compiler,Clash,digital;fpga;open-source;added 2026-11-03,Compile Haskell to synthesizable VHDL/Verilog for FPGAs.,Latest Additions
+https://github.com/sylefeb/Silice,Silice,digital;fpga;open-source;added 2026-11-03,Hardware description language that makes FPGA design algorithmic and approachable.,Latest Additions
+https://github.com/TerosTechnology/vscode-terosHDL,TerosHDL,digital;fpga;tool;open-source;added 2026-11-03,"VSCode extension for VHDL/Verilog/SystemVerilog with docs, linting and simulation.",Latest Additions

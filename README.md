@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-780-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-787-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (80)
+- [🆕 Latest Additions](#latest-additions) (87)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -885,6 +885,13 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Open Hardware Software Docs](https://github.com/lmcapacho/open-hardware-software) | Curated docs on open-source EDA and electronics tools with versions and licenses. | `basics` `tool` `open-source` `added 2026-11-02` |
 | [EWsim.io](https://ewsim.io) | Free browser mixed-signal simulator that runs AVR, PIC and 8051 firmware alongside analog circuits. | `basics` `analog` `simulator` `free (proprietary)` `added 2026-11-02` |
 | [JosephsonCircuits.jl](https://github.com/kpobrien/JosephsonCircuits.jl) | Julia harmonic-balance simulator for nonlinear circuits with Josephson junctions, including S-parameters and noise. | `analog` `simulator` `open-source` `added 2026-11-02` |
+| [CVA6](https://github.com/openhwgroup/cva6) | Open-source application-class 64/32-bit RISC-V core that boots Linux. | `digital` `RISC-V CPU` `open-source` `added 2026-11-03` |
+| [OpenTitan](https://github.com/lowRISC/opentitan) | Open-source silicon root-of-trust chip design with RTL, verification and docs. | `digital` `digital` `vlsi` `open-source` `added 2026-11-03` |
+| [Google XLS](https://github.com/google/xls) | High-level synthesis toolchain turning DSLX code into Verilog. | `digital` `digital` `vlsi` `open-source` `added 2026-11-03` |
+| [VTR](https://github.com/verilog-to-routing/vtr-verilog-to-routing) | Open-source CAD flow for FPGA architecture exploration, synthesis and place-and-route. | `digital` `fpga` `open-source` `added 2026-11-03` |
+| [Clash](https://github.com/clash-lang/clash-compiler) | Compile Haskell to synthesizable VHDL/Verilog for FPGAs. | `digital` `fpga` `open-source` `added 2026-11-03` |
+| [Silice](https://github.com/sylefeb/Silice) | Hardware description language that makes FPGA design algorithmic and approachable. | `digital` `fpga` `open-source` `added 2026-11-03` |
+| [TerosHDL](https://github.com/TerosTechnology/vscode-terosHDL) | VSCode extension for VHDL/Verilog/SystemVerilog with docs, linting and simulation. | `digital` `fpga` `tool` `open-source` `added 2026-11-03` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
