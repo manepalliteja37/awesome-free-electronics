@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-787-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-797-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (87)
+- [🆕 Latest Additions](#latest-additions) (97)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -892,6 +892,16 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Clash](https://github.com/clash-lang/clash-compiler) | Compile Haskell to synthesizable VHDL/Verilog for FPGAs. | `digital` `fpga` `open-source` `added 2026-11-03` |
 | [Silice](https://github.com/sylefeb/Silice) | Hardware description language that makes FPGA design algorithmic and approachable. | `digital` `fpga` `open-source` `added 2026-11-03` |
 | [TerosHDL](https://github.com/TerosTechnology/vscode-terosHDL) | VSCode extension for VHDL/Verilog/SystemVerilog with docs, linting and simulation. | `digital` `fpga` `tool` `open-source` `added 2026-11-03` |
+| [Signex](https://github.com/alplabai/signex) | Rust-based open-source (Apache-2.0) schematic editor with symbol/footprint editors, ERC and BOM export; PCB editor on roadmap. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [OpenPCB](http://openpcb.app/) | Free AGPL desktop EDA with schematic capture, live-DRC routing, 3D preview and KiCad library import. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [fastroute](https://www.baltavista.com/en/post/fastroute-a-fast-pcb-autorouter-for-kicad) | Rust port of Freerouting for KiCad that is about 5x faster, with length matching and diff pairs. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [pcb-claude-plugin](https://github.com/virajrungta/pcb-claude-plugin) | Claude Code plugin that takes a circuit idea to a manufacturable KiCad project. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [boardsmith](https://github.com/ForestHubAI/boardsmith) | AGPL CLI that turns a text prompt into a KiCad schematic, BOM and firmware offline. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [T3CAD](https://github.com/i2cjak/T3CAD) | Agent-driven workspace with KiCad PCB, schematic, Gerber and 3D viewers. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [kicad-cli-extended](https://github.com/Hybirdss/kicad-cli-extended) | Extends kicad-cli with schematic editing, routing, fab packages and JSON output for scripts and AI agents. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [free-embedded-dev-tools](https://github.com/cifertech/free-embedded-dev-tools) | Curated list of free tools for PCB design, debugging, simulation, CI and IoT backends. | `pcb` `embedded` `community` `open-source` `added 2026-11-04` |
+| [StripForge](https://github.com/SomerledDesign/StripForge) | KiCad 10 plugin that lays out stripboard circuits with cuts, links and a build sheet. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [CoHDL 0.5.0](https://cohdl.org/blog/cohdl-0-5-0/) | Python-based HDL release adding native KiCad board generation and a live schematic explorer. | `pcb` `open-source` `tool` `added 2026-11-04` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -906,4 +916,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-03.</sub>
+<sub>Last generated 2026-11-04.</sub>

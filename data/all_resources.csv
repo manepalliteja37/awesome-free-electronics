@@ -786,3 +786,13 @@ https://github.com/verilog-to-routing/vtr-verilog-to-routing,VTR,digital;fpga;op
 https://github.com/clash-lang/clash-compiler,Clash,digital;fpga;open-source;added 2026-11-03,Compile Haskell to synthesizable VHDL/Verilog for FPGAs.,Latest Additions
 https://github.com/sylefeb/Silice,Silice,digital;fpga;open-source;added 2026-11-03,Hardware description language that makes FPGA design algorithmic and approachable.,Latest Additions
 https://github.com/TerosTechnology/vscode-terosHDL,TerosHDL,digital;fpga;tool;open-source;added 2026-11-03,"VSCode extension for VHDL/Verilog/SystemVerilog with docs, linting and simulation.",Latest Additions
+https://github.com/alplabai/signex,Signex,pcb;open-source;tool;added 2026-11-04,"Rust-based open-source (Apache-2.0) schematic editor with symbol/footprint editors, ERC and BOM export; PCB editor on roadmap.",Latest Additions
+http://openpcb.app/,OpenPCB,pcb;open-source;tool;added 2026-11-04,"Free AGPL desktop EDA with schematic capture, live-DRC routing, 3D preview and KiCad library import.",Latest Additions
+https://www.baltavista.com/en/post/fastroute-a-fast-pcb-autorouter-for-kicad,fastroute,pcb;open-source;tool;added 2026-11-04,"Rust port of Freerouting for KiCad that is about 5x faster, with length matching and diff pairs.",Latest Additions
+https://github.com/virajrungta/pcb-claude-plugin,pcb-claude-plugin,pcb;open-source;tool;added 2026-11-04,Claude Code plugin that takes a circuit idea to a manufacturable KiCad project.,Latest Additions
+https://github.com/ForestHubAI/boardsmith,boardsmith,pcb;open-source;tool;added 2026-11-04,"AGPL CLI that turns a text prompt into a KiCad schematic, BOM and firmware offline.",Latest Additions
+https://github.com/i2cjak/T3CAD,T3CAD,pcb;open-source;tool;added 2026-11-04,"Agent-driven workspace with KiCad PCB, schematic, Gerber and 3D viewers.",Latest Additions
+https://github.com/Hybirdss/kicad-cli-extended,kicad-cli-extended,pcb;open-source;tool;added 2026-11-04,"Extends kicad-cli with schematic editing, routing, fab packages and JSON output for scripts and AI agents.",Latest Additions
+https://github.com/cifertech/free-embedded-dev-tools,free-embedded-dev-tools,pcb;embedded;community;open-source;added 2026-11-04,"Curated list of free tools for PCB design, debugging, simulation, CI and IoT backends.",Latest Additions
+https://github.com/SomerledDesign/StripForge,StripForge,pcb;open-source;tool;added 2026-11-04,"KiCad 10 plugin that lays out stripboard circuits with cuts, links and a build sheet.",Latest Additions
+https://cohdl.org/blog/cohdl-0-5-0/,CoHDL 0.5.0,pcb;open-source;tool;added 2026-11-04,Python-based HDL release adding native KiCad board generation and a live schematic explorer.,Latest Additions
