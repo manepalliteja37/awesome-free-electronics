@@ -96,3 +96,13 @@ https://github.com/Hybirdss/kicad-cli-extended,kicad-cli-extended,pcb;open-sourc
 https://github.com/cifertech/free-embedded-dev-tools,free-embedded-dev-tools,pcb;embedded;community;open-source;added 2026-11-04,"Curated list of free tools for PCB design, debugging, simulation, CI and IoT backends."
 https://github.com/SomerledDesign/StripForge,StripForge,pcb;open-source;tool;added 2026-11-04,"KiCad 10 plugin that lays out stripboard circuits with cuts, links and a build sheet."
 https://cohdl.org/blog/cohdl-0-5-0/,CoHDL 0.5.0,pcb;open-source;tool;added 2026-11-04,Python-based HDL release adding native KiCad board generation and a live schematic explorer.
+https://github.com/mikroverk/esp32sim,esp32sim,embedded;iot;simulator;open-source;added 2026-11-05,"MIT-licensed Rust ESP32 emulator that boots real firmware, mask ROM included, in the browser or CLI."
+https://mikroverk.github.io/cooja-ng/,Cooja-NG,iot;embedded;simulator;open-source;added 2026-11-05,Network simulator running real Contiki-NG firmware on every node.
+https://github.com/Zebra-Rodeo/marelleo,Marelleo,embedded;iot;pbl-project;open-source;added 2026-11-05,"MIT ESP32 RFID story box with KiCad PCB, firmware, enclosure and write-up."
+https://jovin555.github.io/firmware-daily-log,Firmware Daily Log,embedded;blog;course;added 2026-11-05,"Daily AI-assisted posts on embedded Linux, RTOS, safety standards and low-power wireless."
+https://github.com/awesome-embedded-learning-studio/imx-forge,imx-forge,embedded;open-source;pbl-project;added 2026-11-05,Open-source i.MX embedded Linux learning project.
+https://phodal.github.io/awesome-iot/,Awesome IoT,iot;community;open-source;added 2026-11-05,"Curated list of IoT protocols, platforms, hardware and tools."
+https://docs.zephyrproject.org/latest/,Zephyr Project Documentation,embedded;open-source;book;added 2026-11-05,Official docs and tutorials for the open-source Zephyr RTOS.
+https://github.com/zephyrproject-rtos/zephyr,Zephyr RTOS,embedded;open-source;tool;added 2026-11-05,Apache-2.0 scalable RTOS for connected resource-constrained devices.
+https://github.com/micropython/micropython,MicroPython,embedded;iot;open-source;tool;added 2026-11-05,Python 3 implementation for microcontrollers like ESP32 and RP2040.
+https://github.com/platformio/platformio-core,PlatformIO Core,embedded;open-source;tool;added 2026-11-05,Cross-platform embedded build system and library manager.

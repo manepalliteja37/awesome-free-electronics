@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-797-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-807-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (97)
+- [🆕 Latest Additions](#latest-additions) (107)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -902,6 +902,16 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [free-embedded-dev-tools](https://github.com/cifertech/free-embedded-dev-tools) | Curated list of free tools for PCB design, debugging, simulation, CI and IoT backends. | `pcb` `embedded` `community` `open-source` `added 2026-11-04` |
 | [StripForge](https://github.com/SomerledDesign/StripForge) | KiCad 10 plugin that lays out stripboard circuits with cuts, links and a build sheet. | `pcb` `open-source` `tool` `added 2026-11-04` |
 | [CoHDL 0.5.0](https://cohdl.org/blog/cohdl-0-5-0/) | Python-based HDL release adding native KiCad board generation and a live schematic explorer. | `pcb` `open-source` `tool` `added 2026-11-04` |
+| [esp32sim](https://github.com/mikroverk/esp32sim) | MIT-licensed Rust ESP32 emulator that boots real firmware, mask ROM included, in the browser or CLI. | `embedded` `iot` `simulator` `open-source` `added 2026-11-05` |
+| [Cooja-NG](https://mikroverk.github.io/cooja-ng/) | Network simulator running real Contiki-NG firmware on every node. | `iot` `embedded` `simulator` `open-source` `added 2026-11-05` |
+| [Marelleo](https://github.com/Zebra-Rodeo/marelleo) | MIT ESP32 RFID story box with KiCad PCB, firmware, enclosure and write-up. | `embedded` `iot` `pbl-project` `open-source` `added 2026-11-05` |
+| [Firmware Daily Log](https://jovin555.github.io/firmware-daily-log) | Daily AI-assisted posts on embedded Linux, RTOS, safety standards and low-power wireless. | `embedded` `blog` `course` `added 2026-11-05` |
+| [imx-forge](https://github.com/awesome-embedded-learning-studio/imx-forge) | Open-source i.MX embedded Linux learning project. | `embedded` `open-source` `pbl-project` `added 2026-11-05` |
+| [Awesome IoT](https://phodal.github.io/awesome-iot/) | Curated list of IoT protocols, platforms, hardware and tools. | `iot` `community` `open-source` `added 2026-11-05` |
+| [Zephyr Project Documentation](https://docs.zephyrproject.org/latest/) | Official docs and tutorials for the open-source Zephyr RTOS. | `embedded` `open-source` `book` `added 2026-11-05` |
+| [Zephyr RTOS](https://github.com/zephyrproject-rtos/zephyr) | Apache-2.0 scalable RTOS for connected resource-constrained devices. | `embedded` `open-source` `tool` `added 2026-11-05` |
+| [MicroPython](https://github.com/micropython/micropython) | Python 3 implementation for microcontrollers like ESP32 and RP2040. | `embedded` `iot` `open-source` `tool` `added 2026-11-05` |
+| [PlatformIO Core](https://github.com/platformio/platformio-core) | Cross-platform embedded build system and library manager. | `embedded` `open-source` `tool` `added 2026-11-05` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -916,4 +926,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-04.</sub>
+<sub>Last generated 2026-11-05.</sub>
