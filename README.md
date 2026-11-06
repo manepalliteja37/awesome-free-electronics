@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-807-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-819-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (107)
+- [🆕 Latest Additions](#latest-additions) (119)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -912,6 +912,18 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Zephyr RTOS](https://github.com/zephyrproject-rtos/zephyr) | Apache-2.0 scalable RTOS for connected resource-constrained devices. | `embedded` `open-source` `tool` `added 2026-11-05` |
 | [MicroPython](https://github.com/micropython/micropython) | Python 3 implementation for microcontrollers like ESP32 and RP2040. | `embedded` `iot` `open-source` `tool` `added 2026-11-05` |
 | [PlatformIO Core](https://github.com/platformio/platformio-core) | Cross-platform embedded build system and library manager. | `embedded` `open-source` `tool` `added 2026-11-05` |
+| [Genesis](https://github.com/Genesis-Embodied-AI/Genesis) | Apache-2.0 generative physics engine and robotics simulation platform. | `robotics` `open-source` `simulator` `added 2026-11-06` |
+| [LeRobot](https://github.com/huggingface/lerobot) | Hugging Face's open library of models, datasets and tools for real-world robot learning. | `robotics` `open-source` `tool` `added 2026-11-06` |
+| [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | Open-source GPU-accelerated framework for robot learning built on Isaac Sim. | `robotics` `open-source` `simulator` `added 2026-11-06` |
+| [pvlib-python](https://github.com/pvlib/pvlib-python) | BSD-licensed Python library for simulating photovoltaic system performance. | `solar` `power` `open-source` `tool` `added 2026-11-06` |
+| [Robotics Toolbox for Python](https://github.com/petercorke/robotics-toolbox-python) | Peter Corke's library for robot kinematics, dynamics and trajectory planning. | `robotics` `open-source` `tool` `added 2026-11-06` |
+| [Pinocchio](https://github.com/stack-of-tasks/pinocchio) | Fast rigid-body dynamics library with analytical derivatives for robot control. | `robotics` `open-source` `tool` `added 2026-11-06` |
+| [AprilTag](https://github.com/AprilRobotics/apriltag) | Visual fiducial system widely used for robot localization and calibration. | `robotics` `open-source` `tool` `added 2026-11-06` |
+| [RTAB-Map](https://github.com/introlab/rtabmap) | Real-time appearance-based SLAM library with ROS integration. | `robotics` `open-source` `tool` `added 2026-11-06` |
+| [ros2_controllers](https://github.com/ros-controls/ros2_controllers) | Collection of standard ROS 2 controllers for use with ros2_control. | `robotics` `open-source` `tool` `added 2026-11-06` |
+| [MuJoCo Playground](https://github.com/google-deepmind/mujoco_playground) | Open GPU-accelerated robot learning environments built on MJX. | `robotics` `open-source` `simulator` `added 2026-11-06` |
+| [Mission Planner source](https://github.com/ArduPilot/MissionPlanner) | Open-source C# ground control station code for ArduPilot. | `drones` `open-source` `tool` `added 2026-11-06` |
+| [Bullet Physics](https://github.com/bulletphysics/bullet3) | Real-time physics engine behind PyBullet for robotics and simulation. | `robotics` `open-source` `simulator` `added 2026-11-06` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -926,4 +938,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-05.</sub>
+<sub>Last generated 2026-11-06.</sub>

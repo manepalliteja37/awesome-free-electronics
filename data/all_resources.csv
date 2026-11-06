@@ -806,3 +806,15 @@ https://docs.zephyrproject.org/latest/,Zephyr Project Documentation,embedded;ope
 https://github.com/zephyrproject-rtos/zephyr,Zephyr RTOS,embedded;open-source;tool;added 2026-11-05,Apache-2.0 scalable RTOS for connected resource-constrained devices.,Latest Additions
 https://github.com/micropython/micropython,MicroPython,embedded;iot;open-source;tool;added 2026-11-05,Python 3 implementation for microcontrollers like ESP32 and RP2040.,Latest Additions
 https://github.com/platformio/platformio-core,PlatformIO Core,embedded;open-source;tool;added 2026-11-05,Cross-platform embedded build system and library manager.,Latest Additions
+https://github.com/Genesis-Embodied-AI/Genesis,Genesis,robotics;open-source;simulator;added 2026-11-06,Apache-2.0 generative physics engine and robotics simulation platform.,Latest Additions
+https://github.com/huggingface/lerobot,LeRobot,robotics;open-source;tool;added 2026-11-06,"Hugging Face's open library of models, datasets and tools for real-world robot learning.",Latest Additions
+https://github.com/isaac-sim/IsaacLab,Isaac Lab,robotics;open-source;simulator;added 2026-11-06,Open-source GPU-accelerated framework for robot learning built on Isaac Sim.,Latest Additions
+https://github.com/pvlib/pvlib-python,pvlib-python,solar;power;open-source;tool;added 2026-11-06,BSD-licensed Python library for simulating photovoltaic system performance.,Latest Additions
+https://github.com/petercorke/robotics-toolbox-python,Robotics Toolbox for Python,robotics;open-source;tool;added 2026-11-06,"Peter Corke's library for robot kinematics, dynamics and trajectory planning.",Latest Additions
+https://github.com/stack-of-tasks/pinocchio,Pinocchio,robotics;open-source;tool;added 2026-11-06,Fast rigid-body dynamics library with analytical derivatives for robot control.,Latest Additions
+https://github.com/AprilRobotics/apriltag,AprilTag,robotics;open-source;tool;added 2026-11-06,Visual fiducial system widely used for robot localization and calibration.,Latest Additions
+https://github.com/introlab/rtabmap,RTAB-Map,robotics;open-source;tool;added 2026-11-06,Real-time appearance-based SLAM library with ROS integration.,Latest Additions
+https://github.com/ros-controls/ros2_controllers,ros2_controllers,robotics;open-source;tool;added 2026-11-06,Collection of standard ROS 2 controllers for use with ros2_control.,Latest Additions
+https://github.com/google-deepmind/mujoco_playground,MuJoCo Playground,robotics;open-source;simulator;added 2026-11-06,Open GPU-accelerated robot learning environments built on MJX.,Latest Additions
+https://github.com/ArduPilot/MissionPlanner,Mission Planner source,drones;open-source;tool;added 2026-11-06,Open-source C# ground control station code for ArduPilot.,Latest Additions
+https://github.com/bulletphysics/bullet3,Bullet Physics,robotics;open-source;simulator;added 2026-11-06,Real-time physics engine behind PyBullet for robotics and simulation.,Latest Additions
