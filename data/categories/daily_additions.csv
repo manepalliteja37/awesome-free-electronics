@@ -118,3 +118,14 @@ https://github.com/ros-controls/ros2_controllers,ros2_controllers,robotics;open-
 https://github.com/google-deepmind/mujoco_playground,MuJoCo Playground,robotics;open-source;simulator;added 2026-11-06,Open GPU-accelerated robot learning environments built on MJX.
 https://github.com/ArduPilot/MissionPlanner,Mission Planner source,drones;open-source;tool;added 2026-11-06,Open-source C# ground control station code for ArduPilot.
 https://github.com/bulletphysics/bullet3,Bullet Physics,robotics;open-source;simulator;added 2026-11-06,Real-time physics engine behind PyBullet for robotics and simulation.
+https://github.com/boydsoftprez/NereusSDR,NereusSDR,rf;sdr;open-source;tool;added 2026-11-07,Open-source cross-platform OpenHPSDR console with GPU waterfall and WDSP DSP.
+https://github.com/hiperiondev/CLASS-E_DESIGN_CALCULATOR,Class-E PA Design Calculator,rf;calculator;open-source;added 2026-11-07,GPL spreadsheet for Class-E RF amplifier and harmonic low-pass filter design.
+https://github.com/domagoj-kod/OpenSpectrum,OpenSpectrum,rf;sdr;open-source;tool;added 2026-11-07,Modular RTL-SDR spectrum analyzer with a clean DSP pipeline.
+https://gophertrunk.org/learn/rf-sdr,GopherTrunk Learn RF and SDR,rf;sdr;course;added 2026-11-07,"Six-module newbie-to-expert path covering RF, SDR hardware and DSP essentials."
+https://github.com/andresmmera/RF-Designer,Qucs-S RF Designer,rf;tool;open-source;added 2026-11-07,"Qt app for S-parameter viewing plus filter, matching and power combiner synthesis."
+https://github.com/sv1btl/PhantomSDR-Plus,PhantomSDR-Plus,rf;sdr;open-source;tool;added 2026-11-07,Open-source WebSDR server with browser IQ demodulators.
+https://github.com/sgoudelis/ground-station,Ground Station,rf;sdr;open-source;tool;added 2026-11-07,"Browser-based satellite tracking, SDR reception and telemetry decoding suite."
+https://gallicchio.github.io/learnSDR,Learn SDR (Harvey Mudd),rf;sdr;dsp;course;added 2026-11-07,Video tutorials with GNU Radio flowgraphs from basic OOK to digital modulation.
+https://iic-jku.github.io/TinyWhisper/index.html,TinyWhisper,rf;open-source;pbl-project;added 2026-11-07,Open-source short-wave transmitter ASIC in 130-nm CMOS for amateur radio.
+https://blog.opensourcesdrlab.com/,OpenSourceSDRLab Blog,rf;sdr;blog;added 2026-11-07,Hands-on GNU Radio and PlutoSDR tutorials.
+https://enjoy-digital.github.io/posts/chromatix-sdr/,ChromatiX SDR (LiteX Notes),rf;sdr;blog;fpga;added 2026-11-07,Deep write-up turning an ESP32 and FPGA into a spectrum analyzer.

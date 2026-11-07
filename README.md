@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-819-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-830-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (119)
+- [🆕 Latest Additions](#latest-additions) (130)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -924,6 +924,17 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [MuJoCo Playground](https://github.com/google-deepmind/mujoco_playground) | Open GPU-accelerated robot learning environments built on MJX. | `robotics` `open-source` `simulator` `added 2026-11-06` |
 | [Mission Planner source](https://github.com/ArduPilot/MissionPlanner) | Open-source C# ground control station code for ArduPilot. | `drones` `open-source` `tool` `added 2026-11-06` |
 | [Bullet Physics](https://github.com/bulletphysics/bullet3) | Real-time physics engine behind PyBullet for robotics and simulation. | `robotics` `open-source` `simulator` `added 2026-11-06` |
+| [NereusSDR](https://github.com/boydsoftprez/NereusSDR) | Open-source cross-platform OpenHPSDR console with GPU waterfall and WDSP DSP. | `rf` `sdr` `open-source` `tool` `added 2026-11-07` |
+| [Class-E PA Design Calculator](https://github.com/hiperiondev/CLASS-E_DESIGN_CALCULATOR) | GPL spreadsheet for Class-E RF amplifier and harmonic low-pass filter design. | `rf` `calculator` `open-source` `added 2026-11-07` |
+| [OpenSpectrum](https://github.com/domagoj-kod/OpenSpectrum) | Modular RTL-SDR spectrum analyzer with a clean DSP pipeline. | `rf` `sdr` `open-source` `tool` `added 2026-11-07` |
+| [GopherTrunk Learn RF and SDR](https://gophertrunk.org/learn/rf-sdr) | Six-module newbie-to-expert path covering RF, SDR hardware and DSP essentials. | `rf` `sdr` `course` `added 2026-11-07` |
+| [Qucs-S RF Designer](https://github.com/andresmmera/RF-Designer) | Qt app for S-parameter viewing plus filter, matching and power combiner synthesis. | `rf` `tool` `open-source` `added 2026-11-07` |
+| [PhantomSDR-Plus](https://github.com/sv1btl/PhantomSDR-Plus) | Open-source WebSDR server with browser IQ demodulators. | `rf` `sdr` `open-source` `tool` `added 2026-11-07` |
+| [Ground Station](https://github.com/sgoudelis/ground-station) | Browser-based satellite tracking, SDR reception and telemetry decoding suite. | `rf` `sdr` `open-source` `tool` `added 2026-11-07` |
+| [Learn SDR (Harvey Mudd)](https://gallicchio.github.io/learnSDR) | Video tutorials with GNU Radio flowgraphs from basic OOK to digital modulation. | `rf` `sdr` `dsp` `course` `added 2026-11-07` |
+| [TinyWhisper](https://iic-jku.github.io/TinyWhisper/index.html) | Open-source short-wave transmitter ASIC in 130-nm CMOS for amateur radio. | `rf` `open-source` `pbl-project` `added 2026-11-07` |
+| [OpenSourceSDRLab Blog](https://blog.opensourcesdrlab.com/) | Hands-on GNU Radio and PlutoSDR tutorials. | `rf` `sdr` `blog` `added 2026-11-07` |
+| [ChromatiX SDR (LiteX Notes)](https://enjoy-digital.github.io/posts/chromatix-sdr/) | Deep write-up turning an ESP32 and FPGA into a spectrum analyzer. | `rf` `sdr` `blog` `fpga` `added 2026-11-07` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -938,4 +949,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-06.</sub>
+<sub>Last generated 2026-11-07.</sub>
