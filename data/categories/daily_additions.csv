@@ -129,3 +129,7 @@ https://gallicchio.github.io/learnSDR,Learn SDR (Harvey Mudd),rf;sdr;dsp;course;
 https://iic-jku.github.io/TinyWhisper/index.html,TinyWhisper,rf;open-source;pbl-project;added 2026-11-07,Open-source short-wave transmitter ASIC in 130-nm CMOS for amateur radio.
 https://blog.opensourcesdrlab.com/,OpenSourceSDRLab Blog,rf;sdr;blog;added 2026-11-07,Hands-on GNU Radio and PlutoSDR tutorials.
 https://enjoy-digital.github.io/posts/chromatix-sdr/,ChromatiX SDR (LiteX Notes),rf;sdr;blog;fpga;added 2026-11-07,Deep write-up turning an ESP32 and FPGA into a spectrum analyzer.
+https://www.youtube.com/@GreatScottLab,GreatScott!,basics;youtube;added 2026-11-08,Practical electronics projects and explainers.
+https://www.youtube.com/@AlphaPhoenixChannel,Alpha Phoenix,other;youtube;added 2026-11-08,Rigorous physics and electronics experiments.
+https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/,MIT 6.002 Circuits and Electronics,basics;analog;course;added 2026-11-08,Free MIT OCW circuits course with lectures and notes.
+https://github.com/kicad/kicad-library-utils,KiCad Library Utils,pcb;open-source;tool;added 2026-11-08,Scripts for checking and managing KiCad libraries.
