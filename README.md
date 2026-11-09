@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-832-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-843-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (132)
+- [🆕 Latest Additions](#latest-additions) (143)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -937,6 +937,17 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [ChromatiX SDR (LiteX Notes)](https://enjoy-digital.github.io/posts/chromatix-sdr/) | Deep write-up turning an ESP32 and FPGA into a spectrum analyzer. | `rf` `sdr` `blog` `fpga` `added 2026-11-07` |
 | [Alpha Phoenix](https://www.youtube.com/@AlphaPhoenixChannel) | Rigorous physics and electronics experiments. | `other` `youtube` `added 2026-11-08` |
 | [KiCad Library Utils](https://github.com/kicad/kicad-library-utils) | Scripts for checking and managing KiCad libraries. | `pcb` `open-source` `tool` `added 2026-11-08` |
+| [Make: Electronics Interactive Companion](https://github.com/fraher/electronics-tutorial) | Interactive web companion to Make: Electronics with formula sliders, animated schematics and editable CircuitJS circuits. | `basics` `analog` `ai-built-tool` `pbl-project` `added 2026-11-09` |
+| [JKU Analog Circuit Design Course](https://iic-jku.github.io/analog-circuit-design/aicd.html) | Apache-2.0 MOSFET analog IC design course using Xschem, ngspice and the IHP SG13 open PDK. | `analog` `course` `open-source` `added 2026-11-09` |
+| [ADI Introduction to Electronics Workshop](https://analogdevicesinc.github.io/system-level/learning/workshops_introduction_to_electronics/) | Hands-on beginner workshop with slides, booklet and scope experiments on filters and transistors. | `basics` `course` `added 2026-11-09` |
+| [ADI University Program Tutorials](https://analogdevicesinc.github.io/system-level/university/courses/tutorials/) | Free ADI tutorials on op-amps, instrumentation amps and analog signal processing for course use. | `analog` `basics` `blog` `added 2026-11-09` |
+| [Homebrew Lab](https://github.com/quakkels/homebrew-lab) | Self-directed bench-driven analog course with scope experiments (AI-generated, verify before relying). | `basics` `analog` `course` `pbl-project` `ai-built-tool` `added 2026-11-09` |
+| [Analog Circuit Skills (ngspice)](https://github.com/Arcadia-1/analog-circuit-skills) | Ngspice setups for OTA, LDO, comparator and bootstrap switch circuits with DC/AC/noise analyses. | `analog` `simulator` `open-source` `added 2026-11-09` |
+| [Ngspice Analog Simulations](https://github.com/bradleybeatz1313/ngspice-analog-simulations) | Parameterized ngspice library of op-amp, active filter, regulator and ADC driver simulations with Monte Carlo sweeps. | `analog` `simulator` `open-source` `added 2026-11-09` |
+| [Gavin J Electronics Lessons](https://www.gavinj.net/electronics-lessons.php) | Free lessons on diodes, transistors, op-amps and 555 with wiring diagrams and Arduino code (AI-written). | `basics` `blog` `ai-built-tool` `added 2026-11-09` |
+| [Circuit Bench](https://www.suvroghosh.in/blog/visualizations/circuit-bench) | Interactive browser circuit editor with transient solver and two-channel oscilloscope. | `basics` `analog` `simulator` `free (proprietary)` `added 2026-11-09` |
+| [Circuit Analysis Notes and LTspice Labs](https://mg-04.github.io/courses/ca) | Student notes on RLC and AC circuits plus LTspice lab reports on op-amps and second-order systems. | `basics` `analog` `blog` `added 2026-11-09` |
+| [Qucs-S](https://github.com/ra3xdh/qucs_s) | Open-source GUI circuit simulator front end for ngspice, Xyce and QUCSATOR. | `analog` `simulator` `open-source` `added 2026-11-09` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -951,4 +962,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-08.</sub>
+<sub>Last generated 2026-11-09.</sub>
