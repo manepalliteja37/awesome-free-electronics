@@ -144,3 +144,13 @@ https://www.gavinj.net/electronics-lessons.php,Gavin J Electronics Lessons,basic
 https://www.suvroghosh.in/blog/visualizations/circuit-bench,Circuit Bench,basics;analog;simulator;free (proprietary);added 2026-11-09,Interactive browser circuit editor with transient solver and two-channel oscilloscope.
 https://mg-04.github.io/courses/ca,Circuit Analysis Notes and LTspice Labs,basics;analog;blog;added 2026-11-09,Student notes on RLC and AC circuits plus LTspice lab reports on op-amps and second-order systems.
 https://github.com/ra3xdh/qucs_s,Qucs-S,analog;simulator;open-source;added 2026-11-09,"Open-source GUI circuit simulator front end for ngspice, Xyce and QUCSATOR."
+https://github.com/pulp-platform/croc,Croc SoC,digital;vlsi;open-source;added 2026-11-10,Tiny educational RISC-V SoC with a complete open-source ASIC implementation flow.
+https://github.com/openhwgroup/cv32e40p,CV32E40P,digital;vlsi;open-source;added 2026-11-10,Verified open-source 32-bit RISC-V core from OpenHW Group.
+https://github.com/ucb-bar/rocket-chip,Rocket Chip,digital;vlsi;open-source;added 2026-11-10,Berkeley's Chisel-based RISC-V SoC generator.
+https://github.com/m-labs/migen,Migen,digital;fpga;open-source;added 2026-11-10,Python-based fine-grained HDL toolbox for generating FPGA logic.
+https://github.com/hdl/containers,HDL Containers,digital;fpga;tool;open-source;added 2026-11-10,Docker images packaging open-source EDA and FPGA toolchains.
+https://github.com/PrincetonUniversity/openpiton,OpenPiton,digital;vlsi;open-source;added 2026-11-10,Open-source manycore research framework from Princeton.
+https://github.com/vortexgpgpu/vortex,Vortex GPGPU,digital;fpga;vlsi;open-source;added 2026-11-10,Open RISC-V GPGPU with an FPGA-ready implementation.
+https://github.com/TinyTapeout/tt-support-tools,Tiny Tapeout Support Tools,digital;vlsi;tool;open-source;added 2026-11-10,Tools behind Tiny Tapeout for getting your own chip design fabricated.
+https://github.com/enjoy-digital/litedram,LiteDRAM,digital;fpga;open-source;added 2026-11-10,"Small footprint, configurable DRAM core for FPGAs."
+https://github.com/pulp-platform/cheshire,Cheshire,digital;vlsi;open-source;added 2026-11-10,Minimal Linux-capable 64-bit RISC-V SoC platform.

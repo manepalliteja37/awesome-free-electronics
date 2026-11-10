@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-843-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-853-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (143)
+- [🆕 Latest Additions](#latest-additions) (153)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -948,6 +948,16 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Circuit Bench](https://www.suvroghosh.in/blog/visualizations/circuit-bench) | Interactive browser circuit editor with transient solver and two-channel oscilloscope. | `basics` `analog` `simulator` `free (proprietary)` `added 2026-11-09` |
 | [Circuit Analysis Notes and LTspice Labs](https://mg-04.github.io/courses/ca) | Student notes on RLC and AC circuits plus LTspice lab reports on op-amps and second-order systems. | `basics` `analog` `blog` `added 2026-11-09` |
 | [Qucs-S](https://github.com/ra3xdh/qucs_s) | Open-source GUI circuit simulator front end for ngspice, Xyce and QUCSATOR. | `analog` `simulator` `open-source` `added 2026-11-09` |
+| [Croc SoC](https://github.com/pulp-platform/croc) | Tiny educational RISC-V SoC with a complete open-source ASIC implementation flow. | `digital` `vlsi` `open-source` `added 2026-11-10` |
+| [CV32E40P](https://github.com/openhwgroup/cv32e40p) | Verified open-source 32-bit RISC-V core from OpenHW Group. | `digital` `vlsi` `open-source` `added 2026-11-10` |
+| [Rocket Chip](https://github.com/ucb-bar/rocket-chip) | Berkeley's Chisel-based RISC-V SoC generator. | `digital` `vlsi` `open-source` `added 2026-11-10` |
+| [Migen](https://github.com/m-labs/migen) | Python-based fine-grained HDL toolbox for generating FPGA logic. | `digital` `fpga` `open-source` `added 2026-11-10` |
+| [HDL Containers](https://github.com/hdl/containers) | Docker images packaging open-source EDA and FPGA toolchains. | `digital` `fpga` `tool` `open-source` `added 2026-11-10` |
+| [OpenPiton](https://github.com/PrincetonUniversity/openpiton) | Open-source manycore research framework from Princeton. | `digital` `vlsi` `open-source` `added 2026-11-10` |
+| [Vortex GPGPU](https://github.com/vortexgpgpu/vortex) | Open RISC-V GPGPU with an FPGA-ready implementation. | `digital` `fpga` `vlsi` `open-source` `added 2026-11-10` |
+| [Tiny Tapeout Support Tools](https://github.com/TinyTapeout/tt-support-tools) | Tools behind Tiny Tapeout for getting your own chip design fabricated. | `digital` `vlsi` `tool` `open-source` `added 2026-11-10` |
+| [LiteDRAM](https://github.com/enjoy-digital/litedram) | Small footprint, configurable DRAM core for FPGAs. | `digital` `fpga` `open-source` `added 2026-11-10` |
+| [Cheshire](https://github.com/pulp-platform/cheshire) | Minimal Linux-capable 64-bit RISC-V SoC platform. | `digital` `vlsi` `open-source` `added 2026-11-10` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -962,4 +972,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-09.</sub>
+<sub>Last generated 2026-11-10.</sub>
