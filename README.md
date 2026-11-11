@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-853-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-865-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (153)
+- [🆕 Latest Additions](#latest-additions) (165)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -958,6 +958,18 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Tiny Tapeout Support Tools](https://github.com/TinyTapeout/tt-support-tools) | Tools behind Tiny Tapeout for getting your own chip design fabricated. | `digital` `vlsi` `tool` `open-source` `added 2026-11-10` |
 | [LiteDRAM](https://github.com/enjoy-digital/litedram) | Small footprint, configurable DRAM core for FPGAs. | `digital` `fpga` `open-source` `added 2026-11-10` |
 | [Cheshire](https://github.com/pulp-platform/cheshire) | Minimal Linux-capable 64-bit RISC-V SoC platform. | `digital` `vlsi` `open-source` `added 2026-11-10` |
+| [OpenPCB](https://github.com/OpenPCB-app/OpenPCB) | Local-first desktop EDA with schematic capture, live-DRC layout, 3D preview and fab export that imports KiCad libraries (AGPL beta). | `pcb` `tool` `open-source` `added 2026-11-11` |
+| [WayriCAD](https://github.com/wayri/WayriCAD) | Collection of KiCad plugins for fanout, via stitching, BOM editing, power/signal integrity, trace RLC and ngspice simulation. | `pcb` `tool` `open-source` `added 2026-11-11` |
+| [KiPilot MCP Server](https://kipilot.org/) | MCP server exposing KiCad PCB and schematic tools to AI assistants. | `pcb` `tool` `open-source` `ai-built-tool` `added 2026-11-11` |
+| [KiCad JLCImport](https://github.com/harry10086/kicad_jlcimport) | KiCad plugin importing symbols, footprints and 3D models from JLCPCB/LCSC parts. | `pcb` `tool` `open-source` `added 2026-11-11` |
+| [Open PCB & IC Engineer](https://jcartes.org/open-pcb-ic-engineer/open-pcb-ic-engineer-beta/) | Reads KiCad boards, 3Dblox chip assemblies and GDSII together in one 3D view with a quality-checking autorouter. | `pcb` `vlsi` `tool` `open-source` `added 2026-11-11` |
+| [atopile](https://github.com/atopile/atopile) | Design electronics with code: declarative language that compiles to KiCad boards. | `pcb` `tool` `open-source` `added 2026-11-11` |
+| [Synth](https://github.com/absmach/synth) | Apache-2.0 circuit compiler turning text board designs into KiCad schematics, layouts and BOMs. | `pcb` `tool` `open-source` `added 2026-11-11` |
+| [Easyduino](https://github.com/Hanqaqa/Easyduino) | Open KiCad designs of popular devboards (Uno, Nano, ESP32, Pico, Bluepill) with USB-C, CERN-OHL-P. | `pcb` `open-hardware` `open-source` `added 2026-11-11` |
+| [CERN KiCad Libraries](https://gitlab.com/ohwr/cern-kicad-libs) | CERN's 17,000+ component symbol and footprint libraries for KiCad, open-sourced in 2026. | `pcb` `open-hardware` `open-source` `added 2026-11-11` |
+| [KiCad PCB Design: Student Guide](https://projectech.in/guides/kicad-pcb-design-student-project-guide/) | Practical walkthrough from schematic to Gerbers on an ESP32 carrier board, with Indian fab ordering tips. | `pcb` `blog` `course` `added 2026-11-11` |
+| [Tindie: Open Hardware Projects in KiCad](https://blog.tindie.com/2026/11/three-open-hardware-projects-to-explore-in-kicad/) | Curated open KiCad projects to study, including a USB STM32 board and handheld calculator. | `pcb` `open-hardware` `blog` `added 2026-11-11` |
+| [TrailCurrent KiCad Libraries](https://github.com/trailcurrentoss/TrailCurrentKiCADLibraries) | PCM-installable KiCad symbol, footprint and 3D library package for reproducible projects. | `pcb` `open-hardware` `open-source` `added 2026-11-11` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -972,4 +984,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-10.</sub>
+<sub>Last generated 2026-11-11.</sub>
