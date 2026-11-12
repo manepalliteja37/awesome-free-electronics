@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-865-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-874-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (165)
+- [🆕 Latest Additions](#latest-additions) (174)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -970,6 +970,15 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [KiCad PCB Design: Student Guide](https://projectech.in/guides/kicad-pcb-design-student-project-guide/) | Practical walkthrough from schematic to Gerbers on an ESP32 carrier board, with Indian fab ordering tips. | `pcb` `blog` `course` `added 2026-11-11` |
 | [Tindie: Open Hardware Projects in KiCad](https://blog.tindie.com/2026/11/three-open-hardware-projects-to-explore-in-kicad/) | Curated open KiCad projects to study, including a USB STM32 board and handheld calculator. | `pcb` `open-hardware` `blog` `added 2026-11-11` |
 | [TrailCurrent KiCad Libraries](https://github.com/trailcurrentoss/TrailCurrentKiCADLibraries) | PCM-installable KiCad symbol, footprint and 3D library package for reproducible projects. | `pcb` `open-hardware` `open-source` `added 2026-11-11` |
+| [Zigbee2MQTT](https://github.com/Koenkk/zigbee2mqtt) | Open-source bridge that lets Zigbee devices talk to MQTT without a vendor hub. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [Node-RED](https://github.com/node-red/node-red) | Flow-based visual programming tool for wiring hardware devices, APIs and services. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [embedded-hal](https://github.com/rust-embedded/embedded-hal) | Rust hardware abstraction traits that make drivers portable across microcontrollers. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [The Rust on ESP Book](https://github.com/esp-rs/book) | Free guide to running Rust on ESP32 chips with std and no_std. | `embedded-iot` `book` `open-source` `added 2026-11-12` |
+| [MCU Debug](https://github.com/mcu-debug/mcu-debug) | VS Code extensions for debugging embedded MCUs with GDB, SWO and RTT views. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [Zephyr Example Application](https://github.com/zephyrproject-rtos/example-application) | Reference out-of-tree Zephyr app showing boards, drivers and tests setup. | `embedded-iot` `pbl-project` `open-source` `added 2026-11-12` |
+| [OpenWrt](https://github.com/openwrt/openwrt) | Linux distribution for embedded routers and gateways, great for IoT networking. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [Matter SDK (connectedhomeip)](https://github.com/project-chip/connectedhomeip) | Open-source reference SDK for the Matter smart-home standard. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [ESP Matter](https://github.com/espressif/esp-matter) | Espressif SDK for building Matter devices on ESP32 chips. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -984,4 +993,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-11.</sub>
+<sub>Last generated 2026-11-12.</sub>

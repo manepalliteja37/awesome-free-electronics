@@ -166,3 +166,12 @@ https://gitlab.com/ohwr/cern-kicad-libs,CERN KiCad Libraries,pcb;open-hardware;o
 https://projectech.in/guides/kicad-pcb-design-student-project-guide/,KiCad PCB Design: Student Guide,pcb;blog;course;added 2026-11-11,"Practical walkthrough from schematic to Gerbers on an ESP32 carrier board, with Indian fab ordering tips."
 https://blog.tindie.com/2026/11/three-open-hardware-projects-to-explore-in-kicad/,Tindie: Open Hardware Projects in KiCad,pcb;open-hardware;blog;added 2026-11-11,"Curated open KiCad projects to study, including a USB STM32 board and handheld calculator."
 https://github.com/trailcurrentoss/TrailCurrentKiCADLibraries,TrailCurrent KiCad Libraries,pcb;open-hardware;open-source;added 2026-11-11,"PCM-installable KiCad symbol, footprint and 3D library package for reproducible projects."
+https://github.com/Koenkk/zigbee2mqtt,Zigbee2MQTT,embedded-iot;open-source;tool;added 2026-11-12,Open-source bridge that lets Zigbee devices talk to MQTT without a vendor hub.
+https://github.com/node-red/node-red,Node-RED,embedded-iot;open-source;tool;added 2026-11-12,"Flow-based visual programming tool for wiring hardware devices, APIs and services."
+https://github.com/rust-embedded/embedded-hal,embedded-hal,embedded-iot;open-source;tool;added 2026-11-12,Rust hardware abstraction traits that make drivers portable across microcontrollers.
+https://github.com/esp-rs/book,The Rust on ESP Book,embedded-iot;book;open-source;added 2026-11-12,Free guide to running Rust on ESP32 chips with std and no_std.
+https://github.com/mcu-debug/mcu-debug,MCU Debug,embedded-iot;open-source;tool;added 2026-11-12,"VS Code extensions for debugging embedded MCUs with GDB, SWO and RTT views."
+https://github.com/zephyrproject-rtos/example-application,Zephyr Example Application,embedded-iot;pbl-project;open-source;added 2026-11-12,"Reference out-of-tree Zephyr app showing boards, drivers and tests setup."
+https://github.com/openwrt/openwrt,OpenWrt,embedded-iot;open-source;tool;added 2026-11-12,"Linux distribution for embedded routers and gateways, great for IoT networking."
+https://github.com/project-chip/connectedhomeip,Matter SDK (connectedhomeip),embedded-iot;open-source;tool;added 2026-11-12,Open-source reference SDK for the Matter smart-home standard.
+https://github.com/espressif/esp-matter,ESP Matter,embedded-iot;open-source;tool;added 2026-11-12,Espressif SDK for building Matter devices on ESP32 chips.
