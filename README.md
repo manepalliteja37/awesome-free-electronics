@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-874-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-886-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (174)
+- [🆕 Latest Additions](#latest-additions) (186)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -979,6 +979,18 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [OpenWrt](https://github.com/openwrt/openwrt) | Linux distribution for embedded routers and gateways, great for IoT networking. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
 | [Matter SDK (connectedhomeip)](https://github.com/project-chip/connectedhomeip) | Open-source reference SDK for the Matter smart-home standard. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
 | [ESP Matter](https://github.com/espressif/esp-matter) | Espressif SDK for building Matter devices on ESP32 chips. | `embedded-iot` `open-source` `tool` `added 2026-11-12` |
+| [openpilot](https://github.com/openpilot/openpilot) | Open-source driver-assistance system running on supported cars, a real-world robotics codebase. | `robotics-plc` `open-source` `tool` `added 2026-11-13` |
+| [PX4 Autopilot repo](https://github.com/PX4/PX4-Autopilot) | Source repository of the PX4 flight stack. | `robotics-plc` `open-source` `tool` `added 2026-11-13` |
+| [ArduPilot source repo](https://github.com/ArduPilot/ardupilot) | Source of the ArduPilot autopilot for copters, planes, rovers and subs. | `robotics-plc` `open-source` `tool` `added 2026-11-13` |
+| [SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100) | Open-source low-cost 3D-printable robot arm with CAD and BOM. | `robotics-plc` `open-source` `3d-models` `added 2026-11-13` |
+| [ros2_control repo](https://github.com/ros-controls/ros2_control) | Source for the ros2_control hardware abstraction framework. | `robotics-plc` `open-source` `tool` `added 2026-11-13` |
+| [Cyphal (OpenCyphal)](https://github.com/OpenCyphal/pycyphal) | Open lightweight publish-subscribe protocol for drones and robots over CAN. | `robotics-plc` `open-source` `tool` `added 2026-11-13` |
+| [MAVProxy](https://github.com/ArduPilot/MAVProxy) | Command-line ground station for MAVLink UAVs. | `robotics-plc` `open-source` `tool` `added 2026-11-13` |
+| [PyPSA](https://github.com/pypsa/pypsa) | Python toolbox for simulating and optimising power systems. | `power-energy` `open-source` `tool` `added 2026-11-13` |
+| [CubicSDR](https://github.com/cjcliffe/CubicSDR) | Cross-platform open-source SDR spectrum and demodulator application. | `RF` `SDR` `tool` `open-source` `added 2026-11-14` |
+| [bladeRF](https://github.com/Nuand/bladeRF) | Open-source host software, FPGA and firmware for the bladeRF SDR. | `RF` `SDR` `open-source` `added 2026-11-14` |
+| [LimeSuite](https://github.com/myriadrf/LimeSuite) | Open-source drivers and tools for LimeSDR transceivers. | `RF` `SDR` `open-source` `added 2026-11-14` |
+| [tar1090](https://github.com/wiedehopf/tar1090) | Open-source web interface for ADS-B aircraft tracking from an SDR. | `RF` `SDR` `tool` `open-source` `added 2026-11-14` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -993,4 +1005,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-13.</sub>
+<sub>Last generated 2026-11-14.</sub>

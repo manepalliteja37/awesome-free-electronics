@@ -175,3 +175,15 @@ https://github.com/zephyrproject-rtos/example-application,Zephyr Example Applica
 https://github.com/openwrt/openwrt,OpenWrt,embedded-iot;open-source;tool;added 2026-11-12,"Linux distribution for embedded routers and gateways, great for IoT networking."
 https://github.com/project-chip/connectedhomeip,Matter SDK (connectedhomeip),embedded-iot;open-source;tool;added 2026-11-12,Open-source reference SDK for the Matter smart-home standard.
 https://github.com/espressif/esp-matter,ESP Matter,embedded-iot;open-source;tool;added 2026-11-12,Espressif SDK for building Matter devices on ESP32 chips.
+https://github.com/openpilot/openpilot,openpilot,robotics-plc;open-source;tool;added 2026-11-13,"Open-source driver-assistance system running on supported cars, a real-world robotics codebase."
+https://github.com/PX4/PX4-Autopilot,PX4 Autopilot repo,robotics-plc;open-source;tool;added 2026-11-13,Source repository of the PX4 flight stack.
+https://github.com/ArduPilot/ardupilot,ArduPilot source repo,robotics-plc;open-source;tool;added 2026-11-13,"Source of the ArduPilot autopilot for copters, planes, rovers and subs."
+https://github.com/TheRobotStudio/SO-ARM100,SO-ARM100,robotics-plc;open-source;3d-models;added 2026-11-13,Open-source low-cost 3D-printable robot arm with CAD and BOM.
+https://github.com/ros-controls/ros2_control,ros2_control repo,robotics-plc;open-source;tool;added 2026-11-13,Source for the ros2_control hardware abstraction framework.
+https://github.com/OpenCyphal/pycyphal,Cyphal (OpenCyphal),robotics-plc;open-source;tool;added 2026-11-13,Open lightweight publish-subscribe protocol for drones and robots over CAN.
+https://github.com/ArduPilot/MAVProxy,MAVProxy,robotics-plc;open-source;tool;added 2026-11-13,Command-line ground station for MAVLink UAVs.
+https://github.com/pypsa/pypsa,PyPSA,power-energy;open-source;tool;added 2026-11-13,Python toolbox for simulating and optimising power systems.
+https://github.com/cjcliffe/CubicSDR,CubicSDR,RF;SDR;tool;open-source;added 2026-11-14,Cross-platform open-source SDR spectrum and demodulator application.
+https://github.com/Nuand/bladeRF,bladeRF,RF;SDR;open-source;added 2026-11-14,"Open-source host software, FPGA and firmware for the bladeRF SDR."
+https://github.com/myriadrf/LimeSuite,LimeSuite,RF;SDR;open-source;added 2026-11-14,Open-source drivers and tools for LimeSDR transceivers.
+https://github.com/wiedehopf/tar1090,tar1090,RF;SDR;tool;open-source;added 2026-11-14,Open-source web interface for ADS-B aircraft tracking from an SDR.
