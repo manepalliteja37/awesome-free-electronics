@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-886-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-893-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (186)
+- [🆕 Latest Additions](#latest-additions) (193)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -991,6 +991,13 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [bladeRF](https://github.com/Nuand/bladeRF) | Open-source host software, FPGA and firmware for the bladeRF SDR. | `RF` `SDR` `open-source` `added 2026-11-14` |
 | [LimeSuite](https://github.com/myriadrf/LimeSuite) | Open-source drivers and tools for LimeSDR transceivers. | `RF` `SDR` `open-source` `added 2026-11-14` |
 | [tar1090](https://github.com/wiedehopf/tar1090) | Open-source web interface for ADS-B aircraft tracking from an SDR. | `RF` `SDR` `tool` `open-source` `added 2026-11-14` |
+| [learning-electronics (KaleSG)](https://github.com/KaleSG/learning-electronics) | Hand-picked beginner-to-intermediate electronics learning path from Ohm's law to KiCad, power and PCB parasitics. | `basics` `tool` `course` `open-source` `added 2026-11-15` |
+| [CircuitLab 3D Simulator](https://github.com/circuitlab-app/circuitlab) | Open-source browser-based 3D electronics simulator for learning, with AI-driven circuit control. | `basics` `simulator` `ai-built-tool` `open-source` `added 2026-11-15` |
+| [Zero to ASIC Course](https://www.zerotoasiccourse.com/) | Free course for designing and taping out your own chip using open-source tools. | `VLSI` `course` `open-source` `added 2026-11-15` |
+| [One Student One Chip (ysyx)](https://ysyx.oscc.cc/) | Open RISC-V chip-design education program with public course materials. | `VLSI` `course` `pbl-project` `open-source` `added 2026-11-15` |
+| [ysyx-workbench](https://github.com/OSCPU/ysyx-workbench) | Student workbench repo for building a RISC-V CPU and simulation environment. | `VLSI` `pbl-project` `open-source` `added 2026-11-15` |
+| [IFE TU Graz](https://www.youtube.com/@ife.tugraz) | Open-educational-resource licensed university electronics lecture videos. | `basics` `youtube` `course` `added 2026-11-15` |
+| [Mike's Electric Stuff](https://www.youtube.com/@Mikeselectricstuff) | Teardowns and hardware hacking of electronic gear, free on YouTube. | `basics` `youtube` `added 2026-11-15` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1005,4 +1012,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-14.</sub>
+<sub>Last generated 2026-11-15.</sub>

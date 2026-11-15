@@ -885,3 +885,10 @@ https://github.com/cjcliffe/CubicSDR,CubicSDR,RF;SDR;tool;open-source;added 2026
 https://github.com/Nuand/bladeRF,bladeRF,RF;SDR;open-source;added 2026-11-14,"Open-source host software, FPGA and firmware for the bladeRF SDR.",Latest Additions
 https://github.com/myriadrf/LimeSuite,LimeSuite,RF;SDR;open-source;added 2026-11-14,Open-source drivers and tools for LimeSDR transceivers.,Latest Additions
 https://github.com/wiedehopf/tar1090,tar1090,RF;SDR;tool;open-source;added 2026-11-14,Open-source web interface for ADS-B aircraft tracking from an SDR.,Latest Additions
+https://github.com/KaleSG/learning-electronics,learning-electronics (KaleSG),basics;tool;course;open-source;added 2026-11-15,"Hand-picked beginner-to-intermediate electronics learning path from Ohm's law to KiCad, power and PCB parasitics.",Latest Additions
+https://github.com/circuitlab-app/circuitlab,CircuitLab 3D Simulator,basics;simulator;ai-built-tool;open-source;added 2026-11-15,"Open-source browser-based 3D electronics simulator for learning, with AI-driven circuit control.",Latest Additions
+https://www.zerotoasiccourse.com/,Zero to ASIC Course,VLSI;course;open-source;added 2026-11-15,Free course for designing and taping out your own chip using open-source tools.,Latest Additions
+https://ysyx.oscc.cc/,One Student One Chip (ysyx),VLSI;course;pbl-project;open-source;added 2026-11-15,Open RISC-V chip-design education program with public course materials.,Latest Additions
+https://github.com/OSCPU/ysyx-workbench,ysyx-workbench,VLSI;pbl-project;open-source;added 2026-11-15,Student workbench repo for building a RISC-V CPU and simulation environment.,Latest Additions
+https://www.youtube.com/@ife.tugraz,IFE TU Graz,basics;youtube;course;added 2026-11-15,Open-educational-resource licensed university electronics lecture videos.,Latest Additions
+https://www.youtube.com/@Mikeselectricstuff,Mike's Electric Stuff,basics;youtube;added 2026-11-15,"Teardowns and hardware hacking of electronic gear, free on YouTube.",Latest Additions
