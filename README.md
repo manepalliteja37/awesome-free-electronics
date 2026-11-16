@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-893-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-909-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (193)
+- [🆕 Latest Additions](#latest-additions) (209)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -998,6 +998,22 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [ysyx-workbench](https://github.com/OSCPU/ysyx-workbench) | Student workbench repo for building a RISC-V CPU and simulation environment. | `VLSI` `pbl-project` `open-source` `added 2026-11-15` |
 | [IFE TU Graz](https://www.youtube.com/@ife.tugraz) | Open-educational-resource licensed university electronics lecture videos. | `basics` `youtube` `course` `added 2026-11-15` |
 | [Mike's Electric Stuff](https://www.youtube.com/@Mikeselectricstuff) | Teardowns and hardware hacking of electronic gear, free on YouTube. | `basics` `youtube` `added 2026-11-15` |
+| [jsWebSPICE](https://gitlab.fing.edu.uy/gbrown/jsWebSPICE) | AGPL browser SPICE simulator (ngspice compiled to WebAssembly) built as an installable PWA for students and instructors. | `basics` `analog` `simulator` `open-source` `added 2026-11-16` |
+| [SymXplorer](https://github.com/NooriDan/SymXplorer) | GPL-3 Python toolbox that symbolically explores analog filter topologies from nodal equations and sizes them with SPICE. | `analog` `tool` `open-source` `added 2026-11-16` |
+| [aispice](https://github.com/danieltyukov/aispice) | MIT AI agent that edits LTspice schematics, simulates on ngspice/Xyce and sizes analog blocks on the open IHP SG13G2 PDK. | `analog` `tool` `ai-built-tool` `open-source` `added 2026-11-16` |
+| [CircuitGenome](https://pypi.org/project/circuitgenome) | MIT Python toolkit for op-amp topology synthesis, recognition and sizing from modular building blocks. | `analog` `tool` `open-source` `added 2026-11-16` |
+| [ohmwork](https://github.com/ShaanGS/ohmwork) | MIT web app that turns an open-ended electronics-lab question into a netlist and real simulator results, live at ohmwork.vercel.app. | `basics` `analog` `ai-built-tool` `open-source` `added 2026-11-16` |
+| [Simten](https://simten.dev/docs) | Apache-2.0 browser digital-logic simulator where circuits are TypeScript, from NAND gates to a RISC-V CPU with Verilog export. | `digital` `simulator` `tool` `open-source` `added 2026-11-16` |
+| [Basics of Electronics Toybox (Edinburgh)](https://www.teaching.eng.ed.ac.uk/open-educational-resources/basics-electronics-toybox) | CC BY-NC-SA Excel-based interactive toys for RC, RLC, op-amps, diodes, filters and Fourier synthesis from University of Edinburgh. | `basics` `analog` `simulator` `course` `added 2026-11-16` |
+| [CSU Electronics Lab Manual](https://github.com/csu-techhub/Electronics-Lab) | CC0 university lab manual covering diode, transistor and op-amp experiments with a downloadable PDF. | `basics` `analog` `book` `open-source` `added 2026-11-16` |
+| [IHP Analog Academy](https://github.com/elnaggar/IHP-AnalogAcademy) | Apache-2.0 hands-on course on analog, mixed-signal and RF design with open-source tools on the IHP 130nm open PDK. | `analog` `RF` `course` `open-source` `added 2026-11-16` |
+| [ngspice Tutorial for Beginners](https://ngspice.sourceforge.io/ngspice-tutorial.html) | Official step-by-step ngspice tutorial from passive circuits to a bipolar amplifier and op-amp inverting stage. | `basics` `analog` `simulator` `blog` `open-source` `added 2026-11-16` |
+| [SI-2026 Analog IC Design Course](https://github.com/silicon-vlsi/SI-2026-AnalogIC) | MIT-licensed summer course notes and labs on analog IC design with Xschem and ngspice, from linear circuits to op-amps. | `analog` `VLSI` `course` `open-source` `added 2026-11-16` |
+| [GET it Digital](https://orca-nrw.github.io/GetItDigital/) | CC BY open German-language course on fundamentals of electrical engineering built by six universities. | `basics` `course` `open-source` `added 2026-11-16` |
+| [Open Source Analog Design Flow](https://www.opencircuitdesign.com/analog_flow/index.html) | Tim Edwards' recommended open-source toolchain for analog design from concept through simulation, layout and verification. | `analog` `VLSI` `blog` `open-source` `added 2026-11-16` |
+| [Interactive HTML Labs for Power Electronics](https://agyepes.github.io/power-electronics-interactive-html/) | CC BY and MIT set of 13 browser labs on rectifiers, RMS, Fourier harmonics and three-phase systems, built with AI assistance. | `power` `basics` `simulator` `course` `open-source` `added 2026-11-16` |
+| [Amptronex Interactive Tools](https://www.amptronex.com/) | Free no-signup browser tools including a circuit simulator, virtual breadboard, Bode plotter, nodal tutor and PCB trace-width calculator. | `basics` `analog` `calculator` `simulator` `free (proprietary)` `added 2026-11-16` |
+| [OhmLens](https://ohmlens.com/) | Free no-signup interactive electronics course with live circuit simulations from Ohm's law through MOSFETs, op-amps and PCB basics. | `basics` `analog` `course` `simulator` `free (proprietary)` `added 2026-11-16` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1012,4 +1028,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-15.</sub>
+<sub>Last generated 2026-11-16.</sub>
