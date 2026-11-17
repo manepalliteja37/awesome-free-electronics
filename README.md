@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-909-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-927-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (209)
+- [🆕 Latest Additions](#latest-additions) (227)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1014,6 +1014,24 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Interactive HTML Labs for Power Electronics](https://agyepes.github.io/power-electronics-interactive-html/) | CC BY and MIT set of 13 browser labs on rectifiers, RMS, Fourier harmonics and three-phase systems, built with AI assistance. | `power` `basics` `simulator` `course` `open-source` `added 2026-11-16` |
 | [Amptronex Interactive Tools](https://www.amptronex.com/) | Free no-signup browser tools including a circuit simulator, virtual breadboard, Bode plotter, nodal tutor and PCB trace-width calculator. | `basics` `analog` `calculator` `simulator` `free (proprietary)` `added 2026-11-16` |
 | [OhmLens](https://ohmlens.com/) | Free no-signup interactive electronics course with live circuit simulations from Ohm's law through MOSFETs, op-amps and PCB basics. | `basics` `analog` `course` `simulator` `free (proprietary)` `added 2026-11-16` |
+| [Silinx ISE](https://github.com/pmnmalo/Silinx-ISE) | AGPL-3.0 browser-based FPGA teaching IDE with VHDL/Verilog, schematic, FSM and K-map entry, board emulator and an open Yosys/nextpnr flow for Spartan boards. | `FPGA` `digital` `course` `tool` `open-source` `added 2026-11-17` |
+| [VHDLearn](https://github.com/dvir369/vhdlearn) | MIT-licensed ten-lesson browser course that simulates your VHDL with GHDL, draws live waveforms and auto-grades from a gate to a traffic-light controller. | `FPGA` `digital` `course` `simulator` `open-source` `added 2026-11-17` |
+| [nextpnr Web FPGA Viewer](https://edacation.github.io/nextpnr-viewer/) | MIT browser viewer that renders iCE40 and ECP5 chips and nextpnr place-and-route results locally via Rust/WebAssembly. | `FPGA` `digital` `tool` `open-source` `added 2026-11-17` |
+| [RTL Design Sherpa](https://github.com/sean-galloway/RTLDesignSherpa) | MIT learning framework with books, SystemVerilog modules, cocotb and Verilator verification infrastructure from first module to AXI-class designs. | `digital` `FPGA` `course` `open-source` `added 2026-11-17` |
+| [RVComp](https://github.com/archlab-sciencetokyo/RVComp) | MIT five-stage RV32IMA SoC in plain Verilog that boots Linux on Nexys A7 and Arty boards with Ethernet and microSD. | `digital` `FPGA` `pbl-project` `open-source` `added 2026-11-17` |
+| [Silicon Chapters Verilog RTL](https://github.com/Silicon-Chapters/Verilog-RTL) | Apache-2.0 workspace of graded RTL exercises run through Verible, Verilator, Yosys and OpenROAD down to physical implementation. | `digital` `VLSI` `course` `open-source` `added 2026-11-17` |
+| [Takahe](https://github.com/zaneham/takahe) | MPL-2.0 from-scratch synthesizer that maps SystemVerilog, VHDL and even ABEL-HDL to SKY130 gate-level netlists, with ternary and base-12 modes. | `VLSI` `digital` `tool` `open-source` `added 2026-11-17` |
+| [TxHDL (Rust HDL)](https://www.hdlfactory.com/post/2026/09/12/txhdl-a-hardware-description-language-that-is-a-rust-library/) | Apache-2.0 hardware description language written as a Rust async library, with Verilog/VHDL lowering and a RISC-V core proven on an Artix-7. | `digital` `FPGA` `blog` `open-source` `added 2026-11-17` |
+| [XiangShan](https://github.com/OpenXiangShan/XiangShan) | Open-source high-performance out-of-order RISC-V processor in Chisel, a full reference for modern CPU microarchitecture. | `digital` `VLSI` `open-source` `pbl-project` `added 2026-11-17` |
+| [FPGA-SIM](https://github.com/TheHarmonicRealm/fpga-sim) | GPL-3.0 virtual FPGA boards with switches, LEDs and displays for running student Verilog and testbenches without Vivado. | `FPGA` `digital` `simulator` `course` `open-source` `added 2026-11-17` |
+| [FPGALab](https://github.com/lmcapacho/FPGALab) | AGPL-3.0 virtual FPGA lab for Icestudio and Verilog designs with Verilator simulation and installable virtual peripherals. | `FPGA` `digital` `simulator` `open-source` `added 2026-11-17` |
+| [FPGA Board Simulator](https://github.com/Machai-Kydoimos/fpga-board-sim) | MIT pygame simulator that runs your VHDL on 270+ virtual real-world FPGA boards using GHDL or NVC and cocotb. | `FPGA` `digital` `simulator` `open-source` `added 2026-11-17` |
+| [formal.org](https://formal.org/) | Free no-install browser course with 155 katas that run real SymbiYosys and Boolector proofs from discrete math up to AXI4-Lite verification. | `digital` `VLSI` `course` `free (proprietary)` `added 2026-11-17` |
+| [ChipFlow Configurator](https://configurator.chipflow.io/) | Free open-source browser tool to pick CPU, memory and peripheral IP for an SoC and generate a ready GitHub project. | `VLSI` `digital` `tool` `open-source` `added 2026-11-17` |
+| [Celox](https://celox-sim.github.io/celox/) | Apache-2.0 JIT simulator that compiles Veryl designs to native x86-64 code for near-hardware simulation speed. | `digital` `VLSI` `tool` `open-source` `added 2026-11-17` |
+| [ASM Editor](https://asm-editor.specy.app/) | AGPL-3.0 web IDE to write, run, step through and debug RISC-V (and other) assembly with memory and register views. | `digital` `embedded` `simulator` `course` `open-source` `added 2026-11-17` |
+| [CREATOR](https://creatorsim.github.io/creator/) | LGPL-3.0 didactic simulator for RISC-V and MIPS assembly programs used in computer architecture teaching. | `digital` `embedded` `simulator` `course` `open-source` `added 2026-11-17` |
+| [Virtual FPGA Lab (Makerchip)](https://github.com/os-fpga/Virtual-FPGA-Lab) | MIT browser FPGA lab with TL-Verilog that you can run on a virtual board or export to real boards. | `FPGA` `digital` `course` `simulator` `open-source` `added 2026-11-17` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1028,4 +1046,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-16.</sub>
+<sub>Last generated 2026-11-17.</sub>
