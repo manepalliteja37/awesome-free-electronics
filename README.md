@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-927-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-941-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (227)
+- [🆕 Latest Additions](#latest-additions) (241)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1032,6 +1032,20 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [ASM Editor](https://asm-editor.specy.app/) | AGPL-3.0 web IDE to write, run, step through and debug RISC-V (and other) assembly with memory and register views. | `digital` `embedded` `simulator` `course` `open-source` `added 2026-11-17` |
 | [CREATOR](https://creatorsim.github.io/creator/) | LGPL-3.0 didactic simulator for RISC-V and MIPS assembly programs used in computer architecture teaching. | `digital` `embedded` `simulator` `course` `open-source` `added 2026-11-17` |
 | [Virtual FPGA Lab (Makerchip)](https://github.com/os-fpga/Virtual-FPGA-Lab) | MIT browser FPGA lab with TL-Verilog that you can run on a virtual board or export to real boards. | `FPGA` `digital` `course` `simulator` `open-source` `added 2026-11-17` |
+| [ZiroEDA Designer (KiCad 10 in the browser)](https://github.com/ZiroEDA/ziro-designer) | GPL-3.0 TypeScript port of KiCad 10 that runs the schematic editor, PCB editor, router and ERC/DRC in a browser tab and opens native .kicad_pro projects. | `PCB` `open hardware` `tool` `open-source` `ai-built-tool` `added 2026-11-18` |
+| [KiCad Android](https://github.com/deveshrai/kicad-android) | GPL-3.0 native Android build of KiCad 10.99 with schematic, PCB router, 3D viewer, Gerber output, Freerouting autorouter and a built-in MCP server. | `PCB` `tool` `open-source` `added 2026-11-18` |
+| [KiCAD-Prism](https://github.com/krishna-swaroop/KiCAD-Prism) | Apache-2.0 self-hosted web app to view, review and comment on KiCad schematics and layouts in the browser, with kicad-cli jobset automation and git versioning. | `PCB` `tool` `open-source` `added 2026-11-18` |
+| [Perfboard Editor](https://github.com/smhgzll/perfboard-editor) | MIT browser workbench for planning perfboard and stripboard builds with two-face routing, continuity checks, 3D preview and build-drawing export. | `PCB` `open hardware` `tool` `open-source` `added 2026-11-18` |
+| [Copper-KiCad MCP](https://github.com/claynicholson/copper-kicad-mcp) | MIT MCP server with 31 tools that lets an AI app draw schematics, source LCSC parts, route boards, run ERC/DRC and export JLCPCB fab files in KiCad 10. | `PCB` `tool` `open-source` `ai-built-tool` `added 2026-11-18` |
+| [KiCad MCP Pro](https://github.com/oaslananka/kicad-mcp-pro) | AGPL-3.0 MCP server that lets AI agents drive KiCad schematic and PCB work, ERC/DRC, DFM review, BOM and manufacturing exports. | `PCB` `tool` `open-source` `ai-built-tool` `added 2026-11-18` |
+| [silk reel](https://github.com/hridaya423/silkreel) | Apache-2.0 tool that turns a .kicad_pcb into a short launch film of the board, handy for showcasing PCB projects as content. | `PCB` `open hardware` `tool` `open-source` `added 2026-11-18` |
+| [Xyce Studio](https://github.com/spice-projects/xyce-studio) | Apache-2.0 GUI for the Xyce circuit simulator with waveform viewer and KiCad schematic integration for one-click simulation. | `analog` `PCB` `simulator` `open-source` `added 2026-11-18` |
+| [Tracelet](https://github.com/gongbin/tracelet) | GPL-3.0 browser-based EDA in TypeScript with multi-sheet schematics, 2-6 layer PCB layout, 3D preview, BOM and fab exports, plus CLI and MCP server. | `PCB` `tool` `open-source` `added 2026-11-18` |
+| [SketchForge PCB](https://github.com/Formsmith746/SketchForge-PCB) | AGPL-3.0 local-first browser PCB editor with circuit capture, board layout, 3D inspection and exports, no account needed. | `PCB` `tool` `open-source` `added 2026-11-18` |
+| [AI-PCB-layout](https://github.com/ChengminLi/AI-PCB-layout) | CC-BY-4.0 agent skill and guidelines for designing and reviewing power-electronics PCBs with a human review gate after every step. | `PCB` `power` `open hardware` `open-source` `added 2026-11-18` |
+| [SiliconWit: PCB Design with KiCad](https://siliconwit.com/education/pcb-design-kicad/) | Free project-based KiCad 9 course taking you from ATmega328P breakouts to SMD boards, covering schematic, layout, Gerbers, build and first firmware. | `PCB` `course` `added 2026-11-18` |
+| [How to Make a PCB: Ten Steps on Real Boards](https://dev.to/dibyaprakash_pradhan/how-to-make-a-pcb-ten-steps-shown-on-real-boards-mistakes-left-in-4obc) | Practical walkthrough of the ten PCB design steps from schematic to fab and assembly, with real boards and mistakes left in. | `PCB` `blog` `added 2026-11-18` |
+| [LabWired](https://github.com/w1ne/labwired-core) | MIT deterministic circuit and MCU firmware simulator that runs compiled firmware against simulated boards and peripherals for debugging and CI. | `embedded` `simulator` `open-source` `added 2026-11-18` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1046,4 +1060,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-17.</sub>
+<sub>Last generated 2026-11-18.</sub>
