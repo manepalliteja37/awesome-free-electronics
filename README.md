@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-941-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-959-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (241)
+- [🆕 Latest Additions](#latest-additions) (259)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1046,6 +1046,24 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [SiliconWit: PCB Design with KiCad](https://siliconwit.com/education/pcb-design-kicad/) | Free project-based KiCad 9 course taking you from ATmega328P breakouts to SMD boards, covering schematic, layout, Gerbers, build and first firmware. | `PCB` `course` `added 2026-11-18` |
 | [How to Make a PCB: Ten Steps on Real Boards](https://dev.to/dibyaprakash_pradhan/how-to-make-a-pcb-ten-steps-shown-on-real-boards-mistakes-left-in-4obc) | Practical walkthrough of the ten PCB design steps from schematic to fab and assembly, with real boards and mistakes left in. | `PCB` `blog` `added 2026-11-18` |
 | [LabWired](https://github.com/w1ne/labwired-core) | MIT deterministic circuit and MCU firmware simulator that runs compiled firmware against simulated boards and peripherals for debugging and CI. | `embedded` `simulator` `open-source` `added 2026-11-18` |
+| [ESP-EMU (Espressif ESP32 Emulator)](https://github.com/espressif/esp-emulator) | Apache-2.0 Rust emulator from Espressif that runs ESP32-C3/C6/H2/P4/S3 firmware images on a PC or in the browser, including WiFi, BLE and Thread. | `embedded` `iot` `simulator` `open-source` `added 2026-11-19` |
+| [ESP-EMU Browser Emulator](https://espressif.github.io/esp-emulator/) | Drop a merged ESP-IDF flash image into the page to boot ESP32 firmware in a browser tab with a UART console, GPIO panel and memory viewer, nothing to install. | `embedded` `iot` `simulator` `tool` `added 2026-11-19` |
+| [ThingStudio](https://thingstudio.net) | Apache-2.0 Node-RED-style visual flow programming that compiles to MicroPython for ESP32, Pico, nRF52840 and STM32, running in the browser with no cloud or account. | `embedded` `iot` `tool` `open-source` `added 2026-11-19` |
+| [esp32-pie-asr](https://github.com/BoumedineBillal/esp32-pie-asr) | Apache-2.0 on-device streaming English speech recognition on the ESP32-P4 using 2/4-bit weights and PIE SIMD kernels, flashable from the browser, with voice-control demos. | `embedded` `iot` `pbl-project` `open-source` `added 2026-11-19` |
+| [Exort](https://github.com/Razz19/Exort) | Free open-source desktop AI coding workspace for microcontrollers that compiles, uploads and monitors serial output for Arduino, ESP32, RP2040, STM32 and Teensy boards. | `embedded` `tool` `open-source` `added 2026-11-19` |
+| [Run Zephyr on ESP32 with QEMU (Espressif)](https://developer.espressif.com/blog/2026/09/zephyr-espressif-qemu-hello-world/) | Step-by-step tutorial to build, boot and debug Zephyr on emulated ESP32, S3, C3 and C6 using the Espressif QEMU fork, no board required. | `embedded` `iot` `blog` `added 2026-11-19` |
+| [IEEE 802.15.4 Wireshark Sniffer with ESP Chips](https://developer.espressif.com/blog/2026/11/zephyr-ieee802154-wireshark-sniffer) | Deep tutorial turning an ESP32-H2/C6/C5 running Zephyr into a live Thread, Zigbee and 802.15.4 sniffer with a Wireshark extcap plugin. | `embedded` `iot` `rf` `blog` `added 2026-11-19` |
+| [Learn Zephyr RTOS on Real Hardware: 24-Week Plan](https://dev.to/vadher_nikunj_47e8c86d866/how-to-learn-zephyr-rtos-on-real-hardware-a-24-week-plan-1bc2) | Free week-by-week study plan covering west, Devicetree, Kconfig, kernel objects and subsystems on an ESP32-S3 board. | `embedded` `iot` `course` `blog` `added 2026-11-19` |
+| [Zephyr RTOS from Zero to Expert Masterclass](https://www.rezabigdeli.de/tutorials/zephyr-rtos-from-zero-to-expert-the-complete-masterclass/) | Long free masterclass that takes you from nothing to writing real Zephyr firmware, covering tools, kernel, drivers, subsystems and connectivity. | `embedded` `iot` `blog` `course` `added 2026-11-19` |
+| [NanoMQ on Zephyr RTOS: MQTT Broker on an MCU](https://nanomq.io/blog/nanomq-on-zephyr-rtos) | Walkthrough of running the open-source NanoMQ MQTT broker directly on a Zephyr microcontroller as an edge gateway. | `iot` `embedded` `blog` `open-source` `added 2026-11-19` |
+| [Getting Started with MQTT on Zephyr RTOS](https://www.emqx.com/en/blog/getting-started-with-mqtt-on-zephyr-rtos) | Tutorial that connects Zephyr to an MQTT broker, upgrading from plain TCP to mutual TLS, fully reproducible on native_sim without hardware. | `iot` `embedded` `blog` `added 2026-11-19` |
+| [EmbLinkRTOS](https://github.com/EmbLinkOs/EmbLinkRTOS) | Apache-2.0 new RTOS kernel preview tested on four real boards and emulated on nine more, with its claims backed by published evidence. | `embedded` `open-source` `added 2026-11-19` |
+| [AkiraOS](https://github.com/ArturR0k3r/AkiraOS) | Open-source Zephyr-based OS that runs sandboxed WebAssembly apps over the air on ESP32-S3, nRF5x and STM32 with a capability-based permission model. | `embedded` `iot` `open-source` `added 2026-11-19` |
+| [Impl Rust for ESP32](https://esp32.implrust.com/) | Free book teaching embedded Rust on the ESP32 DevKit V1 through projects such as LDR, ultrasonic, OLED, servo, Wi-Fi, Bluetooth, RFID and SD card. | `embedded` `iot` `book` `course` `open-source` `added 2026-11-19` |
+| [Impl Rust for Raspberry Pi Pico 2](https://pico.implrust.com/) | Free hands-on book that teaches embedded Rust on the Raspberry Pi Pico 2 with beginner-friendly projects. | `embedded` `book` `course` `open-source` `added 2026-11-19` |
+| [Waveshare ESP32 MicroPython Getting Started](https://docs.waveshare.com/ESP32-MicroPython-Tutorials) | Free chaptered tutorial series covering GPIO, ADC, PWM, UART, I2C, SPI, Wi-Fi, web server and Bluetooth in MicroPython with Thonny. | `embedded` `iot` `course` `added 2026-11-19` |
+| [Moddable SDK](https://github.com/Moddable-OpenSource/moddable) | Open-source toolkit for building IoT products in modern JavaScript on low-cost microcontrollers, now with official Zephyr support. | `embedded` `iot` `tool` `open-source` `added 2026-11-19` |
+| [Embedded Swift](https://www.swift.org/get-started/embedded) | Official Swift.org guide to writing tiny, memory-safe firmware in Swift for microcontrollers with C interop. | `embedded` `tool` `open-source` `added 2026-11-19` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1060,4 +1078,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-18.</sub>
+<sub>Last generated 2026-11-19.</sub>
