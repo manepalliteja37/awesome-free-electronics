@@ -958,3 +958,10 @@ https://pico.implrust.com/,Impl Rust for Raspberry Pi Pico 2,embedded;book;cours
 https://docs.waveshare.com/ESP32-MicroPython-Tutorials,Waveshare ESP32 MicroPython Getting Started,embedded;iot;course;added 2026-11-19,"Free chaptered tutorial series covering GPIO, ADC, PWM, UART, I2C, SPI, Wi-Fi, web server and Bluetooth in MicroPython with Thonny.",Latest Additions
 https://github.com/Moddable-OpenSource/moddable,Moddable SDK,embedded;iot;tool;open-source;added 2026-11-19,"Open-source toolkit for building IoT products in modern JavaScript on low-cost microcontrollers, now with official Zephyr support.",Latest Additions
 https://www.swift.org/get-started/embedded,Embedded Swift,embedded;tool;open-source;added 2026-11-19,"Official Swift.org guide to writing tiny, memory-safe firmware in Swift for microcontrollers with C interop.",Latest Additions
+https://github.com/rerun-io/rerun,Rerun,robotics;tool;open-source;added 2026-11-20,Open-source visualization SDK for logging and replaying multimodal robot sensor data.,Latest Additions
+https://github.com/gazebosim/gz-sim,Gazebo Sim,robotics;simulator;open-source;added 2026-11-20,"Open-source robotics simulator with physics, sensors and ROS 2 integration.",Latest Additions
+https://github.com/moveit/moveit2,MoveIt 2,robotics;tool;open-source;added 2026-11-20,Open-source motion planning framework for robot manipulators on ROS 2.,Latest Additions
+https://github.com/ros-navigation/navigation2,Nav2,robotics;tool;open-source;added 2026-11-20,ROS 2 navigation stack for autonomous mobile robots.,Latest Additions
+https://github.com/kscalelabs/ksim,K-Scale ksim,robotics;tool;open-source;added 2026-11-20,Open-source reinforcement learning framework for training humanoid robot policies.,Latest Additions
+https://github.com/betaflight/betaflight,Betaflight,drones;tool;open-source;added 2026-11-20,Open-source flight controller firmware for multirotors.,Latest Additions
+https://github.com/OpenEMS/openems,OpenEMS,power;solar;tool;open-source;added 2026-11-20,"Open-source energy management system for storage, solar and EV charging.",Latest Additions

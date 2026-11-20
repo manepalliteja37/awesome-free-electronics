@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-959-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-966-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (259)
+- [🆕 Latest Additions](#latest-additions) (266)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1064,6 +1064,13 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Waveshare ESP32 MicroPython Getting Started](https://docs.waveshare.com/ESP32-MicroPython-Tutorials) | Free chaptered tutorial series covering GPIO, ADC, PWM, UART, I2C, SPI, Wi-Fi, web server and Bluetooth in MicroPython with Thonny. | `embedded` `iot` `course` `added 2026-11-19` |
 | [Moddable SDK](https://github.com/Moddable-OpenSource/moddable) | Open-source toolkit for building IoT products in modern JavaScript on low-cost microcontrollers, now with official Zephyr support. | `embedded` `iot` `tool` `open-source` `added 2026-11-19` |
 | [Embedded Swift](https://www.swift.org/get-started/embedded) | Official Swift.org guide to writing tiny, memory-safe firmware in Swift for microcontrollers with C interop. | `embedded` `tool` `open-source` `added 2026-11-19` |
+| [Rerun](https://github.com/rerun-io/rerun) | Open-source visualization SDK for logging and replaying multimodal robot sensor data. | `robotics` `tool` `open-source` `added 2026-11-20` |
+| [Gazebo Sim](https://github.com/gazebosim/gz-sim) | Open-source robotics simulator with physics, sensors and ROS 2 integration. | `robotics` `simulator` `open-source` `added 2026-11-20` |
+| [MoveIt 2](https://github.com/moveit/moveit2) | Open-source motion planning framework for robot manipulators on ROS 2. | `robotics` `tool` `open-source` `added 2026-11-20` |
+| [Nav2](https://github.com/ros-navigation/navigation2) | ROS 2 navigation stack for autonomous mobile robots. | `robotics` `tool` `open-source` `added 2026-11-20` |
+| [K-Scale ksim](https://github.com/kscalelabs/ksim) | Open-source reinforcement learning framework for training humanoid robot policies. | `robotics` `tool` `open-source` `added 2026-11-20` |
+| [Betaflight](https://github.com/betaflight/betaflight) | Open-source flight controller firmware for multirotors. | `drones` `tool` `open-source` `added 2026-11-20` |
+| [OpenEMS](https://github.com/OpenEMS/openems) | Open-source energy management system for storage, solar and EV charging. | `power` `solar` `tool` `open-source` `added 2026-11-20` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
