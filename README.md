@@ -1078,4 +1078,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-19.</sub>
+<sub>Last generated 2026-11-20.</sub>
