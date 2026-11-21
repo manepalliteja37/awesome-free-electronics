@@ -965,3 +965,12 @@ https://github.com/ros-navigation/navigation2,Nav2,robotics;tool;open-source;add
 https://github.com/kscalelabs/ksim,K-Scale ksim,robotics;tool;open-source;added 2026-11-20,Open-source reinforcement learning framework for training humanoid robot policies.,Latest Additions
 https://github.com/betaflight/betaflight,Betaflight,drones;tool;open-source;added 2026-11-20,Open-source flight controller firmware for multirotors.,Latest Additions
 https://github.com/OpenEMS/openems,OpenEMS,power;solar;tool;open-source;added 2026-11-20,"Open-source energy management system for storage, solar and EV charging.",Latest Additions
+https://github.com/tomojitakasu/PocketSDR,Pocket SDR,rf;sdr;tool;open-source;added 2026-11-21,Open-source multi-constellation GNSS SDR receiver with frontend designs and Python/C/C++ apps.,Latest Additions
+https://github.com/OK1BR/sdr-for-linux,SDR for Linux,rf;sdr;tool;open-source;added 2026-11-21,GPLv3 GTK4 SDR transceiver app for HPSDR/ANAN and Hermes Lite 2 built on WDSP.,Latest Additions
+https://callingcq.com/blog/web-sdr,web_sdr,rf;sdr;tool;open-source;added 2026-11-21,"Browser-based RTL-SDR and ADALM-Pluto capture and analysis with waterfall, demodulation and SigMF recording.",Latest Additions
+https://github.com/jj1bdx/airspy-fmradion,airspy-fmradion,rf;sdr;dsp;tool;open-source;added 2026-11-21,"Command-line SDR decoder for FM/AM broadcast, NBFM, SSB and WSPR on Airspy and RTL-SDR.",Latest Additions
+https://github.com/TAPR/OpenHPSDR-wdsp,WDSP,dsp;rf;tool;open-source;added 2026-11-21,"GPL signal-processing library for SDR with noise reduction, AGC and demodulators.",Latest Additions
+https://ringof.github.io/notebook/2026/07/the-rx888-end-to-end/,RX888 end to end notebook,rf;sdr;blog;open-source;added 2026-11-21,Workbench write-up following RX888 samples from FX3 firmware through librx888 into GNU Radio.,Latest Additions
+https://github.com/ams-OSRAM/ams-OSRAM.github.io,ams-OSRAM web tools,sensors;calculator;tool;open-source;added 2026-11-21,"MIT browser tools for ToF sensors: Web Serial GUI, log viewer, FoV and power calculators.",Latest Additions
+https://pypi.org/project/modbus-studio/,modbus-studio,plc;sensors;tool;open-source;added 2026-11-21,"Open-source browser-based Modbus TCP/RTU master for polling, decoding and testing devices.",Latest Additions
+https://github.com/Emefedez/ESP32Calc,ESP32Calc,other;pbl-project;open-source;added 2026-11-21,"Open hardware ESP32-S3 e-paper symbolic calculator with schematics, CAD, BOM and firmware.",Latest Additions

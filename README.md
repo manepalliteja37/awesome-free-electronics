@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-966-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-975-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (266)
+- [🆕 Latest Additions](#latest-additions) (275)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1071,6 +1071,15 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [K-Scale ksim](https://github.com/kscalelabs/ksim) | Open-source reinforcement learning framework for training humanoid robot policies. | `robotics` `tool` `open-source` `added 2026-11-20` |
 | [Betaflight](https://github.com/betaflight/betaflight) | Open-source flight controller firmware for multirotors. | `drones` `tool` `open-source` `added 2026-11-20` |
 | [OpenEMS](https://github.com/OpenEMS/openems) | Open-source energy management system for storage, solar and EV charging. | `power` `solar` `tool` `open-source` `added 2026-11-20` |
+| [Pocket SDR](https://github.com/tomojitakasu/PocketSDR) | Open-source multi-constellation GNSS SDR receiver with frontend designs and Python/C/C++ apps. | `rf` `sdr` `tool` `open-source` `added 2026-11-21` |
+| [SDR for Linux](https://github.com/OK1BR/sdr-for-linux) | GPLv3 GTK4 SDR transceiver app for HPSDR/ANAN and Hermes Lite 2 built on WDSP. | `rf` `sdr` `tool` `open-source` `added 2026-11-21` |
+| [web_sdr](https://callingcq.com/blog/web-sdr) | Browser-based RTL-SDR and ADALM-Pluto capture and analysis with waterfall, demodulation and SigMF recording. | `rf` `sdr` `tool` `open-source` `added 2026-11-21` |
+| [airspy-fmradion](https://github.com/jj1bdx/airspy-fmradion) | Command-line SDR decoder for FM/AM broadcast, NBFM, SSB and WSPR on Airspy and RTL-SDR. | `rf` `sdr` `dsp` `tool` `open-source` `added 2026-11-21` |
+| [WDSP](https://github.com/TAPR/OpenHPSDR-wdsp) | GPL signal-processing library for SDR with noise reduction, AGC and demodulators. | `dsp` `rf` `tool` `open-source` `added 2026-11-21` |
+| [RX888 end to end notebook](https://ringof.github.io/notebook/2026/07/the-rx888-end-to-end/) | Workbench write-up following RX888 samples from FX3 firmware through librx888 into GNU Radio. | `rf` `sdr` `blog` `open-source` `added 2026-11-21` |
+| [ams-OSRAM web tools](https://github.com/ams-OSRAM/ams-OSRAM.github.io) | MIT browser tools for ToF sensors: Web Serial GUI, log viewer, FoV and power calculators. | `sensors` `calculator` `tool` `open-source` `added 2026-11-21` |
+| [modbus-studio](https://pypi.org/project/modbus-studio/) | Open-source browser-based Modbus TCP/RTU master for polling, decoding and testing devices. | `plc` `sensors` `tool` `open-source` `added 2026-11-21` |
+| [ESP32Calc](https://github.com/Emefedez/ESP32Calc) | Open hardware ESP32-S3 e-paper symbolic calculator with schematics, CAD, BOM and firmware. | `other` `pbl-project` `open-source` `added 2026-11-21` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1085,4 +1094,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-20.</sub>
+<sub>Last generated 2026-11-21.</sub>
