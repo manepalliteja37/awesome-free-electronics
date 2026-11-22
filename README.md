@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-975-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-979-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (275)
+- [🆕 Latest Additions](#latest-additions) (279)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1080,6 +1080,10 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [ams-OSRAM web tools](https://github.com/ams-OSRAM/ams-OSRAM.github.io) | MIT browser tools for ToF sensors: Web Serial GUI, log viewer, FoV and power calculators. | `sensors` `calculator` `tool` `open-source` `added 2026-11-21` |
 | [modbus-studio](https://pypi.org/project/modbus-studio/) | Open-source browser-based Modbus TCP/RTU master for polling, decoding and testing devices. | `plc` `sensors` `tool` `open-source` `added 2026-11-21` |
 | [ESP32Calc](https://github.com/Emefedez/ESP32Calc) | Open hardware ESP32-S3 e-paper symbolic calculator with schematics, CAD, BOM and firmware. | `other` `pbl-project` `open-source` `added 2026-11-21` |
+| [OpenROAD Project](https://openroad.org/) | Open-source autonomous RTL-to-GDSII chip design toolchain with docs and getting-started guides. | `vlsi` `digital` `open-source` `tool` `added 2026-11-22` |
+| [Chris Gammell](https://www.youtube.com/@ChrisGammell) | Practical electronics design videos from the Contextual Electronics and Amp Hour founder. | `basics` `youtube` `added 2026-11-22` |
+| [bigclivedotcom](https://www.youtube.com/@bigclivedotcom) | Long-running teardowns of cheap mains and LED gadgets explaining real-world circuit design. | `basics` `youtube` `teardown` `added 2026-11-22` |
+| [Jeri Ellsworth](https://www.youtube.com/@JeriEllsworth) | Hands-on analog, retro-computing and custom-chip builds from a self-taught engineer. | `basics` `youtube` `added 2026-11-22` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1094,4 +1098,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-21.</sub>
+<sub>Last generated 2026-11-22.</sub>
