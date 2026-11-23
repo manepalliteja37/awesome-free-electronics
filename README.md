@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-979-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-987-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (279)
+- [🆕 Latest Additions](#latest-additions) (287)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1084,6 +1084,14 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Chris Gammell](https://www.youtube.com/@ChrisGammell) | Practical electronics design videos from the Contextual Electronics and Amp Hour founder. | `basics` `youtube` `added 2026-11-22` |
 | [bigclivedotcom](https://www.youtube.com/@bigclivedotcom) | Long-running teardowns of cheap mains and LED gadgets explaining real-world circuit design. | `basics` `youtube` `teardown` `added 2026-11-22` |
 | [Jeri Ellsworth](https://www.youtube.com/@JeriEllsworth) | Hands-on analog, retro-computing and custom-chip builds from a self-taught engineer. | `basics` `youtube` `added 2026-11-22` |
+| [Circuits & Systems Classroom](https://github.com/Arcadia-1/circuits-and-systems-classroom) | MIT-licensed interactive lessons on analog and mixed-signal topics like ADCs, PLLs, feedback and noise. | `analog` `course` `open-source` `added 2026-11-23` |
+| [COCOA: Collaborative Compendium on Analog ICs](https://bmurmann.github.io/COCOA) | Open-source online book on analog IC design with reproducible examples on open PDKs. | `analog` `book` `open-source` `added 2026-11-23` |
+| [EE20 Kit Browser Simulator](https://mjrovai.com/articles/ee20-simulator/) | Free browser rebuild of all 22 circuits of the 1970 Philips EE20 electronics kit, offline-capable. | `basics` `simulator` `pbl-project` `added 2026-11-23` |
+| [KIT002-OpAmp](https://github.com/DMC1988/KIT002-OpAmp) | Educational kit with theory and ready-to-run LTspice simulations explaining op-amp internals. | `analog` `pbl-project` `open-source` `added 2026-11-23` |
+| [51 Analog Circuits Series](https://github.com/BhavyaSolanki31/51-Analog-Circuits-Series) | Collection of 51 analog projects from basic amplifiers to system designs with diagrams and simulations. | `analog` `pbl-project` `open-source` `added 2026-11-23` |
+| [Awesome Circuit Simulators](https://github.com/xfans/awesome-circuit-simulators) | Curated list of circuit simulators for students, makers and engineers with cost and source notes. | `basics` `simulator` `community` `open-source` `added 2026-11-23` |
+| [Analog Electronics in the Browser (Velxio)](https://velxio.dev/blog/posts/analog-electronics-in-the-browser/) | Seven measured circuits from dividers to regulators run on ngspice-WASM, checked against formulas. | `analog` `blog` `simulator` `added 2026-11-23` |
+| [Engineer4Free Circuits Course](https://www.engineer4free.com/circuits.html) | Free ~50-tutorial university-level DC circuit analysis course with practice problems. | `basics` `course` `free (proprietary)` `added 2026-11-23` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1098,4 +1106,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-22.</sub>
+<sub>Last generated 2026-11-23.</sub>
