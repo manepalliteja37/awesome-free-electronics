@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-987-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-994-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (287)
+- [🆕 Latest Additions](#latest-additions) (294)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1092,6 +1092,13 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [Awesome Circuit Simulators](https://github.com/xfans/awesome-circuit-simulators) | Curated list of circuit simulators for students, makers and engineers with cost and source notes. | `basics` `simulator` `community` `open-source` `added 2026-11-23` |
 | [Analog Electronics in the Browser (Velxio)](https://velxio.dev/blog/posts/analog-electronics-in-the-browser/) | Seven measured circuits from dividers to regulators run on ngspice-WASM, checked against formulas. | `analog` `blog` `simulator` `added 2026-11-23` |
 | [Engineer4Free Circuits Course](https://www.engineer4free.com/circuits.html) | Free ~50-tutorial university-level DC circuit analysis course with practice problems. | `basics` `course` `free (proprietary)` `added 2026-11-23` |
+| [Tang Nano 9K Series Examples](https://github.com/lushaylabs/tangnano9k-series-examples) | Lushay Labs' step-by-step Verilog tutorials for the cheap Tang Nano 9K board using the open-source toolchain. | `FPGA` `pbl-project` `open-source` `added 2026-11-24` |
+| [Awesome HDL](https://github.com/hdl/awesome) | Curated list of open-source HDL simulators, synthesizers, linters, IP cores and learning material. | `FPGA` `digital` `community` `open-source` `added 2026-11-24` |
+| [Gemmini](https://github.com/ucb-bar/gemmini) | Berkeley's open-source systolic-array DNN accelerator generator, taped out and runnable in FPGA simulation. | `digital` `VLSI` `open-source` `added 2026-11-24` |
+| [HWToolkit (hwt)](https://github.com/Nic30/hwt) | Python framework for describing, simulating and generating RTL for FPGA/ASIC designs. | `FPGA` `digital` `tool` `open-source` `added 2026-11-24` |
+| [PULPino](https://github.com/pulp-platform/pulpino) | Open-source single-core RISC-V microcontroller system from ETH Zurich and UniBo with FPGA and simulation flows. | `digital` `VLSI` `open-source` `added 2026-11-24` |
+| [openXC7 Toolchain Installer](https://github.com/openXC7/toolchain-installer) | One-step installer for a fully open-source toolchain targeting Xilinx 7-series FPGAs. | `FPGA` `tool` `open-source` `added 2026-11-24` |
+| [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) | University of Utah framework to generate customizable FPGA architectures and their bitstream flow. | `FPGA` `VLSI` `tool` `open-source` `added 2026-11-24` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1106,4 +1113,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-23.</sub>
+<sub>Last generated 2026-11-24.</sub>
