@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-994-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-1001-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (294)
+- [🆕 Latest Additions](#latest-additions) (301)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1099,6 +1099,13 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [PULPino](https://github.com/pulp-platform/pulpino) | Open-source single-core RISC-V microcontroller system from ETH Zurich and UniBo with FPGA and simulation flows. | `digital` `VLSI` `open-source` `added 2026-11-24` |
 | [openXC7 Toolchain Installer](https://github.com/openXC7/toolchain-installer) | One-step installer for a fully open-source toolchain targeting Xilinx 7-series FPGAs. | `FPGA` `tool` `open-source` `added 2026-11-24` |
 | [OpenFPGA](https://github.com/lnis-uofu/OpenFPGA) | University of Utah framework to generate customizable FPGA architectures and their bitstream flow. | `FPGA` `VLSI` `tool` `open-source` `added 2026-11-24` |
+| [Junction (collaborative KiCad)](https://github.com/JunctionEDA/junction) | GPL-3.0 KiCad fork for real-time multi-user schematic and PCB editing on desktop or in the browser. | `PCB` `tool` `open-source` `added 2026-11-25` |
+| [Trouting](https://github.com/TommyHolt/trouting) | MIT-licensed KiCad 9/10 autorouter that routes all nets at once with negotiated congestion and GND pour stitching. | `PCB` `tool` `open-source` `added 2026-11-25` |
+| [kicad-happy](https://github.com/aklofas/kicad-happy) | AI agent skills that analyze KiCad schematics and layouts, run SPICE and EMC pre-checks and prep boards for fab. | `PCB` `tool` `open-source` `ai-built-tool` `added 2026-11-25` |
+| [KiPilot](https://kipilot.org/index.html) | Open-source MCP server connecting AI agents to a live KiCad session through its IPC API. | `PCB` `tool` `open-source` `added 2026-11-25` |
+| [KiLeidoscope](https://forum.kicad.info/t/kileidoscope-open-source-real-time-interactive-kicad-to-blender-bridge-flex-pcb-ims-pcb-support/71755) | Open-source KiCad 10 to Blender bridge for real-time 3D editing and rendering of rigid, flex and IMS boards. | `PCB` `3d-models` `open-source` `added 2026-11-25` |
+| [Awesome KiCad Projects (57 curated boards)](https://forum.kicad.info/t/7-years-starring-open-source-hardware-repos-made-with-kicad-today-i-turned-the-list-of-57-curated-project-public/71605) | Curated directory of 57 production-grade open-source KiCad designs to study high-speed routing, power and BGA fanout. | `PCB` `open hardware` `community` `open-source` `added 2026-11-25` |
+| [cadlab](https://github.com/KarpelesLab/cadlab) | Headless Rust electronics CAD with BOM, board layout, autorouting, DRC and fab outputs via CLI and MCP server. | `PCB` `tool` `open-source` `added 2026-11-25` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1113,4 +1120,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-24.</sub>
+<sub>Last generated 2026-11-25.</sub>
