@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-1001-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-1010-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (301)
+- [🆕 Latest Additions](#latest-additions) (310)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1106,6 +1106,15 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [KiLeidoscope](https://forum.kicad.info/t/kileidoscope-open-source-real-time-interactive-kicad-to-blender-bridge-flex-pcb-ims-pcb-support/71755) | Open-source KiCad 10 to Blender bridge for real-time 3D editing and rendering of rigid, flex and IMS boards. | `PCB` `3d-models` `open-source` `added 2026-11-25` |
 | [Awesome KiCad Projects (57 curated boards)](https://forum.kicad.info/t/7-years-starring-open-source-hardware-repos-made-with-kicad-today-i-turned-the-list-of-57-curated-project-public/71605) | Curated directory of 57 production-grade open-source KiCad designs to study high-speed routing, power and BGA fanout. | `PCB` `open hardware` `community` `open-source` `added 2026-11-25` |
 | [cadlab](https://github.com/KarpelesLab/cadlab) | Headless Rust electronics CAD with BOM, board layout, autorouting, DRC and fab outputs via CLI and MCP server. | `PCB` `tool` `open-source` `added 2026-11-25` |
+| [MQTT Device Simulator](https://github.com/mqtt-tools/mqtt-device-simulator) | Open-source web app that spins up virtual IoT devices publishing realistic JSON telemetry to any MQTT broker. | `IoT` `tool` `open-source` `added 2026-11-26` |
+| [Embedded-Hacking](https://github.com/mytechnotalent/Embedded-Hacking) | Free Apache-2.0 course from RP2350 bare-metal basics to firmware debugging and reverse engineering with Ghidra. | `embedded` `course` `open-source` `added 2026-11-26` |
+| [SIMUT](https://github.com/angeloINTJ/simut) | Pico W/Pico 2 W telemetry firmware with 16 sensor slots, web UI, MQTT, Home Assistant, Prometheus and signed OTA. | `embedded` `IoT` `open-source` `added 2026-11-26` |
+| [minUS](https://github.com/kelu124/minus) | Minimal single-channel open-source ultrasound pulse-echo platform built as a hackable workshop badge. | `embedded` `open hardware` `open-source` `added 2026-11-26` |
+| [PCBKit open toolchain](https://github.com/pcbkit-io/toolchain) | Public repo of the WebAssembly GCC/Clang toolchains used to compile Arduino, ESP32 and RISC-V sketches in-browser. | `embedded` `tool` `open-source` `added 2026-11-26` |
+| [ESPHome](https://github.com/esphome/esphome) | Define ESP32/ESP8266 firmware in YAML for Home Assistant and local-control smart devices. | `IoT` `embedded` `tool` `open-source` `added 2026-11-26` |
+| [avr8js](https://github.com/wokwi/avr8js) | JavaScript AVR8 CPU emulator that powers in-browser Arduino simulation. | `embedded` `simulator` `open-source` `added 2026-11-26` |
+| [Arm Learning Paths: Embedded and Microcontrollers](https://learn.arm.com/learning-paths/embedded-and-microcontrollers/) | Free hands-on Arm tutorials for microcontrollers, RTOS, TinyML and IoT. | `embedded` `course` `free (proprietary)` `added 2026-11-26` |
+| [Embassy](https://github.com/embassy-rs/embassy) | Async Rust framework for embedded with HALs for STM32, nRF and RP2040/RP2350. | `embedded` `tool` `open-source` `added 2026-11-26` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1120,4 +1129,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-25.</sub>
+<sub>Last generated 2026-11-26.</sub>
