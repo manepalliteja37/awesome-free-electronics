@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-1010-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-1019-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (310)
+- [🆕 Latest Additions](#latest-additions) (319)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1115,6 +1115,15 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [avr8js](https://github.com/wokwi/avr8js) | JavaScript AVR8 CPU emulator that powers in-browser Arduino simulation. | `embedded` `simulator` `open-source` `added 2026-11-26` |
 | [Arm Learning Paths: Embedded and Microcontrollers](https://learn.arm.com/learning-paths/embedded-and-microcontrollers/) | Free hands-on Arm tutorials for microcontrollers, RTOS, TinyML and IoT. | `embedded` `course` `free (proprietary)` `added 2026-11-26` |
 | [Embassy](https://github.com/embassy-rs/embassy) | Async Rust framework for embedded with HALs for STM32, nRF and RP2040/RP2350. | `embedded` `tool` `open-source` `added 2026-11-26` |
+| [RoboSimStudio](https://github.com/robosimstudio/robosimstudio) | Open toolkit for rebuilding real robot manipulation tasks in physics simulation, runs on CPU-only machines. | `robotics` `simulator` `open-source` `added 2026-11-27` |
+| [ShramkoGSFPV](https://github.com/AndriiShramko/ShramkoGSFPV) | Browser FPV drone simulator for Gaussian Splatting scenes with Betaflight rates, PID and EdgeTX radio support. | `drones` `simulator` `open-source` `added 2026-11-27` |
+| [FastSwarmSim](https://github.com/shupx/FastSwarmSim) | Lightweight PX4-compatible multi-UAV ROS 2 simulator that needs no Gazebo and runs up to 100x real time. | `drones` `simulator` `open-source` `added 2026-11-27` |
+| [OmniSim](https://github.com/omnilink-tech/omnisim) | Apache-2.0 robotics workshop for simulating robots, building digital twins and letting AI agents program them. | `robotics` `simulator` `open-source` `added 2026-11-27` |
+| [DC Microgrid Simulator](https://github.com/hiro1959/dc-microgrid-simulator) | MATLAB/Simulink simulator of residential DC microgrids with PV, wind, LiFePO4 batteries and DC/DC converters. | `power` `solar` `simulator` `open-source` `added 2026-11-27` |
+| [SRCI Client PLC](https://github.com/ThorstenBrach/SRCI_CLIENT_PLC) | Open IEC 61131-3 library for Codesys and TwinCAT to command robots from a PLC via the SRCI standard. | `plc` `robotics` `open-source` `added 2026-11-27` |
+| [RoboUniverse-10K](https://github.com/Einsia/RoboUniverse-10K) | Open suite of 10,807 physics simulation environments for training embodied AI agents. | `robotics` `simulator` `open-source` `added 2026-11-27` |
+| [CrazyS Crazyflie Simulator (ROS 2)](https://www.bitcraze.io/2026/11/crazys-a-crazyflie-simulator-for-ros-now-on-ros-2-and-gazebo-sim/) | Bitcraze post on a Crazyflie simulator re-implementing firmware controllers as ROS 2 nodes for Gazebo Sim. | `drones` `blog` `open-source` `added 2026-11-27` |
+| [Open-Source Robot Learning Simulators 2026](https://dev.to/pranay_argon/open-source-robot-learning-simulators-in-2026-what-each-is-good-for-492h) | Comparison of open-source robot learning simulators such as Newton and Alloy and what each is good at. | `robotics` `blog` `added 2026-11-27` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1129,4 +1138,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-26.</sub>
+<sub>Last generated 2026-11-27.</sub>
