@@ -1,6 +1,6 @@
 # Awesome Free Electronics ⚡
 
-![Resources](https://img.shields.io/badge/resources-1019-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
+![Resources](https://img.shields.io/badge/resources-1030-blue) ![License: CC0](https://img.shields.io/badge/license-CC0-green) ![Free](https://img.shields.io/badge/100%25-free%20%26%20open--source-brightgreen)
 
 A curated list of **free and open-source** electronics tools, simulators, calculators, blogs, YouTube channels, courses, free assets and project-based-learning (PBL) projects, from basic electronics to analog, digital, PCB design, embedded systems, IoT, VLSI, FPGA, robotics, PLC, RF, power electronics and more.
 
@@ -19,7 +19,7 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 - [🧾 Calculators & Reference Tools](#calculators--reference-tools) (48)
 - [🗂️ PCB Community Projects & Free Assets](#pcb-community-projects--free-assets) (60)
 - [📺 YouTube, Blogs, Courses, Communities & AI-Built Tools](#youtube-blogs-courses-communities--ai-built-tools) (63)
-- [🆕 Latest Additions](#latest-additions) (319)
+- [🆕 Latest Additions](#latest-additions) (330)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -1124,6 +1124,17 @@ A curated list of **free and open-source** electronics tools, simulators, calcul
 | [RoboUniverse-10K](https://github.com/Einsia/RoboUniverse-10K) | Open suite of 10,807 physics simulation environments for training embodied AI agents. | `robotics` `simulator` `open-source` `added 2026-11-27` |
 | [CrazyS Crazyflie Simulator (ROS 2)](https://www.bitcraze.io/2026/11/crazys-a-crazyflie-simulator-for-ros-now-on-ros-2-and-gazebo-sim/) | Bitcraze post on a Crazyflie simulator re-implementing firmware controllers as ROS 2 nodes for Gazebo Sim. | `drones` `blog` `open-source` `added 2026-11-27` |
 | [Open-Source Robot Learning Simulators 2026](https://dev.to/pranay_argon/open-source-robot-learning-simulators-in-2026-what-each-is-good-for-492h) | Comparison of open-source robot learning simulators such as Newton and Alloy and what each is good at. | `robotics` `blog` `added 2026-11-27` |
+| [GNU Radio World](https://www.gnuradioworld.com/) | Browser-based GNU Radio that runs .grc flowgraphs and example IQ recordings with no install. | `rf` `sdr` `tool` `simulator` `open-source` `added 2026-11-28` |
+| [SDRmm](https://sdrmm.com/) | Free open-source patch-based SDR app decoding FM, aircraft, pagers, ships, FT8 and digital voice modes. | `rf` `sdr` `tool` `open-source` `added 2026-11-28` |
+| [RemoteRF (UCLA)](https://remoterf.net/) | Free GPLv3 testbed giving remote access to real SDRs like Pluto, HackRF and USRP over the internet. | `rf` `sdr` `tool` `community` `open-source` `added 2026-11-28` |
+| [UberSDR](https://ubersdr.org/) | Open-source web HF+6m SDR platform built on RX-888 MkII hardware and ka9q-radio. | `rf` `sdr` `tool` `open-source` `added 2026-11-28` |
+| [INTERCEPT](https://github.com/smittix/intercept) | Web dashboard unifying rtl_433, ADS-B, pager, satellite and WebSDR decoding for RTL-SDR and HackRF. | `rf` `sdr` `tool` `open-source` `added 2026-11-28` |
+| [Three Benchtop Instruments, From a Browser Tab](https://lc-linkous.github.io/posts/three-instruments-one-browser-tab/) | Browser pages that drive a NanoVNA, tinySA and HackRF directly via WebUSB/serial. | `rf` `sdr` `sensors` `blog` `open-source` `added 2026-11-28` |
+| [VektorFIL](https://ibelinp.github.io/vektorfil) | Free educational LC filter and diplexer designer with real network synthesis and live response plots. | `rf` `calculator` `tool` `free (proprietary)` `added 2026-11-28` |
+| [AntennaKNoBs](https://antennaknobs.dev/) | Browser-based wire-antenna MoM simulator with NEC engines and live pattern charts, no NEC deck needed. | `rf` `antenna` `simulator` `open-source` `added 2026-11-28` |
+| [OpenELINT Lab](https://hongselectronics.github.io/OpenELINT/) | 30 interactive browser modules on radar, electronic warfare and ELINT equations. | `rf` `dsp` `simulator` `open-source` `added 2026-11-28` |
+| [QuickSmith](https://quicksmith.online/) | Free open-source browser rebuild of a 1993 Smith chart and matching-network design tool. | `rf` `calculator` `simulator` `open-source` `added 2026-11-28` |
+| [NGSpice Circuit Simulator Studio](https://ngspice-circuit.vercel.app) | Vercel-hosted ngspice schematic simulator with 555, op-amp, filter and logic examples. | `analog` `simulator` `ai-built-tool` `open-source` `added 2026-11-28` |
 
 <sub>[⬆ back to top](#contents)</sub>
 
@@ -1138,4 +1149,4 @@ Found a great free or open-source electronics resource? See [CONTRIBUTING.md](CO
 This list is released under CC0 1.0. Each linked resource keeps its own licence.
 
 
-<sub>Last generated 2026-11-27.</sub>
+<sub>Last generated 2026-11-28.</sub>
